@@ -65,7 +65,7 @@ for (const r of recipes) {
 const unitSet = new Set(Object.keys(units));
 const ingrSet = new Set(Object.keys(ingredients));
 for (const r of recipes) {
-  // ingredient refs & units
+  // All ingredients must reference known ingredients and units
   for (const ing of r.ingredients) {
     if (!ingrSet.has(ing.ref)) {
       failed = true;
@@ -76,12 +76,44 @@ for (const r of recipes) {
       console.error(`❌ ${r.id}: unknown unit "${ing.unit}"`);
     }
   }
-  // subrecipe IDs
+  // All subrecipes must reference known recipes
   for (const sub of r.subrecipes ?? []) {
     const exists = recipes.some((x) => x.id === sub);
     if (!exists) {
       failed = true;
       console.error(`❌ ${r.id}: subrecipe "${sub}" not found`);
+    }
+  }
+}
+
+// Check that every ingredient's default_unit exists in units.json
+for (const [id, ingr] of Object.entries(ingredients)) {
+  const ingrObj = ingr as { default_unit?: string };
+  if (!unitSet.has(ingrObj.default_unit!)) {
+    failed = true;
+    console.error(
+      `❌ ingredient "${id}" has unknown default_unit "${ingrObj.default_unit}"`
+    );
+  }
+}
+
+// Ensure instructions[].step is strictly increasing or unique
+for (const r of recipes) {
+  if (Array.isArray(r.instructions)) {
+    const steps = r.instructions.map((inst) => inst.step);
+    const uniqueSteps = new Set(steps);
+    if (uniqueSteps.size !== steps.length) {
+      failed = true;
+      console.error(`❌ ${r.id}: instructions[].step has duplicates`);
+    }
+    for (let i = 1; i < steps.length; ++i) {
+      if (steps[i] <= steps[i - 1]) {
+        failed = true;
+        console.error(
+          `❌ ${r.id}: instructions[].step not strictly increasing at index ${i}`
+        );
+        break;
+      }
     }
   }
 }
