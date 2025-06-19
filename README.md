@@ -16,6 +16,24 @@ npm install          # reads package.json + package-lock.json
 npm run validate
 ```
 
+## Folder Layout
+
+```
+data/
+  units.json           # canonical units
+  ingredients.json     # ingredient catalog
+  recipes/             # one JSON per recipe
+schema/                # JSON Schemas
+scripts/validate.ts    # structural + cross-file checks
+```
+
+## Adding a new recipe
+
+1. Extend ingredients.json (or reuse existing IDs).
+2. Create data/recipes/<slug>.json.
+3. `npm run validate` – must pass.
+4. Commit.
+
 ## Pre-commit hook
 
 Husky v9 runs validation automatically:
@@ -25,10 +43,3 @@ Husky v9 runs validation automatically:
 #!/usr/bin/env sh
 npm run validate
 ```
-
-## Adding a new recipe
-
-1. Extend ingredients.json (or reuse existing IDs).
-2. Create data/recipes/<slug>.json.
-3. `npm run validate` – must pass.
-4. Commit.

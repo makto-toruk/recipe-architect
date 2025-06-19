@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "# tests",
   "main": "index.js",
-  "type": "module",         
+  "type": "module",
   "scripts": {
-    "validate": "tsx scripts/validate.ts",
-    "prepare": "husky install"
+    "validate": "tsx scripts/validate.ts"
   },
   "repository": {
     "type": "git",
