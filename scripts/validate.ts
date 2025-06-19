@@ -100,7 +100,7 @@ for (const [id, ingr] of Object.entries(ingredients)) {
 // Ensure instructions[].step is strictly increasing or unique
 for (const r of recipes) {
   if (Array.isArray(r.instructions)) {
-    const steps = r.instructions.map((inst) => inst.step);
+    const steps = r.instructions.map((inst: { step: number }) => inst.step);
     const uniqueSteps = new Set(steps);
     if (uniqueSteps.size !== steps.length) {
       failed = true;
