@@ -1,0 +1,18 @@
+{
+  "g": {
+    "name": "gram",
+    "aliases": ["g", "grams"]
+  },
+  "cup": {
+    "name": "cup",
+    "aliases": ["cups"]
+  },
+  "each": {
+    "name": "item",
+    "aliases": ["each"]
+  },
+  "pinch": {
+    "name": "pinch",
+    "aliases": ["pinches"]
+  }
+}

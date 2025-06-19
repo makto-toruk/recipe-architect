@@ -1,0 +1,31 @@
+{
+  "name": "recipe-architect",
+  "version": "1.0.0",
+  "description": "# tests",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makto-toruk/recipe-architect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makto-toruk/recipe-architect/issues"
+  },
+  "homepage": "https://github.com/makto-toruk/recipe-architect#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "ajv": "^8.17.1",
+    "ajv-errors": "^3.0.0",
+    "ajv-formats": "^3.0.1",
+    "chalk": "^5.4.1",
+    "husky": "^9.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
