@@ -1,5 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
+import type {
+  RecipeSchemaJson,
+  IngredientsSchemaJson,
+  UnitsSchemaJson,
+} from "./types";
 
 const baseDir = path.join(process.cwd(), "data");
 const recipeDir = path.join(baseDir, "recipes");
@@ -14,9 +19,9 @@ export async function getAllRecipeSlugs(): Promise<string[]> {
 }
 
 export type LoadedRecipe = {
-  recipe: any;
-  ingredients: Record<string, any>;
-  units: Record<string, any>;
+  recipe: RecipeSchemaJson;
+  ingredients: IngredientsSchemaJson;
+  units: UnitsSchemaJson;
 };
 
 export async function loadRecipeBySlug(

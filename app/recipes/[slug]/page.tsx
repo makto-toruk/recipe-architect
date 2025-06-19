@@ -3,6 +3,7 @@ import RecipeHeader from "@/components/RecipeHeader";
 import RecipeIngredients from "@/components/RecipeIngredients";
 import RecipeInstructions from "@/components/RecipeInstructions";
 import { notFound } from "next/navigation";
+import type { LoadedRecipe } from "@/utils/loadRecipe";
 
 export async function generateStaticParams() {
   const slugs = await getAllRecipeSlugs();
@@ -15,7 +16,7 @@ export default async function Page(props: { params: { slug: string } }) {
   const data = await loadRecipeBySlug(slug);
   if (!data) return notFound();
 
-  const { recipe, ingredients, units } = data;
+  const { recipe, ingredients, units } = data as LoadedRecipe;
 
   return (
     <main className="p-6 max-w-3xl mx-auto">
