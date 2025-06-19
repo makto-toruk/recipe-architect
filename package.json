@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "validate": "tsx scripts/validate.ts",
-    "dev": "next dev"
+    "dev": "next dev",
+    "gen-types": "tsx scripts/generate-types.ts"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/makto-toruk/recipe-architect#readme",
   "devDependencies": {
+    "@types/glob": "^8.1.0",
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
@@ -28,10 +30,12 @@
     "ajv-formats": "^3.0.1",
     "chalk": "^5.4.1",
     "husky": "^9.0.0",
+    "json-schema-to-typescript": "^15.0.4",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "glob": "^11.0.3",
     "next": "^15.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
