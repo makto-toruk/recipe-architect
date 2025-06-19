@@ -1,5 +1,5 @@
 /* eslint-disable */
-// Auto-generated types
+// Auto-generated types from JSON schemas
 
 /* eslint-disable */
 /**
@@ -8,14 +8,18 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface UnitsSchemaJson {
+export interface Ingredients {
   /**
-   * This interface was referenced by `UnitsSchemaJson`'s JSON-Schema definition
+   * This interface was referenced by `Ingredients`'s JSON-Schema definition
    * via the `patternProperty` "^[a-z_]+$".
    */
   [k: string]: {
     name: string;
-    aliases: string[];
+    default_unit: string;
+    recommendations?: {
+      name: string;
+      link: string;
+    }[];
   };
 }
 
@@ -26,7 +30,7 @@ export interface UnitsSchemaJson {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface RecipeSchemaJson {
+export interface Recipe {
   id: string;
   title: string;
   tags?: string[];
@@ -54,18 +58,14 @@ export interface RecipeSchemaJson {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface IngredientsSchemaJson {
+export interface Units {
   /**
-   * This interface was referenced by `IngredientsSchemaJson`'s JSON-Schema definition
+   * This interface was referenced by `Units`'s JSON-Schema definition
    * via the `patternProperty` "^[a-z_]+$".
    */
   [k: string]: {
     name: string;
-    default_unit: string;
-    recommendations?: {
-      name: string;
-      link: string;
-    }[];
+    aliases: string[];
   };
 }
 

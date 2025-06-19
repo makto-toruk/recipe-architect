@@ -3,7 +3,7 @@ import RecipeHeader from "@/components/RecipeHeader";
 import RecipeIngredients from "@/components/RecipeIngredients";
 import RecipeInstructions from "@/components/RecipeInstructions";
 import { notFound } from "next/navigation";
-import type { LoadedRecipe } from "@/utils/loadRecipe";
+import type { LoadedRecipe } from "@/types";
 
 export async function generateStaticParams() {
   const slugs = await getAllRecipeSlugs();

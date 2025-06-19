@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 npm run validate
 npm run gen-types
-git add utils/types.ts
+git add types/generated.ts
