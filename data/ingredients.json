@@ -1,0 +1,46 @@
+{
+  "dark_chocolate": {
+    "name": "Dark Chocolate",
+    "default_unit": "g",
+    "recommendations": [
+      {
+        "name": "TJ's Pound Plus Dark Chocolate",
+        "link": "https://www.amazon.com/Trader-Joes-Pound-Plus-Chocolate/dp/B00AAIADZE"
+      }
+    ]
+  },
+  "cacao_powder": {
+    "name": "Cacao Powder",
+    "default_unit": "cup",
+    "recommendations": [
+      {
+        "name": "TJ's Organic Cacao Powder",
+        "link": "https://www.amazon.com/Trader-Joes-Organic-Cacao-Powder/dp/B075TGDXXW"
+      }
+    ]
+  },
+  "unsalted_butter": {
+    "name": "Unsalted Butter",
+    "default_unit": "cup"
+  },
+  "white_granulated_sugar": {
+    "name": "White Granulated Sugar",
+    "default_unit": "cup"
+  },
+  "brown_granulated_sugar": {
+    "name": "Brown Sugar",
+    "default_unit": "cup"
+  },
+  "eggs": {
+    "name": "Eggs",
+    "default_unit": "each"
+  },
+  "flour": {
+    "name": "All-Purpose Flour",
+    "default_unit": "cup"
+  },
+  "salt": {
+    "name": "Salt",
+    "default_unit": "g"
+  }
+}

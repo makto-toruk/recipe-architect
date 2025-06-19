@@ -1,0 +1,91 @@
+{
+  "id": "fudgy_brownies",
+  "title": "Fudgy Brownies",
+  "tags": ["dessert", "brownies", "chocolate"],
+  "image": "fudgy-brownies.jpg",
+  "first_made": "2022-08-12",
+  "last_made": "2022-08-12",
+
+  "subrecipes": [],
+
+  "ingredients": [
+    {
+      "ref": "dark_chocolate",
+      "qty": 170,
+      "unit": "g",
+      "note": "70-72 % cocoa works best"
+    },
+    {
+      "ref": "cacao_powder",
+      "qty": 0.25,
+      "unit": "cup"
+    },
+    {
+      "ref": "unsalted_butter",
+      "qty": 0.5,
+      "unit": "cup",
+      "note": "room temp (1 stick)"
+    },
+    {
+      "ref": "white_granulated_sugar",
+      "qty": 0.75,
+      "unit": "cup"
+    },
+    {
+      "ref": "brown_granulated_sugar",
+      "qty": 0.333,
+      "unit": "cup"
+    },
+    {
+      "ref": "eggs",
+      "qty": 3,
+      "unit": "each"
+    },
+    {
+      "ref": "flour",
+      "qty": 0.625,
+      "unit": "cup",
+      "note": "1/2 cup + 2 Tbsp"
+    },
+    {
+      "ref": "salt",
+      "qty": 1,
+      "unit": "pinch"
+    }
+  ],
+
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Melt chocolate and butter over simmering water."
+    },
+    {
+      "step": 2,
+      "text": "Whisk sugars into hot mixture gradually."
+    },
+    {
+      "step": 3,
+      "text": "Preheat oven to 350 °F (175 °C)."
+    },
+    {
+      "step": 4,
+      "text": "Whisk in eggs one at a time."
+    },
+    {
+      "step": 5,
+      "text": "Sift salt, flour, cacao; fold into batter."
+    },
+    {
+      "step": 6,
+      "text": "Line an 8x8-inch pan with greased baking sheet."
+    },
+    {
+      "step": 7,
+      "text": "Bake 35 min at 350 °F; surface may look gooey."
+    },
+    {
+      "step": 8,
+      "text": "Cool, invert, cut into squares."
+    }
+  ]
+}
