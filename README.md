@@ -12,8 +12,8 @@ cd recipe-architect
 # Install dependencies (Node ≥ 18 required)
 npm install          # reads package.json + package-lock.json
 
-# Run validation manually (same command Husky uses)
-npm run validate
+# Run in localhost
+npm run dev
 ```
 
 ## Folder Layout

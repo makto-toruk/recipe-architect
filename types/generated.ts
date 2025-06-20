@@ -37,10 +37,19 @@ export interface Recipe {
   image?: string;
   first_made?: string;
   last_made?: string;
-  subrecipes?: string[];
+  subrecipes?: {
+    ref: string;
+    qty: {
+      num: number;
+      den: number;
+    };
+  }[];
   ingredients: {
     ref: string;
-    qty: number;
+    qty: {
+      num: number;
+      den: number;
+    };
     unit: string;
     note?: string;
   }[];

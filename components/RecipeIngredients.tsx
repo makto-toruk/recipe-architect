@@ -1,4 +1,5 @@
 import type { Recipe, Ingredients, Units } from "@/types";
+import { formatFraction } from "@/utils/fraction";
 
 type Props = {
   recipe: Recipe;
@@ -17,13 +18,15 @@ export default function RecipeIngredients({
       <ul className="space-y-4">
         {recipe.ingredients.map((ing, i) => {
           const name = ingredients[ing.ref]?.name ?? ing.ref;
-          const unit = units[ing.unit]?.name ?? ing.unit;
+          const unitName = units[ing.unit]?.name ?? ing.unit;
+          const qtyDisplay = formatFraction(ing.qty.num, ing.qty.den);
+
           return (
             <li key={i} className="flex flex-col gap-1">
               <div className="flex justify-between items-start">
                 <span className="text-gray-900">{name}</span>
                 <span className="text-sm font-medium text-gray-600 ml-2 flex-shrink-0">
-                  {ing.qty} {unit}
+                  {qtyDisplay} {unitName}
                 </span>
               </div>
               {ing.note && (
