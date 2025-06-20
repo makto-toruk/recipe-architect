@@ -1,51 +1,97 @@
 import React from "react";
 import type { Recipe } from "@/types";
 
-type Props = { recipe: Recipe };
+type Props = {
+  recipe: Recipe;
+  subrecipes?: Recipe[]; // Array of loaded subrecipe data
+};
 
-export default function RecipeInstructions({ recipe }: Props) {
-  // Collect all notes in order
-  const footnotes: { step: number; text: string }[] = [];
-  recipe.instructions.forEach((inst) => {
-    if (inst.note) {
-      footnotes.push({ step: inst.step, text: inst.note });
-    }
-  });
+export default function RecipeInstructions({ recipe, subrecipes = [] }: Props) {
+  const hasSubrecipes = recipe.subrecipes && recipe.subrecipes.length > 0;
+
+  // Collect all footnotes from main recipe and subrecipes with continuous numbering
+  const footnotes: { section: string; step: number; text: string }[] = [];
+  let footnoteCounter = 0;
+
+  // Helper function to process instructions and collect footnotes
+  const processInstructions = (
+    instructions: Recipe["instructions"],
+    sectionName: string
+  ) => {
+    return instructions.map((inst) => {
+      let footnoteIndex = -1;
+      if (inst.note) {
+        footnoteIndex = footnoteCounter;
+        footnotes.push({
+          section: sectionName,
+          step: inst.step,
+          text: inst.note,
+        });
+        footnoteCounter++;
+      }
+      return { ...inst, footnoteIndex };
+    });
+  };
+
+  // Process subrecipe instructions first
+  const processedSubrecipes = hasSubrecipes
+    ? recipe.subrecipes
+        ?.map((subrecipeRef) => {
+          const subrecipe = subrecipes.find(
+            (sub) => sub.id === subrecipeRef.ref
+          );
+          if (!subrecipe) return null;
+
+          return {
+            ...subrecipe,
+            qty: subrecipeRef.qty,
+            processedInstructions: processInstructions(
+              subrecipe.instructions,
+              subrecipe.title
+            ),
+          };
+        })
+        .filter(Boolean) || []
+    : [];
+
+  // Process main recipe instructions after subrecipes
+  const mainInstructions = processInstructions(
+    recipe.instructions,
+    hasSubrecipes ? recipe.title : ""
+  );
 
   return (
-    <section className="mt-8">
+    <section className="mt-8 lg:mt-0">
       <h2 className="text-xl font-semibold mb-6 text-gray-900">Instructions</h2>
-      <ol className="space-y-6">
-        {recipe.instructions.map((inst) => {
-          // Determine footnote index for this step (if any)
-          const noteIndex = footnotes.findIndex((f) => f.step === inst.step);
-          const hasNote = noteIndex > -1;
 
-          return (
-            <li key={inst.step} className="flex gap-4">
-              <span className="flex-shrink-0 w-7 h-7 bg-gray-100 text-gray-700 rounded-full flex items-center justify-center text-sm font-medium">
-                {inst.step}
-              </span>
-              <div className="flex flex-col">
-                <p className="text-gray-800 leading-relaxed pt-0.5">
-                  {inst.text}
-                  {hasNote && (
-                    <sup className="ml-1 align-super text-xs">
-                      {noteIndex + 1}
-                    </sup>
-                  )}
-                </p>
-              </div>
-            </li>
-          );
-        })}
-      </ol>
+      {/* Subrecipe instructions first */}
+      {processedSubrecipes.map((subrecipe, index) => (
+        <div key={subrecipe!.id} className="mb-8">
+          <h3 className="text-lg font-medium mb-4 text-gray-800">
+            For the {subrecipe!.title}
+          </h3>
+          <InstructionsList instructions={subrecipe!.processedInstructions} />
+        </div>
+      ))}
 
+      {/* Main recipe instructions */}
+      {hasSubrecipes && (
+        <div className="mb-8">
+          <h3 className="text-lg font-medium mb-4 text-gray-800">
+            And then...
+          </h3>
+          <InstructionsList instructions={mainInstructions} />
+        </div>
+      )}
+
+      {!hasSubrecipes && <InstructionsList instructions={mainInstructions} />}
+
+      {/* Footnotes with continuous numbering */}
       {footnotes.length > 0 && (
         <section className="mt-8 border-t pt-4">
           <ol className="list-none space-y-2 text-sm text-gray-600">
             {footnotes.map((fn, i) => (
-              <li key={fn.step} className="flex">
+              <li key={`${fn.section}-${fn.step}`} className="flex">
                 <sup className="mr-1 align-super text-xs">{i + 1}</sup>
                 <span>{fn.text}</span>
               </li>
@@ -54,5 +100,34 @@ export default function RecipeInstructions({ recipe }: Props) {
         </section>
       )}
     </section>
+  );
+}
+
+// Helper component for rendering instruction lists
+function InstructionsList({
+  instructions,
+}: {
+  instructions: Array<Recipe["instructions"][0] & { footnoteIndex?: number }>;
+}) {
+  return (
+    <ol className="space-y-6">
+      {instructions.map((inst) => (
+        <li key={inst.step} className="flex gap-4">
+          <span className="flex-shrink-0 w-7 h-7 bg-gray-100 text-gray-700 rounded-full flex items-center justify-center text-sm font-medium">
+            {inst.step}
+          </span>
+          <div className="flex flex-col">
+            <p className="text-gray-800 leading-relaxed pt-0.5">
+              {inst.text}
+              {inst.footnoteIndex !== undefined && inst.footnoteIndex >= 0 && (
+                <sup className="ml-1 align-super text-xs">
+                  {inst.footnoteIndex + 1}
+                </sup>
+              )}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ol>
   );
 }

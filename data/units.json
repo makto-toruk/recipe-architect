@@ -14,5 +14,13 @@
   "pinch": {
     "name": "pinch",
     "aliases": ["pinches"]
+  },
+  "tsp": {
+    "name": "tsp",
+    "aliases": ["teaspoon", "teaspoons"]
+  },
+  "tbsp": {
+    "name": "Tbsp",
+    "aliases": ["tbsp", "tablespoon", "tablespoons"]
   }
 }

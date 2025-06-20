@@ -42,5 +42,25 @@
   "salt": {
     "name": "Salt",
     "default_unit": "g"
+  },
+  "pecans": {
+    "name": "Pecans",
+    "default_unit": "cup"
+  },
+  "maple_syrup": {
+    "name": "Maple Syrup",
+    "default_unit": "cup"
+  },
+  "vanilla_extract": {
+    "name": "Vanilla Extract",
+    "default_unit": "tbsp"
+  },
+  "ghee": {
+    "name": "Ghee",
+    "default_unit": "tbsp"
+  },
+  "water": {
+    "name": "Water",
+    "default_unit": "cup"
   }
 }
