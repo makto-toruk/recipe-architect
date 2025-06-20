@@ -24,11 +24,25 @@ export async function loadRecipeBySlug(
       fs.readFile(unitFile, "utf8"),
     ]);
 
-    return {
-      recipe: JSON.parse(recipeText),
-      ingredients: JSON.parse(ingredientsText),
-      units: JSON.parse(unitsText),
-    };
+    const recipe = JSON.parse(recipeText) as Recipe;
+    const ingredients = JSON.parse(ingredientsText) as Ingredients;
+    const units = JSON.parse(unitsText) as Units;
+
+    // load any subrecipes declared in the JSON
+    let subrecipes: Recipe[] = [];
+    if (recipe.subrecipes && recipe.subrecipes.length > 0) {
+      subrecipes = await Promise.all(
+        recipe.subrecipes.map(async ({ ref }) => {
+          const text = await fs.readFile(
+            path.join(recipeDir, `${ref}.json`),
+            "utf8"
+          );
+          return JSON.parse(text) as Recipe;
+        })
+      );
+    }
+
+    return { recipe, ingredients, units, subrecipes };
   } catch {
     return null;
   }

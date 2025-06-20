@@ -65,6 +65,7 @@ export interface LoadedRecipe {
   recipe: Recipe;
   ingredients: Ingredients;
   units: Units;
+  subrecipes?: Recipe[];
 }
 
 // Add other manual types here...
@@ -75,7 +76,7 @@ export interface LoadedRecipe {
     fs.writeFileSync("types/index.ts", indexContent);
     console.log("Created types/index.ts with manual types");
   } else {
-    console.log("types/index.ts already exists - not overwriting");
+    console.log("types/index.ts already exists");
   }
 }
 
