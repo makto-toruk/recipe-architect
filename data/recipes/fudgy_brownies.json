@@ -5,55 +5,52 @@
   "image": "fudgy-brownies.jpg",
   "first_made": "2022-08-12",
   "last_made": "2022-08-12",
-
   "subrecipes": [],
-
   "ingredients": [
     {
       "ref": "dark_chocolate",
-      "qty": 170,
+      "qty": { "num": 170, "den": 1 },
       "unit": "g",
-      "note": "70-72 % cocoa works best"
+      "note": "70–72 % cocoa works best"
     },
     {
       "ref": "cacao_powder",
-      "qty": 0.25,
+      "qty": { "num": 1, "den": 4 },
       "unit": "cup"
     },
     {
       "ref": "unsalted_butter",
-      "qty": 0.5,
+      "qty": { "num": 1, "den": 2 },
       "unit": "cup",
       "note": "room temp (1 stick)"
     },
     {
       "ref": "white_granulated_sugar",
-      "qty": 0.75,
+      "qty": { "num": 3, "den": 4 },
       "unit": "cup"
     },
     {
       "ref": "brown_granulated_sugar",
-      "qty": 0.333,
+      "qty": { "num": 1, "den": 3 },
       "unit": "cup"
     },
     {
       "ref": "eggs",
-      "qty": 3,
+      "qty": { "num": 3, "den": 1 },
       "unit": "each"
     },
     {
       "ref": "flour",
-      "qty": 0.625,
+      "qty": { "num": 5, "den": 8 },
       "unit": "cup",
       "note": "1/2 cup + 2 Tbsp"
     },
     {
       "ref": "salt",
-      "qty": 1,
+      "qty": { "num": 1, "den": 1 },
       "unit": "pinch"
     }
   ],
-
   "instructions": [
     {
       "step": 1,

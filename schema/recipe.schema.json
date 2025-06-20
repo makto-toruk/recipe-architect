@@ -5,11 +5,33 @@
   "properties": {
     "id": { "type": "string" },
     "title": { "type": "string" },
-    "tags": { "type": "array", "items": { "type": "string" } },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
     "image": { "type": "string" },
     "first_made": { "type": "string", "format": "date" },
     "last_made": { "type": "string", "format": "date" },
-    "subrecipes": { "type": "array", "items": { "type": "string" } },
+    "subrecipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["ref", "qty"],
+        "properties": {
+          "ref": { "type": "string" },
+          "qty": {
+            "type": "object",
+            "required": ["num", "den"],
+            "properties": {
+              "num": { "type": "integer", "minimum": 0 },
+              "den": { "type": "integer", "minimum": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
     "ingredients": {
       "type": "array",
       "items": {
@@ -17,7 +39,15 @@
         "required": ["ref", "qty", "unit"],
         "properties": {
           "ref": { "type": "string" },
-          "qty": { "type": "number" },
+          "qty": {
+            "type": "object",
+            "required": ["num", "den"],
+            "properties": {
+              "num": { "type": "integer", "minimum": 0 },
+              "den": { "type": "integer", "minimum": 1 }
+            },
+            "additionalProperties": false
+          },
           "unit": { "type": "string" },
           "note": { "type": "string" }
         },
