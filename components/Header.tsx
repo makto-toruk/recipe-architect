@@ -10,7 +10,6 @@ const dancing = Dancing_Script({
   weight: ["600"],
 });
 
-// Pure-CSS hamburger icon
 function MenuIcon({ open }: { open: boolean }) {
   return (
     <div className="flex flex-col justify-between w-6 h-5">
@@ -37,8 +36,11 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full flex items-center px-4 py-3 relative">
-      {/* Brand lock-up on the left */}
+    <header
+      className="w-full flex items-center px-4 py-3 relative
+                 border-b-[0.05px] border-gray-200 dark:border-gray-400/40"
+    >
+      {/* Brand */}
       <Link href="/" className="flex items-center gap-3">
         <Image
           src="/images/cafe-tm-logo.png"
@@ -52,10 +54,10 @@ export default function Header() {
         </span>
       </Link>
 
-      {/* Hamburger on the right */}
+      {/* Hamburger */}
       <button
         aria-label="Toggle navigation"
-        className="ml-auto text-gray-700 hover:text-gray-950 focus:outline-none"
+        className="ml-auto p-2 text-gray-700 hover:text-gray-950 focus:outline-none"
         onClick={() => setOpen((p) => !p)}
       >
         <MenuIcon open={open} />
