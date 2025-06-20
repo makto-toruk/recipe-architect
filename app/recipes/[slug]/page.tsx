@@ -10,8 +10,11 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
-export default async function Page(props: { params: { slug: string } }) {
-  const { params } = await props;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const data = await loadRecipeBySlug(slug);
   if (!data) return notFound();
