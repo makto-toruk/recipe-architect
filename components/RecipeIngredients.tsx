@@ -1,14 +1,9 @@
-type Ingredient = {
-  ref: string;
-  qty: number;
-  unit: string;
-  note?: string;
-};
+import type { Recipe, Ingredients, Units } from "@/types";
 
 type Props = {
-  recipe: { ingredients: Ingredient[] };
-  ingredients: Record<string, { name: string }>;
-  units: Record<string, { name: string }>;
+  recipe: Recipe;
+  ingredients: Ingredients;
+  units: Units;
 };
 
 export default function RecipeIngredients({
@@ -17,16 +12,23 @@ export default function RecipeIngredients({
   units,
 }: Props) {
   return (
-    <section className="mb-6">
-      <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
-      <ul className="list-disc pl-5 space-y-1">
+    <section className="mb-6 lg:mb-0">
+      <h2 className="text-xl font-semibold mb-6 text-gray-900">Ingredients</h2>
+      <ul className="space-y-4">
         {recipe.ingredients.map((ing, i) => {
           const name = ingredients[ing.ref]?.name ?? ing.ref;
           const unit = units[ing.unit]?.name ?? ing.unit;
           return (
-            <li key={i}>
-              {ing.qty} {unit} {name}
-              {ing.note && <span className="text-gray-600"> ({ing.note})</span>}
+            <li key={i} className="flex flex-col gap-1">
+              <div className="flex justify-between items-start">
+                <span className="text-gray-900">{name}</span>
+                <span className="text-sm font-medium text-gray-600 ml-2 flex-shrink-0">
+                  {ing.qty} {unit}
+                </span>
+              </div>
+              {ing.note && (
+                <span className="text-sm text-gray-500 italic">{ing.note}</span>
+              )}
             </li>
           );
         })}

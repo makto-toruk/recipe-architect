@@ -19,14 +19,38 @@ export default async function Page(props: { params: { slug: string } }) {
   const { recipe, ingredients, units } = data as LoadedRecipe;
 
   return (
-    <main className="p-6 max-w-3xl mx-auto">
-      <RecipeHeader recipe={recipe} />
-      <RecipeIngredients
-        recipe={recipe}
-        ingredients={ingredients}
-        units={units}
-      />
-      <RecipeInstructions recipe={recipe} />
+    <main className="min-h-screen bg-white">
+      <div className="max-w-5xl mx-auto p-6">
+        {/* Recipe Header - Full Width */}
+        <RecipeHeader recipe={recipe} />
+
+        {/* Mobile: Stacked Layout */}
+        <div className="lg:hidden">
+          <RecipeIngredients
+            recipe={recipe}
+            ingredients={ingredients}
+            units={units}
+          />
+          <RecipeInstructions recipe={recipe} />
+        </div>
+
+        {/* Desktop: Side-by-side Layout */}
+        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-12">
+          {/* Left Column - Ingredients */}
+          <div>
+            <RecipeIngredients
+              recipe={recipe}
+              ingredients={ingredients}
+              units={units}
+            />
+          </div>
+
+          {/* Right Column - Instructions */}
+          <div>
+            <RecipeInstructions recipe={recipe} />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
