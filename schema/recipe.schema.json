@@ -82,7 +82,7 @@
       "additionalProperties": false
     },
     "time": { "type": "string" },
-    "servings": { "type": "integer", "minimum": 1 }
+    "yields": { "type": "string" }
   },
   "additionalProperties": false
 }

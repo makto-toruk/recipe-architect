@@ -65,7 +65,7 @@ export interface Recipe {
     url?: string;
   };
   time?: string;
-  servings?: number;
+  yields?: string;
 }
 
 /* eslint-disable */

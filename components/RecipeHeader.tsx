@@ -1,23 +1,27 @@
 import type { Recipe } from "@/types";
 import { Clock, Users } from "lucide-react"; // ← icons
 import { formatDate } from "@/utils/formatDate";
+import Image from "next/image";
 
 type Props = {
   recipe: Recipe;
 };
 
 export default function RecipeHeader({ recipe }: Props) {
-  const { title, tags, image, first_made, last_made, source, time, servings } =
+  const { title, tags, image, first_made, last_made, source, time, yields } =
     recipe;
 
   return (
     <header className="mb-8">
       {image && (
         <div className="w-full max-w-2xl mx-auto mb-6">
-          <img
+          <Image
             src={`/images/${image}`}
             alt={title}
+            width={800}
+            height={384}
             className="w-full h-auto max-h-96 object-cover rounded-lg"
+            priority
           />
         </div>
       )}
@@ -47,10 +51,10 @@ export default function RecipeHeader({ recipe }: Props) {
                   last_made ? `, Last made: ${formatDate(last_made)}` : ""
                 }`),
 
-          /* servings with icon */
-          servings && (
+          /* yields with icon */
+          yields && (
             <span className="inline-flex items-center gap-1">
-              <Users size={14} strokeWidth={1.5} /> {servings}
+              <Users size={14} strokeWidth={1.5} /> {yields}
             </span>
           ),
 

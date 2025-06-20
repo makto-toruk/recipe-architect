@@ -1,4 +1,11 @@
 import "./globals.css";
+import Header from "@/components/Header";
+import { Dancing_Script } from "next/font/google";
+
+const dancing = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["600"], // adjust weight as you prefer
+});
 
 export const metadata = {
   title: "Next.js",
@@ -12,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">{children}</main>
+      </body>
     </html>
   );
 }
