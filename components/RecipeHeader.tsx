@@ -1,6 +1,7 @@
 import type { Recipe } from "@/types";
 import { Clock, Users } from "lucide-react"; // ← icons
 import { formatDate } from "@/utils/formatDate";
+import Image from "next/image";
 
 type Props = {
   recipe: Recipe;
@@ -14,10 +15,13 @@ export default function RecipeHeader({ recipe }: Props) {
     <header className="mb-8">
       {image && (
         <div className="w-full max-w-2xl mx-auto mb-6">
-          <img
+          <Image
             src={`/images/${image}`}
             alt={title}
+            width={800}
+            height={384}
             className="w-full h-auto max-h-96 object-cover rounded-lg"
+            priority
           />
         </div>
       )}
