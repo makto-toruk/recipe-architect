@@ -54,11 +54,13 @@
   "instructions": [
     {
       "step": 1,
-      "text": "Melt chocolate and butter over simmering water."
+      "text": "Melt chocolate and butter over simmering water.",
+      "note": "Avoid microwaving sincebutter melts faster than chocolate and can burn. A double boiler offers better control."
     },
     {
       "step": 2,
-      "text": "Whisk sugars into hot mixture gradually."
+      "text": "Whisk sugars into hot mixture gradually.",
+      "note": "Some sugar crystals may remain but that's not a problem."
     },
     {
       "step": 3,
@@ -66,7 +68,8 @@
     },
     {
       "step": 4,
-      "text": "Whisk in eggs one at a time."
+      "text": "Whisk in eggs one at a time.",
+      "note": "Your hands should hurt a bit! A bit more work that you might initially expect."
     },
     {
       "step": 5,
@@ -74,11 +77,13 @@
     },
     {
       "step": 6,
-      "text": "Line an 8x8-inch pan with greased baking sheet."
+      "text": "Line an 8x8-inch pan with greased baking sheet.",
+      "note": "I just used the paper covering the butter to smear the baking sheet on both sides. It helped that the butter was at room temperature."
     },
     {
       "step": 7,
-      "text": "Bake 35 min at 350 °F; surface may look gooey."
+      "text": "Bake 35 min at 350°F; surface may look gooey.",
+      "note": "I checked at 30 minutes, a fork came out clean but the top layer was just a little gooey. So I put it back in for 5 more minutes. It was still a tiny bit gooey after that but after cooling, it almost crystalized."
     },
     {
       "step": 8,
