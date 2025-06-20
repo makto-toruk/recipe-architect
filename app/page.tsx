@@ -13,14 +13,12 @@ export default function Home() {
         <p className="text-lg text-gray-700 mb-8">
           🚧 This site is under construction. Please check back soon! 🚧
         </p>
-        {/*
         <a
           href="/recipes"
           className="inline-block px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-800 transition"
         >
           Browse Recipes
         </a>
-        */}
       </div>
     </main>
   );
