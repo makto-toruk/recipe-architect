@@ -2,8 +2,8 @@ import { loadAllRecipes } from "@/utils/loadAllRecipes";
 import RecipeCard from "@/components/RecipeCard";
 
 export const metadata = {
-  title: "All Recipes | Recipe Architect",
-  description: "Browse every recipe in one place",
+  title: "Kitchen Lab | Recipe Architect",
+  description: "Explore our ever-evolving family recipes",
 };
 
 export default async function Home() {
@@ -13,7 +13,7 @@ export default async function Home() {
     <main className="min-h-screen bg-white py-12">
       <div className="max-w-6xl mx-auto px-6">
         <h1 className="text-3xl font-light italic mb-10 text-gray-900">
-          All Recipes
+          Kitchen Lab
         </h1>
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
