@@ -33,6 +33,7 @@ export interface Ingredients {
 export interface Recipe {
   id: string;
   title: string;
+  subtitle?: string;
   tags?: string[];
   image?: string;
   first_made?: string;

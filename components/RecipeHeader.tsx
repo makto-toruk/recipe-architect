@@ -13,6 +13,7 @@ type Props = {
 export default function RecipeHeader({ recipe }: Props) {
   const {
     title,
+    subtitle,
     tags,
     image,
     first_made,
@@ -41,7 +42,17 @@ export default function RecipeHeader({ recipe }: Props) {
 
       {/* Title with Story Toggle */}
       <div className="flex items-start justify-between mb-4">
-        <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
+        <div className="flex flex-col flex-1 min-w-0">
+          <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
+          {subtitle && (
+            <h2
+              className="text-lg font-normal text-gray-600 mt-1 truncate"
+              title={subtitle}
+            >
+              {subtitle}
+            </h2>
+          )}
+        </div>
         {story && (
           <button
             onClick={() => setIsStoryExpanded(!isStoryExpanded)}

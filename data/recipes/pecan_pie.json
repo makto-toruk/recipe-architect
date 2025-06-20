@@ -1,10 +1,11 @@
 {
   "id": "pecan_pie",
   "title": "Pecan Pie",
+  "subtitle": "A Thanksgiving classic.",
   "tags": ["dessert", "pie", "pecan"],
   "image": "pecan-pie.jpg",
   "first_made": "2022-11-25",
-  "last_made": "2022-11-25",
+  "last_made": "2023-11-23",
   "subrecipes": [
     {
       "ref": "flaky_pie_crust",
@@ -75,7 +76,8 @@
     },
     {
       "step": 6,
-      "text": "Bake at 400 °F for 50 to 60 minutes, until the filling is set but still slightly jiggly."
+      "text": "Bake at 375°F (fan on) for 50 to 60 minutes, until the filling is set but still slightly jiggly.",
+      "note": "The pecans can brown quickly, so cover the pie with foil if they start to darken too much."
     },
     {
       "step": 7,
@@ -87,5 +89,6 @@
     "label": "Joshua Weissman's Pecan Pie",
     "url": "https://www.joshuaweissman.com/post/homemade-pecan-pie"
   },
-  "yields": "8 servings"
+  "yields": "8 servings",
+  "story": "My roommate at the time, Joe Barrow, returned from Thanksgiving break with a homemade pecan pie. It was the best I'd ever had. I've been trying to recreate the magic of that first slice."
 }
