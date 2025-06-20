@@ -1,0 +1,91 @@
+{
+  "id": "pecan_pie",
+  "title": "Pecan Pie",
+  "tags": ["dessert", "pie", "pecan"],
+  "image": "pecan-pie.jpg",
+  "first_made": "2022-11-25",
+  "last_made": "2022-11-25",
+  "subrecipes": [
+    {
+      "ref": "flaky_pie_crust",
+      "qty": { "num": 1, "den": 1 }
+    }
+  ],
+  "ingredients": [
+    {
+      "ref": "pecans",
+      "qty": { "num": 5, "den": 2 },
+      "unit": "cup",
+      "note": "roughly chopped or halves and pieces"
+    },
+    {
+      "ref": "eggs",
+      "qty": { "num": 3, "den": 1 },
+      "unit": "each",
+      "note": "large, room temperature"
+    },
+    {
+      "ref": "maple_syrup",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "salt",
+      "qty": { "num": 3, "den": 4 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "brown_granulated_sugar",
+      "qty": { "num": 3, "den": 4 },
+      "unit": "cup"
+    },
+    {
+      "ref": "vanilla_extract",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "unsalted_butter",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup",
+      "note": "melt completely and cool slightly"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "In a large bowl, whisk the eggs together."
+    },
+    {
+      "step": 2,
+      "text": "Add maple syrup, salt, brown sugar, and vanilla extract. Mix thoroughly."
+    },
+    {
+      "step": 3,
+      "text": "Melt the butter completely and allow it to cool slightly."
+    },
+    {
+      "step": 4,
+      "text": "Stream the melted butter into the mixture while whisking.",
+      "note": "Stream gradually to ensure thorough incorporation and avoid solid bits."
+    },
+    {
+      "step": 5,
+      "text": "Place chopped pecans in the prepared pie crust and pour the filling over them."
+    },
+    {
+      "step": 6,
+      "text": "Bake at 400 °F for 50 to 60 minutes, until the filling is set but still slightly jiggly."
+    },
+    {
+      "step": 7,
+      "text": "Let cool, then invert and cut into squares."
+    }
+  ],
+  "source": {
+    "type": "Adapted from",
+    "label": "Joshua Weissman's Pecan Pie",
+    "url": "https://www.joshuaweissman.com/post/homemade-pecan-pie"
+  },
+  "servings": 8
+}

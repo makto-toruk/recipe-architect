@@ -78,10 +78,11 @@ for (const r of recipes) {
   }
   // All subrecipes must reference known recipes
   for (const sub of r.subrecipes ?? []) {
-    const exists = recipes.some((x) => x.id === sub);
+    const ref = sub.ref;
+    const exists = recipes.some((x) => x.id === ref);
     if (!exists) {
       failed = true;
-      console.error(`❌ ${r.id}: subrecipe "${sub}" not found`);
+      console.error(`❌ ${r.id}: subrecipe "${ref}" not found`);
     }
   }
 }

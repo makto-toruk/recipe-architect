@@ -1,0 +1,97 @@
+{
+  "id": "flaky_pie_crust",
+  "title": "Flaky Pie Crust",
+  "image": "pie-crust.jpg",
+  "first_made": "2021-12-19",
+  "subrecipes": [],
+  "ingredients": [
+    {
+      "ref": "flour",
+      "qty": { "num": 5, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "salt",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "white_granulated_sugar",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "ghee",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "unsalted_butter",
+      "qty": { "num": 3, "den": 4 },
+      "unit": "cup",
+      "note": "unsalted, chilled"
+    },
+    {
+      "ref": "water",
+      "qty": { "num": 5, "den": 8 },
+      "unit": "cup",
+      "note": "1/2 cup + 2 Tbsp cold water"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "In a large mixer or food processor, place flour, salt, sugar, and ghee and mix for 10 seconds.",
+      "note": "It is crucial that none of the ingredients are warm enough to melt the butter. The resulting mixture appears sandy. On warm days, chill flour for 30 minutes before using."
+    },
+    {
+      "step": 2,
+      "text": "Cut the butter into small chunks and add to the mixture. Pulse in 1-second increments until the butter is pea-sized.",
+      "note": "Typically 3 pulses, a gentle mix with a fork, then another pulse."
+    },
+    {
+      "step": 3,
+      "text": "Turn the mixture into a mixing bowl and add water in 4 to 5 additions, mixing with a fork after each addition.",
+      "note": "Don't knead the dough. Instead use a scraper to gently press it together."
+    },
+    {
+      "step": 4,
+      "text": "Move the dough onto plastic wrap, wrap tightly, and chill for 2 hours before rolling."
+    },
+    {
+      "step": 5,
+      "text": "Cut the chilled dough into two pieces, lightly flour, and roll out one piece at a time."
+    },
+    {
+      "step": 6,
+      "text": "Quarter turn and roll to keep a round shape; press and repair any edge cracks as you go."
+    },
+    {
+      "step": 7,
+      "text": "Roll the dough at least 4 inches larger than the pie pan."
+    },
+    {
+      "step": 8,
+      "text": "Place the dough in the pie pan, patch any cracks, and return to the fridge while you prepare the filling."
+    },
+    {
+      "step": 9,
+      "text": "Prepare your filling and let it cool completely before filling the crust."
+    },
+    {
+      "step": 10,
+      "text": "If making a double crust, trim and cut ventilation holes in the top dough, then crimp the edges.",
+      "note": "Edges may bake thick but will be super flaky."
+    },
+    {
+      "step": 11,
+      "text": "Bake at 400°F for 60 minutes.",
+      "note": "We've never had a soggy bottom when the crust is cold at assembly."
+    }
+  ],
+  "source": {
+    "type": "Adapted from",
+    "label": "a Baking Arts class",
+    "url": "http://www.bakingarts.net/classes.html"
+  }
+}
