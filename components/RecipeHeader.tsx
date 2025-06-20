@@ -1,4 +1,5 @@
 import type { Recipe } from "@/types";
+import { Clock, Users } from "lucide-react"; // ← icons
 
 type Props = {
   recipe: Recipe;
@@ -37,12 +38,29 @@ export default function RecipeHeader({ recipe }: Props) {
 
       <div className="text-sm text-gray-500 text-center mb-4">
         {[
+          /* first/last-made dates */
           (first_made || last_made) &&
             (first_made === last_made
               ? `First made: ${first_made}`
-              : `First made: ${first_made}${last_made ? `, Last made: ${last_made}` : ""}`),
-          servings && `Servings: ${servings}`,
-          time && `Time needed: ${time}`,
+              : `First made: ${first_made}${
+                  last_made ? `, Last made: ${last_made}` : ""
+                }`),
+
+          /* servings with icon */
+          servings && (
+            <span className="inline-flex items-center gap-1">
+              <Users size={14} strokeWidth={1.5} /> {servings}
+            </span>
+          ),
+
+          /* time with icon */
+          time && (
+            <span className="inline-flex items-center gap-1">
+              <Clock size={14} strokeWidth={1.5} /> {time}
+            </span>
+          ),
+
+          /* source */
           source && (
             <>
               {source.type}:{" "}
