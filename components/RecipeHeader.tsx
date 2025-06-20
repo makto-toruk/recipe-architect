@@ -1,5 +1,6 @@
 import type { Recipe } from "@/types";
 import { Clock, Users } from "lucide-react"; // ← icons
+import { formatDate } from "@/utils/formatDate";
 
 type Props = {
   recipe: Recipe;
@@ -41,9 +42,9 @@ export default function RecipeHeader({ recipe }: Props) {
           /* first/last-made dates */
           (first_made || last_made) &&
             (first_made === last_made
-              ? `First made: ${first_made}`
-              : `First made: ${first_made}${
-                  last_made ? `, Last made: ${last_made}` : ""
+              ? `First made: ${formatDate(first_made)}`
+              : `First made: ${formatDate(first_made)}${
+                  last_made ? `, Last made: ${formatDate(last_made)}` : ""
                 }`),
 
           /* servings with icon */
