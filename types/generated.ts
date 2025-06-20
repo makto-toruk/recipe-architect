@@ -59,6 +59,13 @@ export interface Recipe {
     note?: string;
     image?: string;
   }[];
+  source?: {
+    type: "Adapted from" | "Inspired by";
+    label: string;
+    url?: string;
+  };
+  time?: string;
+  servings?: number;
 }
 
 /* eslint-disable */

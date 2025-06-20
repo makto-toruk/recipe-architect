@@ -5,7 +5,8 @@ type Props = {
 };
 
 export default function RecipeHeader({ recipe }: Props) {
-  const { title, tags, image, first_made, last_made } = recipe;
+  const { title, tags, image, first_made, last_made, source, time, servings } =
+    recipe;
 
   return (
     <header className="mb-8">
@@ -22,7 +23,7 @@ export default function RecipeHeader({ recipe }: Props) {
       <h1 className="text-4xl font-light italic mb-4 text-gray-900">{title}</h1>
 
       {tags && tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -34,13 +35,40 @@ export default function RecipeHeader({ recipe }: Props) {
         </div>
       )}
 
-      {(first_made || last_made) && (
-        <p className="text-sm text-gray-500">
-          {first_made === last_made
-            ? `First made: ${first_made}`
-            : `First made: ${first_made}, Last made: ${last_made}`}
-        </p>
-      )}
+      <div className="text-sm text-gray-500 text-center mb-4">
+        {[
+          (first_made || last_made) &&
+            (first_made === last_made
+              ? `First made: ${first_made}`
+              : `First made: ${first_made}${last_made ? `, Last made: ${last_made}` : ""}`),
+          servings && `Servings: ${servings}`,
+          time && `Time needed: ${time}`,
+          source && (
+            <>
+              {source.type}:{" "}
+              {source.url ? (
+                <a
+                  href={source.url}
+                  className="underline text-gray-500 hover:text-gray-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {source.label}
+                </a>
+              ) : (
+                source.label
+              )}
+            </>
+          ),
+        ]
+          .filter(Boolean)
+          .map((item, index, array) => (
+            <span key={index}>
+              {item}
+              {index < array.length - 1 && <span className="mx-3">|</span>}
+            </span>
+          ))}
+      </div>
     </header>
   );
 }

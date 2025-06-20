@@ -89,5 +89,11 @@
       "step": 8,
       "text": "Cool, invert, cut into squares."
     }
-  ]
+  ],
+  "source": {
+    "type": "Adapted from",
+    "label": "Thomas Joseph's recipe",
+    "url": "https://www.youtube.com/watch?v=HIonKbKM-tE"
+  },
+  "servings": 9
 }

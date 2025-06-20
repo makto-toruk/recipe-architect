@@ -67,7 +67,22 @@
         },
         "additionalProperties": false
       }
-    }
+    },
+    "source": {
+      "type": "object",
+      "required": ["type", "label"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Adapted from", "Inspired by"]
+        },
+        "label": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "time": { "type": "string" },
+    "servings": { "type": "integer", "minimum": 1 }
   },
   "additionalProperties": false
 }
