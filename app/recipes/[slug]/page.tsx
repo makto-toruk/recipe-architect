@@ -15,9 +15,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const data = await loadRecipeBySlug(params.slug);
+  const { slug } = await params;
+  const data = (await loadRecipeBySlug(slug)) as LoadedRecipe | null;
   if (!data) return { title: "Recipe Not Found | Cafe TM" };
   return {
     title: `${data.recipe.title} | Cafe TM`,
