@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Dancing_Script } from "next/font/google";
 
+// Google-fonts helper: Dancing Script 600 weight
 const dancing = Dancing_Script({
   subsets: ["latin"],
   weight: ["600"],
@@ -9,7 +10,8 @@ const dancing = Dancing_Script({
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-4 py-3 max-w-6xl mx-auto">
+    // full-width bar, 16 px side padding
+    <header className="w-full flex items-center px-4 py-3">
       <Link href="/" className="flex items-center gap-3">
         <Image
           src="/images/cafe-tm-logo.png"
@@ -22,6 +24,9 @@ export default function Header() {
           Cafe&nbsp;TM
         </span>
       </Link>
+
+      {/* Add nav links later by inserting:
+          <nav className="ml-auto flex gap-6 text-sm">…</nav> */}
     </header>
   );
 }
