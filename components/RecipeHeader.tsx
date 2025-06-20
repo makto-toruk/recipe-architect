@@ -10,11 +10,13 @@ export default function RecipeHeader({ recipe }: Props) {
   return (
     <header className="mb-8">
       {image && (
-        <img
-          src={`/images/${image}`}
-          alt={title}
-          className="w-full h-auto rounded-lg mb-6"
-        />
+        <div className="w-full max-w-2xl mx-auto mb-6">
+          <img
+            src={`/images/${image}`}
+            alt={title}
+            className="w-full h-auto max-h-96 object-cover rounded-lg"
+          />
+        </div>
       )}
 
       <h1 className="text-4xl font-light italic mb-4 text-gray-900">{title}</h1>

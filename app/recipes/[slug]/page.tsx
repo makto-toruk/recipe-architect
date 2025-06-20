@@ -34,10 +34,10 @@ export default async function Page(props: { params: { slug: string } }) {
           <RecipeInstructions recipe={recipe} />
         </div>
 
-        {/* Desktop: Side-by-side Layout */}
-        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-12">
-          {/* Left Column - Ingredients */}
-          <div>
+        {/* Desktop: Side-by-side Layout - 1/3 ingredients, 2/3 instructions */}
+        <div className="hidden lg:grid lg:grid-cols-3 lg:gap-12">
+          {/* Left Column - Ingredients (1/3) */}
+          <div className="lg:col-span-1">
             <RecipeIngredients
               recipe={recipe}
               ingredients={ingredients}
@@ -45,8 +45,8 @@ export default async function Page(props: { params: { slug: string } }) {
             />
           </div>
 
-          {/* Right Column - Instructions */}
-          <div>
+          {/* Right Column - Instructions (2/3) */}
+          <div className="lg:col-span-2">
             <RecipeInstructions recipe={recipe} />
           </div>
         </div>
