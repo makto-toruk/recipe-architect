@@ -1,6 +1,7 @@
 {
   "id": "fudgy_brownies",
   "title": "Fudgy Brownies",
+  "subtitle": "Moist, gooey, and quick.",
   "tags": ["dessert", "brownies", "chocolate"],
   "image": "fudgy-brownies.jpg",
   "first_made": "2022-08-12",
@@ -95,5 +96,6 @@
     "label": "Thomas Joseph's recipe",
     "url": "https://www.youtube.com/watch?v=HIonKbKM-tE"
   },
-  "yields": "9 squares"
+  "yields": "9 squares",
+  "story": "When you're having a chocolate craving, this decadent, moist brownie recipe is a quick fix! Hard to go wrong with this."
 }

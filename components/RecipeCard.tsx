@@ -4,11 +4,18 @@ import Link from "next/link";
 type Props = {
   id: string;
   title: string;
+  subtitle?: string;
   image?: string;
   tags?: string[];
 };
 
-export default function RecipeCard({ id, title, image, tags = [] }: Props) {
+export default function RecipeCard({
+  id,
+  title,
+  subtitle,
+  image,
+  tags = [],
+}: Props) {
   return (
     <Link
       href={`/recipes/${id}`}
@@ -28,6 +35,11 @@ export default function RecipeCard({ id, title, image, tags = [] }: Props) {
 
       <div className="p-4">
         <h3 className="text-lg font-medium text-gray-900">{title}</h3>
+        {subtitle && (
+          <h4 className="text-sm text-gray-600 mt-1 truncate" title={subtitle}>
+            {subtitle}
+          </h4>
+        )}
         {tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
             {tags.slice(0, 3).map((t) => (

@@ -33,6 +33,7 @@ export interface Ingredients {
 export interface Recipe {
   id: string;
   title: string;
+  subtitle?: string;
   tags?: string[];
   image?: string;
   first_made?: string;
@@ -66,6 +67,7 @@ export interface Recipe {
   };
   time?: string;
   yields?: string;
+  story?: string;
 }
 
 /* eslint-disable */
