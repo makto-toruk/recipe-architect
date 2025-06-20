@@ -9,6 +9,7 @@ export interface LoadedRecipe {
   recipe: Recipe;
   ingredients: Ingredients;
   units: Units;
+  subrecipes?: Recipe[];
 }
 
 // Add other manual types here...

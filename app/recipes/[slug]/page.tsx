@@ -16,28 +16,10 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const data = await loadRecipeBySlug(slug);
+  const data = (await loadRecipeBySlug(slug)) as LoadedRecipe | null;
   if (!data) return notFound();
 
-  const { recipe, ingredients, units } = data as LoadedRecipe;
-
-  // Load subrecipes if they exist
-  let subrecipes: Recipe[] = [];
-  if (recipe.subrecipes && recipe.subrecipes.length > 0) {
-    try {
-      // Import the loadRecipeBySlug function to load subrecipes
-      const subrecipePromises = recipe.subrecipes.map(async (subrecipeRef) => {
-        const subrecipeData = await loadRecipeBySlug(subrecipeRef.ref);
-        return subrecipeData?.recipe;
-      });
-
-      const loadedSubrecipes = await Promise.all(subrecipePromises);
-      subrecipes = loadedSubrecipes.filter(Boolean) as Recipe[];
-    } catch (error) {
-      console.error("Error loading subrecipes:", error);
-      // Continue without subrecipes if there's an error
-    }
-  }
+  const { recipe, ingredients, units, subrecipes = [] } = data;
 
   return (
     <main className="min-h-screen bg-white">
