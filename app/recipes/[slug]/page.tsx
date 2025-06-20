@@ -4,10 +4,26 @@ import RecipeIngredients from "@/components/RecipeIngredients";
 import RecipeInstructions from "@/components/RecipeInstructions";
 import { notFound } from "next/navigation";
 import type { LoadedRecipe, Recipe } from "@/types";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const slugs = await getAllRecipeSlugs();
   return slugs.map((slug) => ({ slug }));
+}
+
+// Dynamic metadata for each recipe page
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const data = await loadRecipeBySlug(params.slug);
+  if (!data) return { title: "Recipe Not Found | Cafe TM" };
+  return {
+    title: `${data.recipe.title} | Cafe TM`,
+    // TODO: update this with description when we add them
+    description: "Explore our ever-evolving family recipes",
+  };
 }
 
 export default async function Page({
