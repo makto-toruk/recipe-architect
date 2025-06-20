@@ -66,20 +66,18 @@ export default function RecipeInstructions({ recipe, subrecipes = [] }: Props) {
 
       {/* Subrecipe instructions first */}
       {processedSubrecipes.map((subrecipe, index) => (
-        <div key={subrecipe!.id} className="mb-8">
-          <h3 className="text-lg font-medium mb-4 text-gray-800">
+        <details key={subrecipe!.id} open className="mb-8">
+          <summary className="cursor-pointer text-lg font-medium mb-4 text-gray-800">
             For the {subrecipe!.title}
-          </h3>
+          </summary>
           <InstructionsList instructions={subrecipe!.processedInstructions} />
-        </div>
+        </details>
       ))}
 
       {/* Main recipe instructions */}
       {hasSubrecipes && (
         <div className="mb-8">
-          <h3 className="text-lg font-medium mb-4 text-gray-800">
-            And then...
-          </h3>
+          <h3 className="text-lg font-medium mb-4 text-gray-800">And then</h3>
           <InstructionsList instructions={mainInstructions} />
         </div>
       )}
