@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function RecipeHeader({ recipe }: Props) {
-  const { title, tags, image, first_made, last_made, source, time, servings } =
+  const { title, tags, image, first_made, last_made, source, time, yields } =
     recipe;
 
   return (
@@ -47,10 +47,10 @@ export default function RecipeHeader({ recipe }: Props) {
                   last_made ? `, Last made: ${formatDate(last_made)}` : ""
                 }`),
 
-          /* servings with icon */
-          servings && (
+          /* yields with icon */
+          yields && (
             <span className="inline-flex items-center gap-1">
-              <Users size={14} strokeWidth={1.5} /> {servings}
+              <Users size={14} strokeWidth={1.5} /> {yields}
             </span>
           ),
 
