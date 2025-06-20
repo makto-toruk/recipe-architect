@@ -62,6 +62,7 @@
         "properties": {
           "step": { "type": "integer", "minimum": 1 },
           "text": { "type": "string" },
+          "note": { "type": "string" },
           "image": { "type": "string" }
         },
         "additionalProperties": false

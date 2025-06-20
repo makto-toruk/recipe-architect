@@ -56,6 +56,7 @@ export interface Recipe {
   instructions: {
     step: number;
     text: string;
+    note?: string;
     image?: string;
   }[];
 }
