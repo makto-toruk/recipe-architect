@@ -66,6 +66,7 @@ export interface Recipe {
   };
   time?: string;
   yields?: string;
+  story?: string;
 }
 
 /* eslint-disable */

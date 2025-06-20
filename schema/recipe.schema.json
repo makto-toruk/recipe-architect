@@ -82,7 +82,8 @@
       "additionalProperties": false
     },
     "time": { "type": "string" },
-    "yields": { "type": "string" }
+    "yields": { "type": "string" },
+    "story": { "type": "string" }
   },
   "additionalProperties": false
 }
