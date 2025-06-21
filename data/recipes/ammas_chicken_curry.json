@@ -7,6 +7,23 @@
   "first_made": "2015-09-01",
   "ingredients": [
     {
+      "ref": "chicken",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "lbs",
+      "note": "Bone-in chicken thighs work best"
+    },
+    {
+      "ref": "ghee",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp",
+      "note": "Divided"
+    },
+    {
+      "ref": "onion",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "each"
+    },
+    {
       "ref": "garlic",
       "qty": { "num": 1, "den": 1 },
       "unit": "bulb"
@@ -15,6 +32,21 @@
       "ref": "ginger",
       "qty": { "num": 1, "den": 1 },
       "unit": "inch"
+    },
+    {
+      "ref": "peppercorns",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "cashews",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "curry_leaves",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
     },
     {
       "ref": "cumin_powder",
@@ -32,24 +64,9 @@
       "unit": "tbsp"
     },
     {
-      "ref": "cashews",
-      "qty": { "num": 2, "den": 1 },
-      "unit": "tbsp"
-    },
-    {
-      "ref": "peppercorns",
-      "qty": { "num": 1, "den": 1 },
-      "unit": "tsp"
-    },
-    {
       "ref": "coriander_powder",
       "qty": { "num": 1, "den": 1 },
       "unit": "tsp"
-    },
-    {
-      "ref": "onion",
-      "qty": { "num": 1, "den": 1 },
-      "unit": "each"
     },
     {
       "ref": "garam_masala",
@@ -62,11 +79,6 @@
       "unit": "cup"
     },
     {
-      "ref": "curry_leaves",
-      "qty": { "num": 2, "den": 1 },
-      "unit": "tbsp"
-    },
-    {
       "ref": "cilantro",
       "qty": { "num": 1, "den": 1 },
       "unit": "cup"
@@ -77,53 +89,45 @@
       "unit": "cup"
     },
     {
-      "ref": "chicken",
-      "qty": { "num": 2, "den": 1 },
-      "unit": "lbs",
-      "note": "Bone-in chicken thighs work best"
+      "ref": "salt",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
     }
   ],
   "instructions": [
     {
       "step": 1,
-      "text": "Clean the chicken, cut into large pieces. Set aside.",
+      "text": "Clean the chicken and cut into large pieces. Set aside.",
       "note": "I prefer cutting one chicken thigh into 2 or 3 pieces."
     },
     {
       "step": 2,
-      "text": "Heat 1 Tbsp of ghee in a heavy-bottomed pressure cooker on medium heat. Add the onion and garlic. Sauté until onions turn translucent.",
+      "text": "Heat 1 Tbsp ghee in a heavy-bottomed pressure cooker over medium heat. Add onion, garlic, and ginger. Sauté until onions turn translucent.",
       "note": "Any heavy-bottomed pan should work."
     },
     {
       "step": 3,
-      "text": "Add peppercorns, cashews, and curry leaves abd sauté for a few minutes until aromatic."
+      "text": "Add peppercorns, cashews, and curry leaves. Sauté for 2-3 minutes until aromatic."
     },
     {
       "step": 4,
-      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro and mint. Blend until very smooth.",
-      "note": "We use a NutriBullet. The resulting paste should look very green because of the mint and cilantro."
+      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.",
+      "note": "We use a NutriBullet. The resulting paste should look very green from the herbs."
     },
     {
       "step": 5,
-      "text": "In the same pan (on medium heat), add 1 Tbsp of ghee. Then add chicken and salt. Sear on all sides until lightly colored (around 10 minutes)."
+      "text": "In the same pan, heat remaining 1 Tbsp ghee. Add chicken and salt. Sear on all sides until lightly browned, about 10 minutes."
     },
     {
       "step": 6,
-      "text": "Add the masala paste from the blender. Mix well with the chicken. Close the lid, add the whistle weight, and cook for 2 whistles. Turn off the heat and let the pressure release naturally.",
-      "note": "If you don't have a pressure cooker, you can simmer the chicken in a heavy-bottomed pan with a lid. Just add the masala paste and cook for about 20 minutes on medium heat, stirring occasionally."
-    },
-    {
-      "step": 7,
-      "text": "Add about 1/2 cup water if needed. Cover and simmer on low for 30-40 minutes until chicken is tender."
-    },
-    {
-      "step": 8,
-      "text": "Finish with garam masala, raisins, chopped mint, and coriander. Let rest covered for 10 minutes before serving."
+      "text": "Add the blended masala. Mix well. Close the lid, add the whistle weight, and cook for 2 whistles. Let pressure release naturally.",
+      "note": "If you don't have a pressure cooker, cover and simmer for 20 minutes on medium heat, stirring occasionally."
     }
   ],
   "source": {
     "type": "Inspired by",
-    "label": "My Amma's chicken curry"
+    "label": "My Amma's recipe'"
   },
-  "yields": "4-6 servings"
+  "yields": "4-6 servings",
+  "story": "Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder :)"
 }
