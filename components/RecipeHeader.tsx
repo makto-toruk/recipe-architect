@@ -1,5 +1,3 @@
-// components/RecipeHeader.tsx
-
 "use client";
 
 import { useState } from "react";
@@ -46,10 +44,7 @@ export default function RecipeHeader({ recipe }: Props) {
       <div className="mb-4">
         <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
         {subtitle && (
-          <h2
-            className="text-lg font-normal text-gray-600 mt-1 truncate"
-            title={subtitle}
-          >
+          <h2 className="text-lg font-normal text-gray-600 mt-1 whitespace-normal">
             {subtitle}
           </h2>
         )}
@@ -58,7 +53,10 @@ export default function RecipeHeader({ recipe }: Props) {
       {/* Story with Read more/less */}
       {story && (
         <div className="mb-6 max-w-2xl mx-auto">
-          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-200">
+          <div
+            id="recipe-story"
+            className="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-200"
+          >
             <p
               className={`text-gray-700 leading-relaxed text-sm italic transition-all ${
                 isStoryExpanded ? "" : "line-clamp-1 overflow-hidden"
