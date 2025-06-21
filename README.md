@@ -31,7 +31,7 @@ scripts/validate.ts    # structural + cross-file checks
 
 1. Extend ingredients.json (or reuse existing IDs).
 2. Create data/recipes/<slug>.json.
-3. `npm run validate` – must pass.
+3. `npm run validate` must pass.
 4. Commit.
 
 ## Pre-commit hook

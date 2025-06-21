@@ -1,0 +1,129 @@
+{
+  "id": "ammas_chicken_curry",
+  "title": "Amma's Chicken 'Chaaps'",
+  "subtitle": "Spicy and comforting chicken curry from home.",
+  "tags": ["curry", "chicken", "indian"],
+  "image": "ammas-chicken-curry.jpg",
+  "first_made": "2015-09-01",
+  "ingredients": [
+    {
+      "ref": "garlic",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "bulb"
+    },
+    {
+      "ref": "ginger",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "inch"
+    },
+    {
+      "ref": "cumin_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "red_chili_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "raisins",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "cashews",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "peppercorns",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "coriander_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "onion",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "each"
+    },
+    {
+      "ref": "garam_masala",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "yogurt",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "curry_leaves",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "cilantro",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "cup"
+    },
+    {
+      "ref": "mint",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "chicken",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "lbs",
+      "note": "Bone-in chicken thighs work best"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Clean the chicken, cut into large pieces. Set aside.",
+      "note": "I prefer cutting one chicken thigh into 2 or 3 pieces."
+    },
+    {
+      "step": 2,
+      "text": "Heat 1 Tbsp of ghee in a heavy-bottomed pressure cooker on medium heat. Add the onion and garlic. Sauté until onions turn translucent.",
+      "note": "Any heavy-bottomed pan should work."
+    },
+    {
+      "step": 3,
+      "text": "Add peppercorns, cashews, and curry leaves abd sauté for a few minutes until aromatic."
+    },
+    {
+      "step": 4,
+      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro and mint. Blend until very smooth.",
+      "note": "We use a NutriBullet. The resulting paste should look very green because of the mint and cilantro."
+    },
+    {
+      "step": 5,
+      "text": "In the same pan (on medium heat), add 1 Tbsp of ghee. Then add chicken and salt. Sear on all sides until lightly colored (around 10 minutes)."
+    },
+    {
+      "step": 6,
+      "text": "Add the masala paste from the blender. Mix well with the chicken. Close the lid, add the whistle weight, and cook for 2 whistles. Turn off the heat and let the pressure release naturally.",
+      "note": "If you don't have a pressure cooker, you can simmer the chicken in a heavy-bottomed pan with a lid. Just add the masala paste and cook for about 20 minutes on medium heat, stirring occasionally."
+    },
+    {
+      "step": 7,
+      "text": "Add about 1/2 cup water if needed. Cover and simmer on low for 30-40 minutes until chicken is tender."
+    },
+    {
+      "step": 8,
+      "text": "Finish with garam masala, raisins, chopped mint, and coriander. Let rest covered for 10 minutes before serving."
+    }
+  ],
+  "source": {
+    "type": "Inspired by",
+    "label": "My Amma's chicken curry"
+  },
+  "yields": "4-6 servings"
+}
