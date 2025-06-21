@@ -1,5 +1,4 @@
 import "./globals.css";
-import Header from "@/components/Header";
 import { Dancing_Script } from "next/font/google";
 
 const dancing = Dancing_Script({
@@ -20,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        <Header />
+        {/* Header removed from layout - each page handles its own header */}
         <main className="flex-grow">{children}</main>
       </body>
     </html>

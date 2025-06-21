@@ -8,9 +8,13 @@ import Image from "next/image";
 
 type Props = {
   recipe: Recipe;
+  focusModeEnabled?: boolean;
 };
 
-export default function RecipeHeader({ recipe }: Props) {
+export default function RecipeHeader({
+  recipe,
+  focusModeEnabled = false,
+}: Props) {
   const {
     title,
     subtitle,
@@ -27,7 +31,8 @@ export default function RecipeHeader({ recipe }: Props) {
 
   return (
     <header className="mb-8">
-      {image && (
+      {/* Image - hidden in focus mode */}
+      {image && !focusModeEnabled && (
         <div className="w-full max-w-2xl mx-auto mb-6">
           <Image
             src={`/images/${image}`}
@@ -50,8 +55,8 @@ export default function RecipeHeader({ recipe }: Props) {
         )}
       </div>
 
-      {/* Story with Read more/less */}
-      {story && (
+      {/* Story with Read more/less - hidden in focus mode */}
+      {story && !focusModeEnabled && (
         <div className="mb-6 max-w-2xl mx-auto">
           <div
             id="recipe-story"
@@ -85,8 +90,8 @@ export default function RecipeHeader({ recipe }: Props) {
         </div>
       )}
 
-      {/* Tags */}
-      {tags && tags.length > 0 && (
+      {/* Tags - hidden in focus mode */}
+      {tags && tags.length > 0 && !focusModeEnabled && (
         <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag) => (
             <span
@@ -99,54 +104,56 @@ export default function RecipeHeader({ recipe }: Props) {
         </div>
       )}
 
-      {/* Meta info */}
-      <div className="text-sm text-gray-500 text-center mb-4">
-        {[
-          (first_made || last_made) &&
-            (first_made === last_made
-              ? `First made: ${formatDate(first_made)}`
-              : `First made: ${formatDate(first_made)}${
-                  last_made ? `, Last made: ${formatDate(last_made)}` : ""
-                }`),
+      {/* Meta info - hidden in focus mode */}
+      {!focusModeEnabled && (
+        <div className="text-sm text-gray-500 text-center mb-4">
+          {[
+            (first_made || last_made) &&
+              (first_made === last_made
+                ? `First made: ${formatDate(first_made)}`
+                : `First made: ${formatDate(first_made)}${
+                    last_made ? `, Last made: ${formatDate(last_made)}` : ""
+                  }`),
 
-          yields && (
-            <span className="inline-flex items-center gap-1">
-              <Users size={14} strokeWidth={1.5} /> {yields}
-            </span>
-          ),
+            yields && (
+              <span className="inline-flex items-center gap-1">
+                <Users size={14} strokeWidth={1.5} /> {yields}
+              </span>
+            ),
 
-          time && (
-            <span className="inline-flex items-center gap-1">
-              <Clock size={14} strokeWidth={1.5} /> {time}
-            </span>
-          ),
+            time && (
+              <span className="inline-flex items-center gap-1">
+                <Clock size={14} strokeWidth={1.5} /> {time}
+              </span>
+            ),
 
-          source && (
-            <>
-              {source.type}:{" "}
-              {source.url ? (
-                <a
-                  href={source.url}
-                  className="underline text-gray-500 hover:text-gray-700"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {source.label}
-                </a>
-              ) : (
-                source.label
-              )}
-            </>
-          ),
-        ]
-          .filter(Boolean)
-          .map((item, idx, arr) => (
-            <span key={idx}>
-              {item}
-              {idx < arr.length - 1 && <span className="mx-3">|</span>}
-            </span>
-          ))}
-      </div>
+            source && (
+              <>
+                {source.type}:{" "}
+                {source.url ? (
+                  <a
+                    href={source.url}
+                    className="underline text-gray-500 hover:text-gray-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {source.label}
+                  </a>
+                ) : (
+                  source.label
+                )}
+              </>
+            ),
+          ]
+            .filter(Boolean)
+            .map((item, idx, arr) => (
+              <span key={idx}>
+                {item}
+                {idx < arr.length - 1 && <span className="mx-3">|</span>}
+              </span>
+            ))}
+        </div>
+      )}
     </header>
   );
 }
