@@ -1,8 +1,10 @@
+// components/RecipeHeader.tsx
+
 "use client";
 
 import { useState } from "react";
 import type { Recipe } from "@/types";
-import { Clock, Users, ChevronDown, ChevronUp } from "lucide-react";
+import { Clock, Users, ChevronUp, ChevronDown } from "lucide-react";
 import { formatDate } from "@/utils/formatDate";
 import Image from "next/image";
 
@@ -40,58 +42,52 @@ export default function RecipeHeader({ recipe }: Props) {
         </div>
       )}
 
-      {/* Title with Story Toggle */}
-      <div className="flex items-start justify-between mb-4">
-        <div className="flex flex-col flex-1 min-w-0">
-          <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
-          {subtitle && (
-            <h2
-              className="text-lg font-normal text-gray-600 mt-1 truncate"
-              title={subtitle}
-            >
-              {subtitle}
-            </h2>
-          )}
-        </div>
-        {story && (
-          <button
-            onClick={() => setIsStoryExpanded(!isStoryExpanded)}
-            className="flex items-center gap-1 text-gray-600 hover:text-gray-800 transition-colors ml-4 mt-1 group flex-shrink-0"
-            aria-expanded={isStoryExpanded}
-            aria-controls="recipe-story"
+      {/* Title */}
+      <div className="mb-4">
+        <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
+        {subtitle && (
+          <h2
+            className="text-lg font-normal text-gray-600 mt-1 truncate"
+            title={subtitle}
           >
-            <span className="text-sm font-medium">Behind the Recipe</span>
-            {isStoryExpanded ? (
-              <ChevronUp
-                size={14}
-                className="group-hover:translate-y-[-1px] transition-transform"
-              />
-            ) : (
-              <ChevronDown
-                size={14}
-                className="group-hover:translate-y-[1px] transition-transform"
-              />
-            )}
-          </button>
+            {subtitle}
+          </h2>
         )}
       </div>
 
-      {/* Story Content */}
+      {/* Story with Read more/less */}
       {story && (
-        <div
-          id="recipe-story"
-          className={`overflow-hidden transition-all duration-300 ease-in-out mb-6 ${
-            isStoryExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-200 max-w-2xl mx-auto">
-            <p className="text-gray-700 leading-relaxed text-sm italic">
+        <div className="mb-6 max-w-2xl mx-auto">
+          <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-200">
+            <p
+              className={`text-gray-700 leading-relaxed text-sm italic transition-all ${
+                isStoryExpanded ? "" : "line-clamp-1 overflow-hidden"
+              }`}
+            >
               {story}
             </p>
+            <div className="flex justify-center mt-2">
+              <button
+                onClick={() => setIsStoryExpanded((prev) => !prev)}
+                className="flex items-center text-sm font-medium text-gray-600 hover:text-gray-700 transition-colors"
+                aria-expanded={isStoryExpanded}
+                aria-controls="recipe-story"
+              >
+                {isStoryExpanded ? (
+                  <ChevronUp size={14} />
+                ) : (
+                  <ChevronDown size={14} />
+                )}
+                <span className="ml-1">
+                  {isStoryExpanded ? "Read less" : "Read more"}
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       )}
 
+      {/* Tags */}
       {tags && tags.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag) => (
@@ -105,9 +101,9 @@ export default function RecipeHeader({ recipe }: Props) {
         </div>
       )}
 
+      {/* Meta info */}
       <div className="text-sm text-gray-500 text-center mb-4">
         {[
-          /* first/last-made dates */
           (first_made || last_made) &&
             (first_made === last_made
               ? `First made: ${formatDate(first_made)}`
@@ -115,21 +111,18 @@ export default function RecipeHeader({ recipe }: Props) {
                   last_made ? `, Last made: ${formatDate(last_made)}` : ""
                 }`),
 
-          /* yields with icon */
           yields && (
             <span className="inline-flex items-center gap-1">
               <Users size={14} strokeWidth={1.5} /> {yields}
             </span>
           ),
 
-          /* time with icon */
           time && (
             <span className="inline-flex items-center gap-1">
               <Clock size={14} strokeWidth={1.5} /> {time}
             </span>
           ),
 
-          /* source */
           source && (
             <>
               {source.type}:{" "}
@@ -149,10 +142,10 @@ export default function RecipeHeader({ recipe }: Props) {
           ),
         ]
           .filter(Boolean)
-          .map((item, index, array) => (
-            <span key={index}>
+          .map((item, idx, arr) => (
+            <span key={idx}>
               {item}
-              {index < array.length - 1 && <span className="mx-3">|</span>}
+              {idx < arr.length - 1 && <span className="mx-3">|</span>}
             </span>
           ))}
       </div>
