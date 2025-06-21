@@ -119,6 +119,10 @@
     "name": "Mint Leaves",
     "default_unit": "tbsp"
   },
+  "fenugreek": {
+    "name": "Fenugreek Leaves",
+    "default_unit": "tbsp"
+  },
   "chicken": {
     "name": "Chicken",
     "default_unit": "lbs"

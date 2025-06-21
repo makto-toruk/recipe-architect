@@ -89,6 +89,12 @@
       "unit": "cup"
     },
     {
+      "ref": "fenugreek",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup",
+      "note": "Optional, but my mom always adds it"
+    },
+    {
       "ref": "salt",
       "qty": { "num": 1, "den": 1 },
       "unit": "tbsp"
@@ -111,7 +117,7 @@
     },
     {
       "step": 4,
-      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.",
+      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, mint, and fenugreek. Blend until smooth.",
       "note": "We use a NutriBullet. The resulting paste should look very green from the herbs."
     },
     {
