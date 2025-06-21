@@ -123,6 +123,26 @@
     "name": "Fenugreek Leaves",
     "default_unit": "tbsp"
   },
+  "fennel": {
+    "name": "Fennel Seeds",
+    "default_unit": "tsp"
+  },
+  "butter": {
+    "name": "Butter",
+    "default_unit": "tbsp"
+  },
+  "cinnamon_stick": {
+    "name": "Cinnamon Stick",
+    "default_unit": "inch"
+  },
+  "cloves": {
+    "name": "Cloves",
+    "default_unit": "each"
+  },
+  "cardamom": {
+    "name": "Cardamom",
+    "default_unit": "each"
+  },
   "chicken": {
     "name": "Chicken",
     "default_unit": "lbs"

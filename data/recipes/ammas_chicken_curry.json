@@ -14,14 +14,19 @@
     },
     {
       "ref": "ghee",
-      "qty": { "num": 2, "den": 1 },
-      "unit": "tbsp",
-      "note": "Divided"
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "butter",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
     },
     {
       "ref": "onion",
       "qty": { "num": 1, "den": 1 },
-      "unit": "each"
+      "unit": "each",
+      "note": "Divide into two halves: one quartered and the other diced"
     },
     {
       "ref": "garlic",
@@ -56,7 +61,8 @@
     {
       "ref": "red_chili_powder",
       "qty": { "num": 1, "den": 1 },
-      "unit": "tsp"
+      "unit": "tsp",
+      "note": "Or a few dried chili peppers"
     },
     {
       "ref": "raisins",
@@ -89,6 +95,26 @@
       "unit": "cup"
     },
     {
+      "ref": "cinnamon_stick",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "inch"
+    },
+    {
+      "ref": "cloves",
+      "qty": { "num": 4, "den": 1 },
+      "unit": "each"
+    },
+    {
+      "ref": "cardamom",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "each"
+    },
+    {
+      "ref": "fennel",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
       "ref": "fenugreek",
       "qty": { "num": 1, "den": 2 },
       "unit": "cup",
@@ -108,7 +134,7 @@
     },
     {
       "step": 2,
-      "text": "Heat 1 Tbsp ghee in a heavy-bottomed pressure cooker over medium heat. Add onion, garlic, and ginger. Sauté until onions turn translucent.",
+      "text": "Heat 1 Tbsp ghee in a heavy-bottomed pressure cooker over medium heat. Add half an onion (quartered), garlic, and ginger. Sauté until onions turn translucent.",
       "note": "Any heavy-bottomed pan should work."
     },
     {
@@ -117,22 +143,26 @@
     },
     {
       "step": 4,
-      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, mint, and fenugreek. Blend until smooth.",
+      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.",
       "note": "We use a NutriBullet. The resulting paste should look very green from the herbs."
     },
     {
       "step": 5,
-      "text": "In the same pan, heat remaining 1 Tbsp ghee. Add chicken and salt. Sear on all sides until lightly browned, about 10 minutes."
+      "text": "In the same pan, heat 1 Tbsp butter. For the 'oggarne', add half a diced onion, fenugreek leaves, cardamom, cloves, fennel seeds, and cinnamon. Sauté until onions are golden brown.",
+      "note": "This is the 'oggarne' or tempering."
     },
     {
       "step": 6,
-      "text": "Add the blended masala. Mix well. Close the lid, add the whistle weight, and cook for 2 whistles. Let pressure release naturally.",
-      "note": "If you don't have a pressure cooker, cover and simmer for 20 minutes on medium heat, stirring occasionally."
+      "text": "Add chicken and salt. Sear on all sides, about 10 minutes."
+    },
+    {
+      "step": 7,
+      "text": "Add the blended masala. Mix well. Simmer on low heat for 20 minutes. Enjoy!"
     }
   ],
   "source": {
     "type": "Inspired by",
-    "label": "My Amma's recipe'"
+    "label": "My Amma's recipe"
   },
   "yields": "4-6 servings",
   "story": "Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder :)"
