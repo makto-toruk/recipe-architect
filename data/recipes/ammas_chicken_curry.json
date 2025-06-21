@@ -1,0 +1,133 @@
+{
+  "id": "ammas_chicken_curry",
+  "title": "Amma's Chicken 'Chaaps'",
+  "subtitle": "Spicy and comforting chicken curry from home.",
+  "tags": ["curry", "chicken", "indian"],
+  "image": "ammas-chicken-curry.jpg",
+  "first_made": "2015-09-01",
+  "ingredients": [
+    {
+      "ref": "chicken",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "lbs",
+      "note": "Bone-in chicken thighs work best"
+    },
+    {
+      "ref": "ghee",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp",
+      "note": "Divided"
+    },
+    {
+      "ref": "onion",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "each"
+    },
+    {
+      "ref": "garlic",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "bulb"
+    },
+    {
+      "ref": "ginger",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "inch"
+    },
+    {
+      "ref": "peppercorns",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "cashews",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "curry_leaves",
+      "qty": { "num": 2, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "cumin_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "red_chili_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "raisins",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    },
+    {
+      "ref": "coriander_powder",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "garam_masala",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tsp"
+    },
+    {
+      "ref": "yogurt",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "cilantro",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "cup"
+    },
+    {
+      "ref": "mint",
+      "qty": { "num": 1, "den": 2 },
+      "unit": "cup"
+    },
+    {
+      "ref": "salt",
+      "qty": { "num": 1, "den": 1 },
+      "unit": "tbsp"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Clean the chicken and cut into large pieces. Set aside.",
+      "note": "I prefer cutting one chicken thigh into 2 or 3 pieces."
+    },
+    {
+      "step": 2,
+      "text": "Heat 1 Tbsp ghee in a heavy-bottomed pressure cooker over medium heat. Add onion, garlic, and ginger. Sauté until onions turn translucent.",
+      "note": "Any heavy-bottomed pan should work."
+    },
+    {
+      "step": 3,
+      "text": "Add peppercorns, cashews, and curry leaves. Sauté for 2-3 minutes until aromatic."
+    },
+    {
+      "step": 4,
+      "text": "Transfer to a blender. Add cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.",
+      "note": "We use a NutriBullet. The resulting paste should look very green from the herbs."
+    },
+    {
+      "step": 5,
+      "text": "In the same pan, heat remaining 1 Tbsp ghee. Add chicken and salt. Sear on all sides until lightly browned, about 10 minutes."
+    },
+    {
+      "step": 6,
+      "text": "Add the blended masala. Mix well. Close the lid, add the whistle weight, and cook for 2 whistles. Let pressure release naturally.",
+      "note": "If you don't have a pressure cooker, cover and simmer for 20 minutes on medium heat, stirring occasionally."
+    }
+  ],
+  "source": {
+    "type": "Inspired by",
+    "label": "My Amma's recipe'"
+  },
+  "yields": "4-6 servings",
+  "story": "Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder :)"
+}

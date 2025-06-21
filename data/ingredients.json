@@ -62,5 +62,65 @@
   "water": {
     "name": "Water",
     "default_unit": "cup"
+  },
+  "garlic": {
+    "name": "Garlic",
+    "default_unit": "clove"
+  },
+  "ginger": {
+    "name": "Ginger",
+    "default_unit": "inch"
+  },
+  "cumin_powder": {
+    "name": "Cumin Powder",
+    "default_unit": "tsp"
+  },
+  "red_chili_powder": {
+    "name": "Red Chili Powder",
+    "default_unit": "tsp"
+  },
+  "raisins": {
+    "name": "Raisins",
+    "default_unit": "tbsp"
+  },
+  "cashews": {
+    "name": "Cashews",
+    "default_unit": "tbsp"
+  },
+  "peppercorns": {
+    "name": "Black Peppercorns",
+    "default_unit": "tsp"
+  },
+  "coriander_powder": {
+    "name": "Coriander Powder",
+    "default_unit": "tsp"
+  },
+  "onion": {
+    "name": "Onion",
+    "default_unit": "each"
+  },
+  "garam_masala": {
+    "name": "Garam Masala",
+    "default_unit": "tsp"
+  },
+  "yogurt": {
+    "name": "Yogurt",
+    "default_unit": "cup"
+  },
+  "curry_leaves": {
+    "name": "Curry Leaves",
+    "default_unit": "each"
+  },
+  "cilantro": {
+    "name": "Cilantro Leaves",
+    "default_unit": "tbsp"
+  },
+  "mint": {
+    "name": "Mint Leaves",
+    "default_unit": "tbsp"
+  },
+  "chicken": {
+    "name": "Chicken",
+    "default_unit": "lbs"
   }
 }
