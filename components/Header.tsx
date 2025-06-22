@@ -115,6 +115,15 @@ export default function Header({
                 All Recipes
               </Link>
             </li>
+            <li>
+              <Link
+                href="/about"
+                className="block px-4 py-2 text-sm hover:bg-gray-50"
+                onClick={() => setOpen(false)}
+              >
+                About
+              </Link>
+            </li>
           </ul>
         </nav>
       )}
