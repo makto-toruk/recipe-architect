@@ -91,6 +91,10 @@
     "name": "Black Peppercorns",
     "default_unit": "tsp"
   },
+  "pepper": {
+    "name": "Black Pepper",
+    "default_unit": "tsp"
+  },
   "coriander_powder": {
     "name": "Coriander Powder",
     "default_unit": "tsp"
@@ -146,5 +150,33 @@
   "chicken": {
     "name": "Chicken",
     "default_unit": "lbs"
+  },
+  "olive_oil": {
+    "name": "Olive Oil",
+    "default_unit": "tbsp"
+  },
+  "avocado_oil": {
+    "name": "Avocado Oil",
+    "default_unit": "tbsp"
+  },
+  "lemon_juice": {
+    "name": "Lemon Juice",
+    "default_unit": "each"
+  },
+  "garlic_powder": {
+    "name": "Garlic Powder",
+    "default_unit": "tbsp"
+  },
+  "paprika": {
+    "name": "Paprika",
+    "default_unit": "tbsp"
+  },
+  "cayenne": {
+    "name": "Cayenne Pepper",
+    "default_unit": "tsp"
+  },
+  "turmeric": {
+    "name": "Turmeric Powder",
+    "default_unit": "tsp"
   }
 }
