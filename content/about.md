@@ -8,4 +8,6 @@ I’ve come to value the calm that comes with focus. The discipline of cutting a
 
 I love building things. This was a chance to build something that I would love to use. It was also a chance to learn something new.
 
+[The right data architecture](https://github.com/makto-toruk/recipe-architect) has always felt like the foundation for great products. I wanted another way to test this.
+
 Maybe our children (we don't have any yet) will cook from it. Maybe the robots of the future will. In either case, I wanted to leave something behind that felt considered.
