@@ -178,5 +178,51 @@
   "turmeric": {
     "name": "Turmeric Powder",
     "default_unit": "tsp"
+  },
+  "red_curry_paste": {
+    "name": "Red Curry Paste",
+    "default_unit": "tbsp"
+  },
+  "coconut_milk": {
+    "name": "Coconut Milk",
+    "default_unit": "cup"
+  },
+  "shallots": {
+    "name": "Shallots",
+    "default_unit": "each"
+  },
+  "green_bell_pepper": {
+    "name": "Green Bell Pepper",
+    "default_unit": "each"
+  },
+  "mushrooms": {
+    "name": "Mushrooms",
+    "default_unit": "oz"
+  },
+  "tofu": {
+    "name": "Tofu",
+    "default_unit": "block"
+  },
+  "thai_chili": {
+    "name": "Thai Chili",
+    "default_unit": "each"
+  },
+  "gyozas": {
+    "name": "Gyozas (Frozen Dumplings)",
+    "default_unit": "each",
+    "recommendations": [
+      {
+        "name": "Trader Joe's Thai Vegetable Gyoza (16-17 count)",
+        "link": "https://www.traderjoes.com/home/products/pdp/thai-vegetable-gyoza-047945"
+      }
+    ]
+  },
+  "soy_sauce": {
+    "name": "Soy Sauce",
+    "default_unit": "tbsp"
+  },
+  "rice_vinegar": {
+    "name": "Rice Vinegar",
+    "default_unit": "tbsp"
   }
 }
