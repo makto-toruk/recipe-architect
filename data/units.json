@@ -38,5 +38,13 @@
   "inch": {
     "name": "inch",
     "aliases": ["inch", "inches"]
+  },
+  "oz": {
+    "name": "ounce",
+    "aliases": ["oz", "ounce", "ounces"]
+  },
+  "block": {
+    "name": "block",
+    "aliases": ["block", "blocks"]
   }
 }
