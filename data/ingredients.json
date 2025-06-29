@@ -203,8 +203,8 @@
     "name": "Tofu",
     "default_unit": "block"
   },
-  "thai_bird_chili": {
-    "name": "Thai Bird's-Eye Chili",
+  "thai_chili": {
+    "name": "Thai Chili",
     "default_unit": "each"
   },
   "gyozas": {

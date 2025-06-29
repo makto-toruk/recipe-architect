@@ -29,10 +29,10 @@
       "ref": "garlic",
       "qty": { "num": 6, "den": 1 },
       "unit": "clove",
-      "note": "6 – 8 cloves, crushed"
+      "note": "6 - 8 cloves, crushed"
     },
     {
-      "ref": "thai_bird_chili",
+      "ref": "thai_chili",
       "qty": { "num": 6, "den": 1 },
       "unit": "each",
       "note": "reduce if you prefer less heat"
@@ -74,14 +74,14 @@
     {
       "ref": "salt",
       "qty": { "num": 1, "den": 1 },
-      "unit": "pinch",
+      "unit": "tbsp",
       "note": "plus more to taste"
     },
     {
       "ref": "gyozas",
-      "qty": { "num": 16, "den": 1 },
+      "qty": { "num": 1, "den": 1 },
       "unit": "each",
-      "note": "1 Trader Joe’s vegan gyoza pack (16 – 17 dumplings)"
+      "note": "1 Trader Joe's vegetarian gyoza pack (about 16 dumplings)"
     }
   ],
   "instructions": [
@@ -123,7 +123,8 @@
     },
     {
       "step": 10,
-      "text": "Add frozen gyozas, cover, and simmer about 10 minutes until the dumplings are heated through."
+      "text": "Add frozen gyozas, cover, and simmer about 10 minutes until the dumplings are heated through.",
+      "note": "Add only as many gyozas as you'll serve immediately; when reheating leftovers, drop in fresh frozen gyozas so they stay intact."
     },
     {
       "step": 11,
