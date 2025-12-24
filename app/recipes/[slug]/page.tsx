@@ -1,11 +1,13 @@
-import { loadRecipeBySlug, getAllRecipeSlugs } from "@/utils/loadRecipe";
+import {
+  loadMarkdownRecipeBySlug,
+  getAllMarkdownRecipeSlugs,
+} from "@/utils/loadMarkdownRecipe";
 import { notFound } from "next/navigation";
-import type { LoadedRecipe, Recipe } from "@/types";
 import { Metadata } from "next";
-import RecipePageClient from "@/components/RecipePageClient";
+import RecipePageClient from "@/components/markdown/RecipePageClient";
 
 export async function generateStaticParams() {
-  const slugs = await getAllRecipeSlugs();
+  const slugs = await getAllMarkdownRecipeSlugs();
   return slugs.map((slug) => ({ slug }));
 }
 
@@ -16,13 +18,16 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const data = (await loadRecipeBySlug(slug)) as LoadedRecipe | null;
-  if (!data) return { title: "Recipe Not Found | Cafe TM" };
-  return {
-    title: `${data.recipe.title} | Cafe TM`,
-    // TODO: update this with description when we add them
-    description: "Explore our ever-evolving family recipes",
-  };
+
+  const recipe = await loadMarkdownRecipeBySlug(slug);
+  if (recipe) {
+    return {
+      title: `${recipe.title} | Cafe TM`,
+      description: recipe.subtitle || "Explore our ever-evolving family recipes",
+    };
+  }
+
+  return { title: "Recipe Not Found | Cafe TM" };
 }
 
 export default async function Page({
@@ -31,13 +36,15 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const data = (await loadRecipeBySlug(slug)) as LoadedRecipe | null;
-  if (!data) return notFound();
 
-  // Return a full page layout since this recipe page needs to control its own header
+  const recipe = await loadMarkdownRecipeBySlug(slug);
+  if (!recipe) {
+    return notFound();
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
-      <RecipePageClient data={data} />
+      <RecipePageClient recipe={recipe} />
     </div>
   );
 }

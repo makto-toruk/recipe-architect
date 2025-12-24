@@ -1,17 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import RecipeHeader from "@/components/RecipeHeader";
-import RecipeIngredients from "@/components/RecipeIngredients";
-import RecipeInstructions from "@/components/RecipeInstructions";
+import RecipeHeader from "./RecipeHeader";
+import RecipeIngredients from "./RecipeIngredients";
+import RecipeInstructions from "./RecipeInstructions";
 import Header from "@/components/Header";
-import type { LoadedRecipe } from "@/types";
+import type { MarkdownRecipe } from "@/types/markdown";
 
-interface RecipePageClientProps {
-  data: LoadedRecipe;
+interface MarkdownRecipePageClientProps {
+  recipe: MarkdownRecipe;
 }
 
-export default function RecipePageClient({ data }: RecipePageClientProps) {
+export default function MarkdownRecipePageClient({
+  recipe,
+}: MarkdownRecipePageClientProps) {
   const [focusModeEnabled, setFocusModeEnabled] = useState(false);
   const [checkedIngredients, setCheckedIngredients] = useState<Set<string>>(
     new Set()
@@ -19,8 +21,6 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
   const [checkedInstructions, setCheckedInstructions] = useState<Set<string>>(
     new Set()
   );
-
-  const { recipe, ingredients, units, subrecipes = [] } = data;
 
   // Generate unique storage keys for this recipe
   const storageKeyPrefix = `recipe-${recipe.id}`;
@@ -110,7 +110,6 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
     });
   };
 
-  // Optional: Add a clear progress function
   const handleClearProgress = () => {
     setCheckedIngredients(new Set());
     setCheckedInstructions(new Set());
@@ -133,7 +132,7 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
           {/* Recipe Header - conditionally hide elements in focus mode */}
           <RecipeHeader recipe={recipe} focusModeEnabled={focusModeEnabled} />
 
-          {/* Optional: Clear Progress Button in focus mode */}
+          {/* Clear Progress Button in focus mode */}
           {focusModeEnabled &&
             (checkedIngredients.size > 0 || checkedInstructions.size > 0) && (
               <div className="mb-6 flex justify-center">
@@ -149,17 +148,13 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
           {/* Mobile: Stacked Layout */}
           <div className="lg:hidden">
             <RecipeIngredients
-              recipe={recipe}
-              ingredients={ingredients}
-              units={units}
-              subrecipes={subrecipes}
+              ingredients={recipe.ingredients}
               focusModeEnabled={focusModeEnabled}
               checkedIngredients={checkedIngredients}
               onIngredientCheck={handleIngredientCheck}
             />
             <RecipeInstructions
-              recipe={recipe}
-              subrecipes={subrecipes}
+              instructions={recipe.instructions}
               focusModeEnabled={focusModeEnabled}
               checkedInstructions={checkedInstructions}
               onInstructionCheck={handleInstructionCheck}
@@ -171,10 +166,7 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
             {/* Left Column - Ingredients (1/3) */}
             <div className="lg:col-span-1">
               <RecipeIngredients
-                recipe={recipe}
-                ingredients={ingredients}
-                units={units}
-                subrecipes={subrecipes}
+                ingredients={recipe.ingredients}
                 focusModeEnabled={focusModeEnabled}
                 checkedIngredients={checkedIngredients}
                 onIngredientCheck={handleIngredientCheck}
@@ -184,8 +176,7 @@ export default function RecipePageClient({ data }: RecipePageClientProps) {
             {/* Right Column - Instructions (2/3) */}
             <div className="lg:col-span-2">
               <RecipeInstructions
-                recipe={recipe}
-                subrecipes={subrecipes}
+                instructions={recipe.instructions}
                 focusModeEnabled={focusModeEnabled}
                 checkedInstructions={checkedInstructions}
                 onInstructionCheck={handleInstructionCheck}

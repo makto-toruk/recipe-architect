@@ -1,0 +1,117 @@
+import React from "react";
+import type { MarkdownInstruction } from "@/types/markdown";
+
+type Props = {
+  instructions: MarkdownInstruction[];
+  focusModeEnabled?: boolean;
+  checkedInstructions?: Set<string>;
+  onInstructionCheck?: (key: string, checked: boolean) => void;
+};
+
+export default function RecipeInstructions({
+  instructions,
+  focusModeEnabled = false,
+  checkedInstructions = new Set(),
+  onInstructionCheck,
+}: Props) {
+  // Collect footnotes with continuous numbering
+  const footnotes: { step: number; text: string }[] = [];
+  const instructionsWithFootnotes = instructions.map((inst) => {
+    let footnoteIndex = -1;
+    if (inst.note) {
+      footnoteIndex = footnotes.length;
+      footnotes.push({
+        step: inst.step,
+        text: inst.note,
+      });
+    }
+    return { ...inst, footnoteIndex };
+  });
+
+  return (
+    <section className="mt-8 lg:mt-0">
+      <h2 className="text-xl font-semibold mb-6 text-gray-900">Instructions</h2>
+
+      <InstructionsList
+        instructions={instructionsWithFootnotes}
+        focusModeEnabled={focusModeEnabled}
+        checkedInstructions={checkedInstructions}
+        onInstructionCheck={onInstructionCheck}
+        keyPrefix="main"
+      />
+
+      {/* Footnotes with continuous numbering */}
+      {footnotes.length > 0 && (
+        <section className="mt-8 border-t pt-4">
+          <ol className="list-none space-y-2 text-sm text-gray-600">
+            {footnotes.map((fn, i) => (
+              <li key={`${fn.step}`} className="flex">
+                <sup className="mr-1 align-super text-xs">{i + 1}</sup>
+                <span>{fn.text}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+    </section>
+  );
+}
+
+// Helper component for rendering instruction lists
+function InstructionsList({
+  instructions,
+  focusModeEnabled = false,
+  checkedInstructions = new Set(),
+  onInstructionCheck,
+  keyPrefix = "",
+}: {
+  instructions: Array<MarkdownInstruction & { footnoteIndex?: number }>;
+  focusModeEnabled?: boolean;
+  checkedInstructions?: Set<string>;
+  onInstructionCheck?: (key: string, checked: boolean) => void;
+  keyPrefix?: string;
+}) {
+  return (
+    <ol className="space-y-6">
+      {instructions.map((inst) => {
+        const instructionKey = `${keyPrefix}-${inst.step}`;
+        const isChecked = checkedInstructions.has(instructionKey);
+
+        return (
+          <li key={inst.step} className="flex gap-4">
+            {/* Checkbox in focus mode */}
+            {focusModeEnabled && (
+              <input
+                type="checkbox"
+                checked={isChecked}
+                onChange={(e) =>
+                  onInstructionCheck?.(instructionKey, e.target.checked)
+                }
+                className="mt-1.5 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 flex-shrink-0"
+              />
+            )}
+
+            <span
+              className={`flex-shrink-0 w-7 h-7 bg-gray-100 text-gray-700 rounded-full flex items-center justify-center text-sm font-medium ${isChecked && focusModeEnabled ? "opacity-60" : ""}`}
+            >
+              {inst.step}
+            </span>
+            <div className="flex flex-col">
+              <p
+                className={`text-gray-800 leading-relaxed pt-0.5 ${isChecked && focusModeEnabled ? "line-through opacity-60" : ""}`}
+              >
+                {inst.text}
+                {inst.footnoteIndex !== undefined &&
+                  inst.footnoteIndex >= 0 && (
+                    <sup className="ml-1 align-super text-xs">
+                      {inst.footnoteIndex + 1}
+                    </sup>
+                  )}
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}

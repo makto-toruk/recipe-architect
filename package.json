@@ -5,11 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "validate": "tsx scripts/validate.ts",
+    "validate": "tsx scripts/validateMarkdown.ts",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "gen-types": "tsx scripts/generate-types.ts"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -49,6 +48,7 @@
     "react-dom": "^19.1.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "unist-util-visit": "^5.0.0"
   }
 }

@@ -1,26 +1,45 @@
 import fs from "fs/promises";
 import path from "path";
-import type { Recipe } from "@/types";
+import matter from "gray-matter";
 
-const recipesDir = path.join(process.cwd(), "data/recipes");
+const markdownDir = path.join(process.cwd(), "data/recipes/markdown");
 
-/** Fetch minimal fields for every recipe JSON file. */
-export async function loadAllRecipes(): Promise<
-  Pick<
-    Recipe,
-    "id" | "title" | "subtitle" | "image" | "tags" | "first_made" | "last_made"
-  >[]
-> {
-  const files = (await fs.readdir(recipesDir)).filter((f) =>
-    f.endsWith(".json")
-  );
+type RecipeCard = {
+  id: string;
+  title: string;
+  subtitle?: string;
+  image?: string;
+  tags?: string[];
+  first_made?: string;
+  last_made?: string;
+};
 
-  return Promise.all(
-    files.map(async (file) => {
-      const text = await fs.readFile(path.join(recipesDir, file), "utf8");
-      const { id, title, subtitle, image, tags, first_made, last_made } =
-        JSON.parse(text) as Recipe;
-      return { id, title, subtitle, image, tags, first_made, last_made };
-    })
-  );
+/** Fetch minimal fields for every recipe from markdown files. */
+export async function loadAllRecipes(): Promise<RecipeCard[]> {
+  try {
+    const files = (await fs.readdir(markdownDir)).filter(
+      (f) => f.endsWith(".md") && f !== "template.md"
+    );
+
+    return Promise.all(
+      files.map(async (file) => {
+        const text = await fs.readFile(path.join(markdownDir, file), "utf8");
+        const { data: frontmatter } = matter(text);
+        const slug = file.replace(/\.md$/, "");
+
+        return {
+          id: frontmatter.id || slug,
+          title: frontmatter.title,
+          subtitle: frontmatter.subtitle,
+          image: frontmatter.image,
+          tags: frontmatter.tags,
+          first_made: frontmatter.first_made,
+          last_made: frontmatter.last_made,
+        };
+      })
+    );
+  } catch (error) {
+    console.warn("Could not load markdown recipes:", error);
+    return [];
+  }
 }
