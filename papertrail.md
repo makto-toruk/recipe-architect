@@ -4,6 +4,25 @@ Reverse-chronological log of notable decisions, fixes, and milestones.
 
 ---
 
+## 2025-12-24
+
+- **Complete migration from JSON to markdown-based recipes.**
+  Replaced complex JSON schema system with simple YAML frontmatter + markdown content. Ingredients now use clean format: `Name (quantity unit, note)`. Instructions support footnotes via parentheses.
+
+- **Simplified ingredient parsing.**
+  Removed centralized ingredient/unit databases. Parse quantities and units directly from markdown using `fraction.js`.
+
+- **Unified to markdown-only system.**
+  Deleted all JSON recipes, schemas, validation scripts, and database files. Removed old components and utils. App is now 45% smaller (recipe pages: 7.63kB → 4.16kB).
+
+- **Renamed recipe.**
+  `ammas-chicken-chaaps` → `ammas-chicken-curry` with proper metadata from original source.
+
+- **Enforced hyphenated filenames.**
+  Validation now errors on underscored filenames. Markdown files must use hyphens (e.g., `my-recipe.md` not `my_recipe.md`).
+
+---
+
 ## 2025-06-20
 
 - **Landing page with recipe grid**
