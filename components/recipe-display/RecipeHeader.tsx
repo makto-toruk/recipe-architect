@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { MarkdownRecipe } from "@/types/markdown";
 import { Clock, Users, ChevronUp, ChevronDown } from "lucide-react";
-import { formatDate } from "@/utils/formatDate";
+import { formatDate } from "@/components/utils/formatDate";
 import Image from "next/image";
 
 type Props = {
