@@ -57,7 +57,7 @@ Frontend Components (components/recipe-display/)
 - `index.ts`: Public API (`parseRecipe()`, `getAllRecipeSlugs()`, `loadAllRecipes()`)
 - `frontmatter-parser.ts`: YAML frontmatter extraction with gray-matter
 - `ingredient-parser.ts`: Parse "Ingredient Name (quantity unit, note)" format
-- `instruction-parser.ts`: Parse H3 headings as numbered steps
+- `instruction-parser.ts`: Parse bullet list as numbered steps
 - `ast-parser.ts`: Helper utilities for markdown AST traversal
 
 **`lib/recipe-validator/`** - Validation with categorized issues (schema/content/file):
@@ -103,13 +103,11 @@ story: Personal story about the recipe...
 
 ## Instructions
 
-### 1. Step Name
+- Step description text. Nested bullets are footnotes:
+  - This appears at bottom with superscript ¹
+  - This appears at bottom with superscript ²
 
-Description of step. (This becomes a footnote)
-
-### 2. Next Step
-
-Continue with numbered H3 headings.
+- For lists, write inline: "In a bowl, mix flour, sugar, and salt."
 ```
 
 ### Component Structure

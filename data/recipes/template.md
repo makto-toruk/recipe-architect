@@ -23,6 +23,7 @@
 - Ingredient Name (quantity unit)
 
 Examples:
+
 - Ghee (1 Tbsp)
 - Dark chocolate (170g, 70-72% cocoa recommended)
 - Chicken thighs (2 lbs, boneless)
@@ -35,18 +36,14 @@ Examples:
 
 ## Instructions
 
-### 1. Step Name (Optional)
+- Description of what to do in this step. Keep it clear and actionable.
 
-Description of what to do in this step.
+- For steps with footnotes, add nested bullets (all nested bullets are footnotes):
 
-### 2. Step Name (Optional)
+  - This becomes a footnote shown at the bottom with superscripts
+  - Multiple bullets create multiple footnotes
 
-- Bullet points can be used
-- For sub-steps within a main step
-
-### 3. Step Name (Optional)
-
-Continue with clear, actionable instructions.
+- For lists of items (not footnotes), write inline: "In a bowl, mix flour, sugar, and salt."
 
 ## Serving (Optional)
 

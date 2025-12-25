@@ -1,7 +1,7 @@
 ---
 id: tandoori-chicken-bake
 title: Easy Tandoori Masala Chicken Bake
-first_made: '2025-11-23'
+first_made: "2025-11-23"
 source:
   type: Adapted from
   label: Curries With Bumbi
@@ -10,6 +10,7 @@ source:
 yields: 5-6
 time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
 ---
+
 ## Recipe Details
 
 - **Servings:** 5-6
@@ -51,60 +52,15 @@ time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
 
 ## Instructions
 
-### 1. Marinate the Chicken
+- In a bowl, combine chicken thighs with buttermilk (or yogurt mixture). Cover and refrigerate for at least 3 hours, or up to 12 hours (don't go over 12 hours—the meat may become mushy). Remove from the fridge 1 hour before cooking to bring to room temperature.
 
-- In a bowl, combine chicken thighs with buttermilk (or yogurt mixture)
-- Cover and refrigerate for at least 3 hours, or up to 12 hours
-- **Tip:** Don't go over 12 hours—the meat may become mushy
-- Remove from the fridge 1 hour before cooking to bring to room temperature
+- In a small bowl, mix tandoori masala, brown sugar, black pepper, garam masala, ground cumin, ground coriander, kasoori methi, salt, and paprika. Set aside.
 
-### 2. Make the Spice Rub
+- Preheat oven to 400°F (200°C) or 375°F (190°C) if using convection. Lightly oil a steel baking tray or cast iron casserole pot. Add sliced onions to the base. Place only the chicken into the dish (discard the marinade). Add ginger-garlic paste, the spice rub, and 1 tbsp melted butter. Mix well so every piece is coated.
 
-In a small bowl, mix:
+- Bake for 1 hour total. At 30-minute mark, mix remaining melted butter with 1 tsp sweet paprika, baste the chicken with this mixture, and return to oven. At 50-minute mark, baste again, add whole chillies and sprinkle with fresh thyme (optional), and bake final 10 minutes.
 
-- Tandoori masala
-- Brown sugar
-- Black pepper
-- Garam masala
-- Ground cumin
-- Ground coriander
-- Kasoori methi
-- Salt
-- Paprika
-
-Set aside.
-
-### 3. Prepare to Bake
-
-- Preheat oven to 400°F (200°C) or 375°F (190°C) if using convection
-- Lightly oil a steel baking tray or cast iron casserole pot
-- Add sliced onions to the base
-- Place only the chicken into the dish (discard the marinade)
-- Add ginger-garlic paste, the spice rub, and 1 tbsp melted butter
-- Mix well so every piece is coated
-
-### 4. Bake the Chicken
-
-Bake for 1 hour total:
-
-**At 30-minute mark:**
-
-- Mix remaining melted butter with 1 tsp sweet paprika
-- Baste the chicken with this mixture
-- Return to oven
-
-**At 50-minute mark:**
-
-- Baste again
-- Add whole chillies and sprinkle with fresh thyme (optional)
-- Bake final 10 minutes
-
-### 5. (Optional) Thicken the Gravy
-
-- Mix cornstarch and water into a slurry
-- Once chicken is done, place the pan on the stove over high heat
-- Stir in the slurry and let the gravy boil for 1 minute
-- Spoon the thickened gravy over the chicken to coat
+- (Optional) Mix cornstarch and water into a slurry. Once chicken is done, place the pan on the stove over high heat. Stir in the slurry and let the gravy boil for 1 minute. Spoon the thickened gravy over the chicken to coat.
 
 ## Serving
 

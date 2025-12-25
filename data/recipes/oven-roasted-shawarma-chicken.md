@@ -39,25 +39,15 @@ time: >-
 
 ## Instructions
 
-### 1. Prepare the Marinade
+- Clean chicken thighs and place in a large bowl. Add oil, salt, pepper, yogurt, and lemon juice. Stir to combine.
 
-Clean chicken thighs and place in a large bowl. Add oil, salt, pepper, yogurt, and lemon juice. Stir to combine.
+- Mix in all spices (garlic powder, paprika, cayenne pepper, turmeric powder, cumin powder, and garam masala) to evenly coat the chicken. Add sliced onion and mix well. Cover and refrigerate for a minimum of 2 hours, preferably overnight.
 
-### 2. Add Spices and Marinate
+- Preheat oven to 425°F (220°C). Pack chicken and onions tightly into a loaf pan.
 
-Mix in all spices (garlic powder, paprika, cayenne pepper, turmeric powder, cumin powder, and garam masala) to evenly coat the chicken. Add sliced onion and mix well. Cover and refrigerate for a minimum of 2 hours, preferably overnight.
+- Bake uncovered for 45 minutes until fully cooked with a crispy top. Internal temperature should reach 165°F.
 
-### 3. Prepare for Baking
-
-Preheat oven to 425°F (220°C). Pack chicken and onions tightly into a loaf pan.
-
-### 4. Bake
-
-Bake uncovered for 45 minutes until fully cooked with a crispy top. Internal temperature should reach 165°F.
-
-### 5. Slice and Serve
-
-Flip the cooked chicken onto a cutting board and slice thinly in shawarma style.
+- Flip the cooked chicken onto a cutting board and slice thinly in shawarma style.
 
 ## Serving
 

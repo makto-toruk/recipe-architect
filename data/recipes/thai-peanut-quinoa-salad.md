@@ -40,21 +40,13 @@ time: 20 minutes prep + 20 minutes cook
 
 ## Instructions
 
-### 1. Cook quinoa
+- Rinse quinoa in a fine mesh colander. Combine with 3 cups water in a medium pot. Bring to a boil, then reduce heat to medium-low and simmer until water is absorbed (about 10-15 minutes). Remove from heat, cover, and let rest 5 minutes. Fluff with a fork and cool.
 
-Rinse quinoa in a fine mesh colander. Combine with 3 cups water in a medium pot. Bring to a boil, then reduce heat to medium-low and simmer until water is absorbed (about 10-15 minutes). Remove from heat, cover, and let rest 5 minutes. Fluff with a fork and cool.
+- Whisk peanut butter and tamari together until smooth (microwave briefly if needed to make mixing easier). Add remaining sauce ingredients (maple syrup, rice vinegar, sesame oil, grated ginger, lime juice, and red pepper flakes) and whisk until smooth. Add water a tablespoon at a time if the sauce is too thick.
 
-### 2. Make peanut sauce
+- Combine cooked quinoa, cabbage, carrot, cilantro, and green onion in a large bowl. Pour in the peanut sauce and toss well to coat. Taste and adjust seasoning if needed (add more tamari for saltiness, lime for acidity, or maple syrup for sweetness).
 
-Whisk peanut butter and tamari together until smooth (microwave briefly if needed to make mixing easier). Add remaining sauce ingredients (maple syrup, rice vinegar, sesame oil, grated ginger, lime juice, and red pepper flakes) and whisk until smooth. Add water a tablespoon at a time if the sauce is too thick.
-
-### 3. Assemble salad
-
-Combine cooked quinoa, cabbage, carrot, cilantro, and green onion in a large bowl. Pour in the peanut sauce and toss well to coat. Taste and adjust seasoning if needed (add more tamari for saltiness, lime for acidity, or maple syrup for sweetness).
-
-### 4. Serve
-
-Divide salad into bowls and garnish with chopped peanuts.
+- Divide salad into bowls and garnish with chopped peanuts.
 
 ## Notes
 

@@ -44,23 +44,13 @@ A Thanksgiving classic recreated from a roommate's homemade version - "the best 
 
 ## Instructions
 
-### 1. Make the Pie Crust
+- Mix flour, salt, sugar, and ghee in a bowl. Pulse in chilled butter until mixture resembles pea-sized pieces. Add cold water gradually until dough comes together. Chill for 2 hours. Roll out and place in pie pan.
 
-Mix flour, salt, sugar, and ghee in a bowl. Pulse in chilled butter until mixture resembles pea-sized pieces. Add cold water gradually until dough comes together. Chill for 2 hours. Roll out and place in pie pan.
+- Whisk eggs in a large bowl. Add maple syrup, salt, brown sugar, and vanilla extract, whisking to combine. While whisking continuously, stream in the melted and cooled butter. Add pecans to the prepared crust, then pour the filling mixture over the pecans.
 
-### 2. Prepare the Filling
+- First, bake the prepared crust at 400°F for 60 minutes until lightly golden. Add the filling, then bake the filled pie at 375°F (with fan on) for 50-60 minutes. The pie is done when it's set but still slightly jiggly in the center.
 
-Whisk eggs in a large bowl. Add maple syrup, salt, brown sugar, and vanilla extract, whisking to combine. While whisking continuously, stream in the melted and cooled butter. Add pecans to the prepared crust, then pour the filling mixture over the pecans.
-
-### 3. Bake
-
-- First, bake the prepared crust at 400°F for 60 minutes until lightly golden
-- Add the filling, then bake the filled pie at 375°F (with fan on) for 50-60 minutes
-- The pie is done when it's set but still slightly jiggly in the center
-
-### 4. Cool and Serve
-
-Cool the pie completely before cutting. For serving, you can invert and cut into squares for a unique presentation.
+- Cool the pie completely before cutting. For serving, you can invert and cut into squares for a unique presentation.
 
 ## Notes
 

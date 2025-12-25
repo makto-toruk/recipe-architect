@@ -36,33 +36,19 @@ time: 15 minutes prep + 30 minutes cook
 
 ## Instructions
 
-### 1. Make the aromatic paste
+- Crush ginger, garlic, and chiles with salt using mortar and pestle to form a coarse paste.
 
-Crush ginger, garlic, and chiles with salt using mortar and pestle to form a coarse paste.
+- Heat avocado oil in pot over medium heat. Sauté shallots for about 2 minutes until translucent. Add bell pepper and sauté 2 minutes more.
 
-### 2. Sauté aromatics
+- Reduce heat to low and add the ginger-garlic-chili paste. Sauté for 2 minutes. Stir in red curry paste and cook on low, stirring constantly, for 4-5 minutes until the raw aroma dissipates.
 
-Heat avocado oil in pot over medium heat. Sauté shallots for about 2 minutes until translucent. Add bell pepper and sauté 2 minutes more.
+- Add mushrooms, season with salt, and sauté until they release their moisture.
 
-### 3. Build the flavor base
+- Pour in about 5 cups hot water and bring to a boil. Stir in coconut milk, soy sauce, rice vinegar, and brown sugar. Taste and adjust salt as needed. Return to a gentle boil.
 
-Reduce heat to low and add the ginger-garlic-chili paste. Sauté for 2 minutes. Stir in red curry paste and cook on low, stirring constantly, for 4-5 minutes until the raw aroma dissipates.
+- Gently add cubed tofu and return to a simmer. Add frozen gyozas, cover, and simmer for about 10 minutes until heated through.
 
-### 4. Add mushrooms
-
-Add mushrooms, season with salt, and sauté until they release their moisture.
-
-### 5. Create the broth
-
-Pour in about 5 cups hot water and bring to a boil. Stir in coconut milk, soy sauce, rice vinegar, and brown sugar. Taste and adjust salt as needed. Return to a gentle boil.
-
-### 6. Add tofu and dumplings
-
-Gently add cubed tofu and return to a simmer. Add frozen gyozas, cover, and simmer for about 10 minutes until heated through.
-
-### 7. Serve
-
-Serve hot.
+- Serve hot.
 
 ## Notes
 

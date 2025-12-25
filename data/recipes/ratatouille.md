@@ -41,17 +41,17 @@ time: 20 minutes prep + 1 hour 10 minutes cook
 
 ## Instructions
 
-1. Preheat oven to 375°F. Heat 4 tablespoons olive oil in a large nonstick pan over medium-high heat.
+- Preheat oven to 375°F. Heat 4 tablespoons olive oil in a large nonstick pan over medium-high heat.
 
-2. Cook onion, garlic, and carrot until tender (about 5 minutes).
+- Cook onion, garlic, and carrot until tender (about 5 minutes).
 
-3. Add crushed tomatoes and seasonings; simmer 15 minutes until thickened.
+- Add crushed tomatoes and seasonings; simmer 15 minutes until thickened.
 
-4. Pour sauce into a 9x13 inch baking dish and arrange sliced vegetables in circular patterns standing upright.
+- Pour sauce into a 9x13 inch baking dish and arrange sliced vegetables in circular patterns standing upright.
 
-5. Brush vegetables with remaining olive oil. Cover and bake 30 minutes.
+- Brush vegetables with remaining olive oil. Cover and bake 30 minutes.
 
-6. Uncover and continue baking until vegetables are tender. Serve immediately.
+- Uncover and continue baking until vegetables are tender. Serve immediately.
 
 ## Notes
 

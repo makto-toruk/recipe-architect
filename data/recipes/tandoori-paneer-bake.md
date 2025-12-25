@@ -43,42 +43,17 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 
 ## Instructions
 
-### 1. Prepare the Paneer
+- If using store-bought paneer, press it gently between paper towels to remove excess moisture. Cut into 1.5-inch cubes and set aside.
 
-- If using store-bought paneer, press it gently between paper towels to remove excess moisture
-- Cut into 1.5-inch cubes
-- Set aside
+- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, and all the spice rub ingredients. Add paneer cubes and bell pepper pieces. Gently toss to coat everything evenly. Cover and refrigerate for 30 minutes to 2 hours.
 
-### 2. Make the Marinade
+- If using wooden skewers, soak them in water for 30 minutes to prevent burning. Thread paneer cubes and bell peppers alternately onto skewers. Add onion chunks between them if desired.
 
-- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, and all the spice rub ingredients
-- Add paneer cubes and bell pepper pieces
-- Gently toss to coat everything evenly
-- Cover and refrigerate for 30 minutes to 2 hours
+- Preheat oven to 400°F (200°C). Line a baking tray with parchment paper or lightly oil it. Place skewers on the tray, leaving space between them. Drizzle with 1 tbsp melted butter.
 
-### 3. Assemble the Skewers
+- Bake for 15 minutes. Mix remaining melted butter with ½ tsp sweet paprika. Remove from oven, flip skewers, and baste with the paprika butter. Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender.
 
-- If using wooden skewers, soak them in water for 30 minutes to prevent burning
-- Thread paneer cubes and bell peppers alternately onto skewers
-- Add onion chunks between them if desired
-
-### 4. Prepare to Bake
-
-- Preheat oven to 400°F (200°C)
-- Line a baking tray with parchment paper or lightly oil it
-- Place skewers on the tray, leaving space between them
-- Drizzle with 1 tbsp melted butter
-
-### 5. Bake the Skewers
-
-- Bake for 15 minutes
-- Mix remaining melted butter with ½ tsp sweet paprika
-- Remove from oven, flip skewers, and baste with the paprika butter
-- Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender
-
-### 6. Broil (Optional)
-
-- For extra char, broil on high for 2-3 minutes, watching carefully to prevent burning
+- (Optional) For extra char, broil on high for 2-3 minutes, watching carefully to prevent burning.
 
 ## Serving
 

@@ -4,7 +4,7 @@ title: Amma's Chicken Curry
 subtitle: Spicy and comforting chicken curry from home.
 tags: [curry, chicken, indian]
 image: ammas-chicken-curry.jpg
-first_made: '2015-09-01'
+first_made: "2015-09-01"
 source:
   type: Inspired by
   label: My Amma's recipe
@@ -23,9 +23,11 @@ story: Growing up, I could smell this masala from several houses away. We always
 ## Ingredients
 
 ### Chicken:
+
 - chicken (2 lbs, bone-in thighs preferred, cleaned and cut into large pieces)
 
 ### For the Masala Base:
+
 - ghee (1 Tbsp)
 - onion, quartered (1/2)
 - garlic (1 bulb)
@@ -43,6 +45,7 @@ story: Growing up, I could smell this masala from several houses away. We always
 - mint leaves (1/2 cup)
 
 ### For the Tempering (Oggarne):
+
 - butter (1 Tbsp)
 - onion, diced (1/2)
 - 1/2 cup fenugreek leaves (optional)
@@ -59,30 +62,17 @@ story: Growing up, I could smell this masala from several houses away. We always
 
 ## Instructions
 
-### 1. Prepare the Chicken
-Clean and cut chicken into large pieces.
+- Clean and cut chicken into large pieces.
 
-### 2. Make the Masala Base
-- Heat ghee in heavy-bottomed pressure cooker
-- Sauté quartered onion, garlic, and ginger until translucent
-- Add peppercorns, cashews, and curry leaves
-- Sauté for 2-3 minutes
+- Heat ghee in heavy-bottomed pressure cooker. Sauté quartered onion, garlic, and ginger until translucent. Add peppercorns, cashews, and curry leaves. Sauté for 2-3 minutes.
 
-### 3. Blend the Masala
-Transfer the sautéed mixture to a blender along with cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.
+- Transfer the sautéed mixture to a blender along with cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.
 
-### 4. Prepare the Tempering (Oggarne)
-- Heat butter in the pan
-- Sauté diced onion with fenugreek leaves, cardamom, cloves, fennel seeds, and cinnamon stick
-- Cook until onions are golden
+- Heat butter in the pan. Sauté diced onion with fenugreek leaves, cardamom, cloves, fennel seeds, and cinnamon stick. Cook until onions are golden.
 
-### 5. Sear the Chicken
-Add chicken and salt to the tempering. Sear for 10 minutes on all sides until well-browned.
+- Add chicken and salt to the tempering. Sear for 10 minutes on all sides until well-browned.
 
-### 6. Simmer
-- Add the blended masala to the chicken
-- Simmer covered on low heat for 20-25 minutes, stirring occasionally
-- The chicken should be tender and the curry thickened
+- Add the blended masala to the chicken. Simmer covered on low heat for 20-25 minutes, stirring occasionally. The chicken should be tender and the curry thickened.
 
 ## Notes
 
