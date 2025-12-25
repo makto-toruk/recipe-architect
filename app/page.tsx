@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { loadAllRecipes } from "@/utils/loadAllRecipes";
+import { loadAllRecipes } from "@/lib/recipe-parser";
 import RecipeCard from "@/components/RecipeCard";
 
 export const metadata = {

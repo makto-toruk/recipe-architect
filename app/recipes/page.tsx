@@ -1,4 +1,4 @@
-import { loadAllRecipes } from "@/utils/loadAllRecipes";
+import { loadAllRecipes } from "@/lib/recipe-parser";
 import RecipeCard from "@/components/RecipeCard";
 import Header from "@/components/Header";
 

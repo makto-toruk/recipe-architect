@@ -5,10 +5,10 @@ import RecipeHeader from "./RecipeHeader";
 import RecipeIngredients from "./RecipeIngredients";
 import RecipeInstructions from "./RecipeInstructions";
 import Header from "@/components/Header";
-import type { MarkdownRecipe } from "@/types/markdown";
+import type { Recipe } from "@/lib/recipe-types";
 
 interface MarkdownRecipePageClientProps {
-  recipe: MarkdownRecipe;
+  recipe: Recipe;
 }
 
 export default function MarkdownRecipePageClient({
