@@ -33,15 +33,15 @@ function MenuIcon({ open }: { open: boolean }) {
   );
 }
 
-interface HeaderProps {
+interface SiteHeaderProps {
   onFocusModeToggle?: (enabled: boolean) => void;
   focusModeEnabled?: boolean;
 }
 
-export default function Header({
+export default function SiteHeader({
   onFocusModeToggle,
   focusModeEnabled = false,
-}: HeaderProps) {
+}: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 

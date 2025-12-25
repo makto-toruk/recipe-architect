@@ -1,6 +1,6 @@
-import { loadMarkdown } from "@/utils/loadMarkdown";
+import { loadMarkdown } from "@/lib/loadMarkdown";
 import { Metadata } from "next";
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title: "About | Cafe TM",
@@ -12,7 +12,7 @@ export default async function AboutPage() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <SiteHeader />
       <main className="min-h-screen bg-white py-12 flex-grow">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <article className="prose prose-lg prose-gray">

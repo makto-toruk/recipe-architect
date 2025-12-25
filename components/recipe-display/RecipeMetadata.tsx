@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import type { MarkdownRecipe } from "@/types/markdown";
+import type { Recipe } from "@/lib/recipe-types";
 import { Clock, Users, ChevronUp, ChevronDown } from "lucide-react";
-import { formatDate } from "@/utils/formatDate";
+import { formatDate } from "@/components/utils/formatDate";
 import Image from "next/image";
 
 type Props = {
-  recipe: MarkdownRecipe;
+  recipe: Recipe;
   focusModeEnabled?: boolean;
 };
 
-export default function RecipeHeader({
+export default function RecipeMetadata({
   recipe,
   focusModeEnabled = false,
 }: Props) {

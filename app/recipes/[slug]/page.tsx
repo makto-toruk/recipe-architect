@@ -1,10 +1,10 @@
 import {
   loadMarkdownRecipeBySlug,
   getAllMarkdownRecipeSlugs,
-} from "@/utils/loadMarkdownRecipe";
+} from "@/lib/recipe-parser";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import RecipePageClient from "@/components/markdown/RecipePageClient";
+import RecipePageClient from "@/components/recipe-display/RecipePageClient";
 
 export async function generateStaticParams() {
   const slugs = await getAllMarkdownRecipeSlugs();

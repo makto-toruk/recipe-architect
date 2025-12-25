@@ -1,7 +1,7 @@
-import type { MarkdownIngredient } from "@/types/markdown";
+import type { Ingredient } from "@/lib/recipe-types";
 
 interface Props {
-  ingredients: MarkdownIngredient[];
+  ingredients: Ingredient[];
   focusModeEnabled?: boolean;
   checkedIngredients?: Set<string>;
   onIngredientCheck?: (key: string, checked: boolean) => void;
@@ -23,7 +23,7 @@ export default function RecipeIngredients({
       acc[groupName].push(ing);
       return acc;
     },
-    {} as Record<string, MarkdownIngredient[]>
+    {} as Record<string, Ingredient[]>
   );
 
   // Sort groups: ungrouped first, then alphabetically
@@ -67,7 +67,7 @@ function IngredientsList({
   onIngredientCheck,
   keyPrefix = "",
 }: {
-  ingredients: MarkdownIngredient[];
+  ingredients: Ingredient[];
   focusModeEnabled?: boolean;
   checkedIngredients?: Set<string>;
   onIngredientCheck?: (key: string, checked: boolean) => void;

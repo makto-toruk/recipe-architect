@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "validate": "tsx scripts/validateMarkdown.ts",
+    "validate": "tsx lib/tooling/validate-recipes.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

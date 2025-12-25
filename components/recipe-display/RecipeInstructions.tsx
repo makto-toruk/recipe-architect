@@ -1,8 +1,8 @@
 import React from "react";
-import type { MarkdownInstruction } from "@/types/markdown";
+import type { Instruction } from "@/lib/recipe-types";
 
 type Props = {
-  instructions: MarkdownInstruction[];
+  instructions: Instruction[];
   focusModeEnabled?: boolean;
   checkedInstructions?: Set<string>;
   onInstructionCheck?: (key: string, checked: boolean) => void;
@@ -65,7 +65,7 @@ function InstructionsList({
   onInstructionCheck,
   keyPrefix = "",
 }: {
-  instructions: Array<MarkdownInstruction & { footnoteIndex?: number }>;
+  instructions: Array<Instruction & { footnoteIndex?: number }>;
   focusModeEnabled?: boolean;
   checkedInstructions?: Set<string>;
   onInstructionCheck?: (key: string, checked: boolean) => void;

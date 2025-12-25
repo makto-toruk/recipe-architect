@@ -1,10 +1,9 @@
 /**
- * Type definitions for markdown-based recipes
- * These types represent the structure of recipes parsed from markdown files
- * with YAML frontmatter.
+ * Type definitions for recipe domain
+ * These types represent the structure of recipes and their components.
  */
 
-export interface MarkdownRecipe {
+export interface Recipe {
   // Frontmatter metadata
   id: string;
   title: string;
@@ -23,11 +22,11 @@ export interface MarkdownRecipe {
   yields?: string;
 
   // Parsed content from markdown body
-  ingredients: MarkdownIngredient[];
-  instructions: MarkdownInstruction[];
+  ingredients: Ingredient[];
+  instructions: Instruction[];
 }
 
-export interface MarkdownIngredient {
+export interface Ingredient {
   quantity: string; // Display string: "2 1/2", "1", etc.
   unit: string; // Display string: "cups", "lbs", "each", etc.
   name: string; // Ingredient name: "flour", "chicken thighs", etc.
@@ -35,8 +34,18 @@ export interface MarkdownIngredient {
   group?: string; // Optional group heading: "For the Marinade", etc.
 }
 
-export interface MarkdownInstruction {
+export interface Instruction {
   step: number; // Step number
   text: string; // Instruction text
   note?: string; // Optional footnote
+}
+
+export interface RecipeCard {
+  id: string;
+  title: string;
+  subtitle?: string;
+  image?: string;
+  tags?: string[];
+  first_made?: string;
+  last_made?: string;
 }
