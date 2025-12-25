@@ -11,7 +11,7 @@ type Props = {
   focusModeEnabled?: boolean;
 };
 
-export default function RecipeHeader({
+export default function RecipeMetadata({
   recipe,
   focusModeEnabled = false,
 }: Props) {

@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import RecipeHeader from "./RecipeHeader";
+import RecipeMetadata from "./RecipeMetadata";
 import RecipeIngredients from "./RecipeIngredients";
 import RecipeInstructions from "./RecipeInstructions";
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 import type { Recipe } from "@/lib/recipe-types";
 
 interface MarkdownRecipePageClientProps {
@@ -123,14 +123,14 @@ export default function MarkdownRecipePageClient({
 
   return (
     <>
-      <Header
+      <SiteHeader
         onFocusModeToggle={handleFocusModeToggle}
         focusModeEnabled={focusModeEnabled}
       />
       <main className="min-h-screen bg-white flex-grow">
         <div className="max-w-5xl mx-auto p-6">
           {/* Recipe Header - conditionally hide elements in focus mode */}
-          <RecipeHeader recipe={recipe} focusModeEnabled={focusModeEnabled} />
+          <RecipeMetadata recipe={recipe} focusModeEnabled={focusModeEnabled} />
 
           {/* Clear Progress Button in focus mode */}
           {focusModeEnabled &&

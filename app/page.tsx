@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 import { loadAllRecipes } from "@/lib/recipe-parser";
 import RecipeCard from "@/components/RecipeCard";
 
@@ -28,7 +28,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
+      <SiteHeader />
       <main className="min-h-screen bg-white py-12">
         <div className="max-w-6xl mx-auto px-6">
           {/* Recent Recipes Section */}
