@@ -1,4 +1,4 @@
-import { loadMarkdown } from "@/utils/loadMarkdown";
+import { loadMarkdown } from "@/lib/loadMarkdown";
 import { Metadata } from "next";
 import Header from "@/components/Header";
 
