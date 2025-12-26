@@ -13,7 +13,7 @@ export default function RecipeIngredients({
   checkedIngredients = new Set(),
   onIngredientCheck,
 }: Props) {
-  // Group ingredients by their group field
+  // Group ingredients by their group field, preserving order
   const groupedIngredients = ingredients.reduce(
     (acc, ing) => {
       const groupName = ing.group || "";
@@ -26,12 +26,9 @@ export default function RecipeIngredients({
     {} as Record<string, Ingredient[]>
   );
 
-  // Sort groups: ungrouped first, then alphabetically
-  const sortedGroups = Object.keys(groupedIngredients).sort((a, b) => {
-    if (a === "") return -1;
-    if (b === "") return 1;
-    return a.localeCompare(b);
-  });
+  // Preserve source order: ungrouped first, then groups in order of first appearance
+  const allGroups = Object.keys(groupedIngredients);
+  const sortedGroups = allGroups.filter(g => g === "").concat(allGroups.filter(g => g !== ""));
 
   return (
     <section className="mb-6 lg:mb-0">

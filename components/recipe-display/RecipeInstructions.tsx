@@ -32,17 +32,45 @@ export default function RecipeInstructions({
     return { ...inst, footnoteIndices };
   });
 
+  // Group instructions by their group field, preserving order
+  const groupedInstructions = instructionsWithFootnotes.reduce(
+    (acc, inst) => {
+      const groupName = inst.group || "";
+      if (!acc[groupName]) {
+        acc[groupName] = [];
+      }
+      acc[groupName].push(inst);
+      return acc;
+    },
+    {} as Record<string, Array<Instruction & { footnoteIndices?: number[] }>>
+  );
+
+  // Preserve source order: ungrouped first, then groups in order of first appearance
+  const allGroups = Object.keys(groupedInstructions);
+  const sortedGroups = allGroups.filter(g => g === "").concat(allGroups.filter(g => g !== ""));
+
   return (
     <section className="mt-8 lg:mt-0">
       <h2 className="text-xl font-semibold mb-6 text-gray-900">Instructions</h2>
 
-      <InstructionsList
-        instructions={instructionsWithFootnotes}
-        focusModeEnabled={focusModeEnabled}
-        checkedInstructions={checkedInstructions}
-        onInstructionCheck={onInstructionCheck}
-        keyPrefix="main"
-      />
+      {sortedGroups.map((groupName, groupIdx) => (
+        <div key={groupName || `group-${groupIdx}`} className="mb-8">
+          {/* Group heading if it exists */}
+          {groupName && (
+            <h3 className="text-lg font-medium mb-4 text-gray-800">
+              {groupName}
+            </h3>
+          )}
+
+          <InstructionsList
+            instructions={groupedInstructions[groupName]}
+            focusModeEnabled={focusModeEnabled}
+            checkedInstructions={checkedInstructions}
+            onInstructionCheck={onInstructionCheck}
+            keyPrefix={groupName || "main"}
+          />
+        </div>
+      ))}
 
       {/* Footnotes with continuous numbering */}
       {footnotes.length > 0 && (
