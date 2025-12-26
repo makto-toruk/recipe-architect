@@ -12,13 +12,6 @@ yields: 8-10 (doubled for meal prep)
 time: 10 minutes prep + 40 minutes cook
 ---
 
-## Recipe Details
-
-- **Servings:** 8-10 (doubled for meal prep)
-- **Prep time:** 10 minutes
-- **Cook time:** 40 minutes
-- **Pan/Dish size:** Large stock pot or Dutch oven
-
 ## Ingredients
 
 - Olive oil (2 tablespoons)

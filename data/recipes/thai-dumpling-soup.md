@@ -10,11 +10,6 @@ source:
 yields: 5 servings
 time: 15 minutes prep + 30 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 5 servings
-- **Prep time:** 15 minutes
-- **Cook time:** 30 minutes
 
 ## Ingredients
 

@@ -12,12 +12,6 @@ time: >-
   15 minutes (plus minimum 2 hours marinating, overnight preferred) prep + 45
   minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 6-8
-- **Prep time:** 15 minutes (plus minimum 2 hours marinating, overnight preferred)
-- **Cook time:** 45 minutes
-- **Pan/Dish size:** Loaf pan
 
 ## Ingredients
 

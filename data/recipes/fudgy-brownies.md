@@ -10,12 +10,6 @@ source:
 yields: 9 squares
 time: 15 minutes prep + 35 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 9 squares
-- **Prep time:** 15 minutes
-- **Cook time:** 35 minutes
-- **Pan/Dish size:** 8x8-inch square pan
 
 ## Ingredients
 

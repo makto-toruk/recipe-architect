@@ -10,12 +10,6 @@ yields: "8"
 time: 20 minutes prep + 20 minutes cook
 ---
 
-## Recipe Details
-
-- **Servings:** 8
-- **Prep time:** 20 minutes
-- **Cook time:** 20 minutes
-
 ## Ingredients
 
 ### For the Salad:

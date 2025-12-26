@@ -9,12 +9,6 @@ source:
 yields: 8-10
 time: 15 minutes prep + 35 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 8-10
-- **Prep time:** 15 minutes
-- **Cook time:** 35 minutes
-- **Pan/Dish size:** Large dutch oven or deep saucepan
 
 ## Ingredients
 

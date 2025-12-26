@@ -11,11 +11,6 @@ source:
 yields: 2 pie crusts
 ---
 
-## Recipe Details
-
-- **Servings:** 2 pie crusts
-- **First Made:** December 19, 2021
-
 ## Ingredients
 
 - All-purpose flour (2 1/2 cups)

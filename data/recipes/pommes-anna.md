@@ -9,12 +9,6 @@ source:
 yields: 6-8
 time: 15-20 minutes prep + 40-50 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 6-8
-- **Prep time:** 15-20 minutes
-- **Cook time:** 40-50 minutes
-- **Pan/Dish size:** 10 inch skillet
 
 ## Ingredients
 

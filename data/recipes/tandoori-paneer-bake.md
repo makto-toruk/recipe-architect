@@ -5,11 +5,6 @@ first_made: '2025-11-23'
 yields: 3-4
 time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 3-4
-- **Prep time:** 15 minutes (plus 30 minutes to 2 hours marinating)
-- **Cook time:** 20-25 minutes
 
 ## Ingredients
 

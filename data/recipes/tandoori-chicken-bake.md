@@ -11,12 +11,6 @@ yields: 5-6
 time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
 ---
 
-## Recipe Details
-
-- **Servings:** 5-6
-- **Prep time:** 15 minutes (plus 3-12 hours marinating)
-- **Cook time:** 1 hour
-
 ## Ingredients
 
 ### For the Chicken Marinade:

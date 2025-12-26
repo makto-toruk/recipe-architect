@@ -14,13 +14,6 @@ time: >-
 ---
 A Thanksgiving classic recreated from a roommate's homemade version - "the best I'd ever had." Adapted from Joshua Weissman's Pecan Pie.
 
-## Recipe Details
-
-- **Servings:** 8
-- **Prep time:** 2 hours 30 minutes (includes chilling)
-- **Cook time:** 60 minutes (crust) + 50-60 minutes (filled pie)
-- **Pan/Dish size:** Standard 9-inch pie pan
-
 ## Ingredients
 
 ### Flaky Pie Crust:

@@ -11,12 +11,6 @@ time: >-
   45 minutes (plus 30 min - 1 hour marinating time) prep + 1 hour 45 minutes
   (plus 30 minutes resting) cook
 ---
-## Recipe Details
-
-- **Servings:** 6 to 7
-- **Prep time:** 45 minutes (plus 30 min - 1 hour marinating time)
-- **Cook time:** 1 hour 45 minutes (plus 30 minutes resting)
-- **Pan/Dish size:** Large, wide, heavy-bottomed pot with tight-fitting lid
 
 ## Ingredients
 

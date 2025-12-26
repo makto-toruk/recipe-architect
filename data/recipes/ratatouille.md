@@ -9,12 +9,6 @@ source:
 yields: '12'
 time: 20 minutes prep + 1 hour 10 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 12
-- **Prep time:** 20 minutes
-- **Cook time:** 1 hour 10 minutes
-- **Pan/Dish size:** 9x13 inch
 
 ## Ingredients
 
