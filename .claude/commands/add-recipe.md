@@ -36,6 +36,6 @@ You are helping add a new recipe to the `data/recipes/` directory.
 5. **Save & Validate**
    - Save to `data/recipes/[filename].md`
    - Ensure `id` field matches filename (without .md)
-   - **Run `npm run validate`** and review the output
+   - **Run `npm run validate:recipe [slug]`** and review the output
    - Fix any errors or warnings until the recipe validates cleanly
    - If image mentioned, remind about `/public/images/` placement

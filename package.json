@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "validate": "tsx lib/tooling/validate-recipes.ts",
+    "validate:recipe": "tsx lib/tooling/validate-recipe.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
