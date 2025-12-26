@@ -1,6 +1,8 @@
 ---
 id: fudgy-brownies
 title: Fudgy Brownies
+subtitle: A quick, chocolate fix solves most problems
+tags: [baking, brownies, chocolate]
 image: fudgy-brownies.jpg
 first_made: '2025-12-23'
 source:
