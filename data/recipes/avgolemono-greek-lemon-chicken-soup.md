@@ -3,6 +3,7 @@ id: avgolemono-greek-lemon-chicken-soup
 title: Avgolemono — Greek Lemon Chicken Soup
 subtitle: A warm chicken soup for cozy winter dinners.
 tags: [soup, chicken]
+image: avgolemono-greek-lemon-chicken-soup.jpg
 first_made: "2025-12-06"
 source:
   type: Adapted from
@@ -14,7 +15,7 @@ time: 10 minutes prep + 40 minutes cook
 
 ## Ingredients
 
-- Olive oil (2 tablespoons)
+- Olive oil (2 Tbsp)
 - Onions (2 medium, diced)
 - Carrots (2 medium, diced)
 - Celery stalks (4-6, diced)
