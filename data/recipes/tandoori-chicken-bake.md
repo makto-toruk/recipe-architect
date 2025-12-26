@@ -21,34 +21,34 @@ time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
 
 ### For the Chicken Marinade:
 
-- / 3.3 lb bone-in (1.5 kg, skin-on chicken thighs)
-- 1½ cups buttermilk (or substitute: 1 cup plain yogurt + ⅓ cup water)
+- Bone-in, skin-on chicken thighs (3.3 lb)
+- Buttermilk (1 1/2 cups, or substitute: 1 cup plain yogurt + 1/3 cup water)
 
 ### For the Spice Rub:
 
-- 1 tbsp tandoori masala (start with ½ tbsp if yours is spicy)
-- ½ tbsp light brown sugar (optional)
-- ¼ tsp freshly ground black pepper
-- garam masala powder (1 tsp)
-- 1 tsp ground cumin (jeera)
-- 1 tsp ground coriander (dhania)
-- 1 tsp kasoori methi (crushed dried fenugreek leaves)
-- 1 tsp sweet paprika (or Kashmiri red chilli powder for color)
-- 1 tsp salt or to taste (adjust based on salt in your tandoori masala)
+- Tandoori masala (1 tbsp, start with 1/2 tbsp if yours is spicy)
+- Light brown sugar (1/2 tbsp, optional)
+- Freshly ground black pepper (1/4 tsp)
+- Garam masala powder (1 tsp)
+- Ground cumin (1 tsp, jeera)
+- Ground coriander (1 tsp, dhania)
+- Kasoori methi (1 tsp, crushed dried fenugreek leaves)
+- Sweet paprika (1 tsp, or Kashmiri red chilli powder for color)
+- Salt (1 tsp or to taste, adjust based on salt in your tandoori masala)
 
 ### Other Ingredients:
 
-- / 1 medium to large onion (210 gm, sliced)
-- 1 tbsp ginger-garlic paste (or finely grate 2-inch piece ginger + 8-9 garlic cloves)
-- 4 tbsp melted butter (divided) (or use ghee/oil)
+- Onion (1 medium to large, sliced)
+- Ginger-garlic paste (1 tbsp, or finely grate 2-inch piece ginger + 8-9 garlic cloves)
+- Melted butter (4 tbsp, divided, or use ghee/oil)
 - Whole chillies (optional)
-- 1 tsp paprika mixed with butter (for basting)
+- Paprika mixed with butter (1 tsp, for basting)
 - Fresh thyme or parsley or coriander for garnish
 
 ### To Thicken Gravy (Optional):
 
-- cornstarch (1 tbsp)
-- water (2 tbsp)
+- Cornstarch (1 tbsp)
+- Water (2 tbsp)
 
 ## Instructions
 

@@ -18,10 +18,10 @@ time: 15-20 minutes prep + 40-50 minutes cook
 
 ## Ingredients
 
-- 1 stick (8 tablespoons) unsalted butter
-- fresh rosemary (2 sprigs)
-- cloves (2 garlic, smashed and peeled)
-- 3 lbs medium potatoes (German butter ball or Yukon Gold recommended), peeled
+- Unsalted butter (1 stick)
+- Fresh rosemary (2 sprigs)
+- Garlic cloves (2, smashed and peeled)
+- Medium potatoes (3 lbs, German butter ball or Yukon Gold recommended, peeled)
 - Kosher salt
 - Freshly ground black pepper
 

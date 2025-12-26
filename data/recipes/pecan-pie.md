@@ -25,22 +25,22 @@ A Thanksgiving classic recreated from a roommate's homemade version - "the best 
 
 ### Flaky Pie Crust:
 
-- all-purpose flour (2 1/2 cups)
-- salt (1 tsp)
-- white granulated sugar (1 Tbsp)
-- ghee (2 Tbsp)
-- unsalted butter (3/4 cup, chilled)
-- 5/8 cup cold water (1/2 cup + 2 Tbsp)
+- All-purpose flour (2 1/2 cups)
+- Salt (1 tsp)
+- White granulated sugar (1 Tbsp)
+- Ghee (2 Tbsp)
+- Unsalted butter (3/4 cup, chilled)
+- Cold water (5/8 cup, which is 1/2 cup + 2 Tbsp)
 
 ### Pecan Pie Filling:
 
-- pecans (2 1/2 cups, chopped or halves)
-- eggs (3 large, room temperature)
-- maple syrup (1/2 cup)
-- salt (3/4 tsp)
-- brown sugar (3/4 cup)
-- vanilla extract (1 Tbsp)
-- unsalted butter (1/2 cup, melted and cooled)
+- Pecans (2 1/2 cups, chopped or halves)
+- Eggs (3 large, room temperature)
+- Maple syrup (1/2 cup)
+- Salt (3/4 tsp)
+- Brown sugar (3/4 cup)
+- Vanilla extract (1 Tbsp)
+- Unsalted butter (1/2 cup, melted and cooled)
 
 ## Instructions
 

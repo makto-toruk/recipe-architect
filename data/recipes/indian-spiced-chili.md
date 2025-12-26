@@ -18,24 +18,24 @@ time: 15 minutes prep + 35 minutes cook
 
 ## Ingredients
 
-- canola oil (4 tbsp)
-- onions (2 medium, diced)
-- carrots, diced (4-6)
-- celery stalks, diced (4-6)
-- garlic paste (2 tsp)
-- ginger paste (2 tsp)
-- ground cumin (2 tbsp)
-- ground coriander (2 tbsp)
-- garam masala (2 tsp)
-- chili powder (2 tsp)
-- 2 tsp dried fenugreek leaves (optional)
-- bay leaves (2 dried)
-- 6 Thai chilis or 2 jalapenos (optional, adjust to heat preference)
-- 1-2 adobo chilis, chopped (adjust to taste)
-- paneer (2 lbs, crumbled)
-- 4 (14.5 oz) cans diced tomatoes, undrained
-- 2 (14.5 oz) cans kidney beans, undrained
-- Salt, (to taste)
+- Canola oil (4 tbsp)
+- Onions (2 medium, diced)
+- Carrots (4-6, diced)
+- Celery stalks (4-6, diced)
+- Garlic paste (2 tsp)
+- Ginger paste (2 tsp)
+- Ground cumin (2 tbsp)
+- Ground coriander (2 tbsp)
+- Garam masala (2 tsp)
+- Chili powder (2 tsp)
+- Dried fenugreek leaves (2 tsp, optional)
+- Dried bay leaves (2)
+- Thai chilis or jalapenos (6 Thai chilis or 2 jalapenos, optional, adjust to heat preference)
+- Adobo chilis (1-2, chopped, adjust to taste)
+- Paneer (2 lbs, crumbled)
+- Diced tomatoes (4 cans, 14.5 oz each, undrained)
+- Kidney beans (2 cans, 14.5 oz each, undrained)
+- Salt (to taste)
 
 ## Instructions
 

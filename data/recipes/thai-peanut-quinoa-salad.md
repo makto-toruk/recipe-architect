@@ -1,14 +1,15 @@
 ---
 id: thai-peanut-quinoa-salad
 title: Crunchy Thai Peanut & Quinoa Salad
-first_made: '2025-12-23'
+first_made: "2025-12-23"
 source:
   type: Adapted from
   label: Cookie and Kate
-  url: 'https://cookieandkate.com/thai-peanut-quinoa-salad-recipe/print/25575/'
-yields: '8'
+  url: "https://cookieandkate.com/thai-peanut-quinoa-salad-recipe/print/25575/"
+yields: "8"
 time: 20 minutes prep + 20 minutes cook
 ---
+
 ## Recipe Details
 
 - **Servings:** 8
@@ -19,24 +20,25 @@ time: 20 minutes prep + 20 minutes cook
 
 ### For the Salad:
 
-- uncooked quinoa or millet (1 1/2 cups)
-- water (3 cups)
-- shredded purple cabbage (4 cups)
-- grated carrot (2 cups)
-- chopped cilantro (1 cup)
-- thinly sliced green onion (1/2 cup)
-- 1/2 cup chopped roasted and salted peanuts (for garnish)
+- Uncooked quinoa or millet (1 1/2 cups)
+- Water (3 cups)
+- Shredded purple cabbage (4 cups)
+- Grated carrot (2 cups)
+- Chopped cilantro (1 cup)
+- Thinly sliced green onion (1/2 cup)
+- Roasted and salted peanuts (1/2 cup, to top the salad)
 
 ### For the Peanut Sauce:
 
-- smooth peanut butter (1/2 cup)
-- reduced-sodium tamari or soy sauce (6 tablespoons)
-- maple syrup or honey (2 tablespoons)
-- rice vinegar (2 tablespoons)
-- toasted sesame oil (2 teaspoons)
-- grated fresh ginger (2 teaspoons)
-- lime, juiced (1)
-- red pepper flakes (1/4 teaspoon)
+- Smooth peanut butter (1/2 cup)
+- Reduced-sodium tamari or soy sauce (5 tablespoons)
+- Maple syrup or honey (2 tablespoons)
+- Rice vinegar (2 tablespoons)
+- Toasted sesame oil (2 teaspoons)
+- Grated fresh ginger (2 teaspoons)
+- Lime (1, juiced)
+- Harissa (2 tsp, optional; swap with any chili paste)
+- Red pepper flakes (1/4 teaspoon)
 
 ## Instructions
 

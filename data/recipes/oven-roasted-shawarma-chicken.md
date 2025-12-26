@@ -23,19 +23,19 @@ time: >-
 
 ### Chicken and Marinade:
 
-- boneless (2 1/2 lbs, skinless chicken thighs)
-- avocado oil (2 Tbsp)
-- salt (2 tsp)
-- black pepper (1 tsp)
-- yogurt (1/2 cup)
-- lemon, juiced (1/2)
-- garlic powder (1 1/2 Tbsp)
-- paprika (1 Tbsp)
-- cayenne pepper (1/2 tsp)
-- turmeric powder (1/2 tsp)
-- cumin powder (1/2 tsp)
-- garam masala (1/2 tsp)
-- onion (1/2 red, thinly sliced)
+- Boneless, skinless chicken thighs (2 1/2 lbs)
+- Avocado oil (2 Tbsp)
+- Salt (2 tsp)
+- Black pepper (1 tsp)
+- Yogurt (1/2 cup)
+- Lemon (1/2, juiced)
+- Garlic powder (1 1/2 Tbsp)
+- Paprika (1 Tbsp)
+- Cayenne pepper (1/2 tsp)
+- Turmeric powder (1/2 tsp)
+- Cumin powder (1/2 tsp)
+- Garam masala (1/2 tsp)
+- Red onion (1/2, thinly sliced)
 
 ## Instructions
 

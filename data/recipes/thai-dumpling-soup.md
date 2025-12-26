@@ -18,21 +18,21 @@ time: 15 minutes prep + 30 minutes cook
 
 ## Ingredients
 
-- avocado oil (2 Tbsp)
-- 2 shallots (or 1/2 large red onion, thinly sliced)
-- bell pepper (1 green, thinly sliced)
-- 1 inch ginger (galangal works even better)
-- garlic (6 cloves, crushed)
-- 6 Thai chilis (reduce if you prefer less heat)
-- red curry paste (3 Tbsp)
-- 8 oz mushrooms (white or cremini, sliced)
-- 1 block tofu (soft or medium-firm, cubed)
-- 1 cup coconut milk (light or full-fat)
-- soy sauce (1 1/2 Tbsp)
-- rice vinegar (2 Tbsp)
-- brown sugar (1 Tbsp)
-- 1 Tbsp salt (plus more to taste)
-- 1 pack frozen gyozas (~16 dumplings)
+- Avocado oil (2 Tbsp)
+- Shallots (2, or 1/2 large red onion, thinly sliced)
+- Green bell pepper (1, thinly sliced)
+- Ginger (1 inch, galangal works even better)
+- Garlic (6 cloves, crushed)
+- Thai chilis (6, reduce if you prefer less heat)
+- Red curry paste (3 Tbsp)
+- Mushrooms (8 oz, white or cremini, sliced)
+- Tofu (1 block, soft or medium-firm, cubed)
+- Coconut milk (1 cup, light or full-fat)
+- Soy sauce (1 1/2 Tbsp)
+- Rice vinegar (2 Tbsp)
+- Brown sugar (1 Tbsp)
+- Salt (1 Tbsp, plus more to taste)
+- Frozen gyozas (1 pack, ~16 dumplings)
 
 ## Instructions
 

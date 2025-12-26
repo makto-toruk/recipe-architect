@@ -19,18 +19,18 @@ time: 10 minutes prep + 40 minutes cook
 
 ## Ingredients
 
-- olive oil (2 tablespoons)
-- onions (2 medium, diced)
-- carrots (2 medium, diced)
-- celery stalks, diced (4-6)
-- garlic cloves, finely chopped (4-6)
-- leaves (4 bay)
-- 4 chicken breasts (about 24 oz / 700 g total)
-- 12 cups (3 liters) chicken stock
-- 1 1/2 cups (350 g) farro
-- Juice of 2 lemons
-- yolks (4 egg)
-- fresh dill (2 handfuls)
+- Olive oil (2 tablespoons)
+- Onions (2 medium, diced)
+- Carrots (2 medium, diced)
+- Celery stalks (4-6, diced)
+- Garlic cloves (4-6, finely chopped)
+- Bay leaves (4)
+- Chicken breasts (4, about 24 oz total)
+- Chicken stock (12 cups)
+- Farro (1 1/2 cups)
+- Lemon juice (2 lemons)
+- Egg yolks (4)
+- Fresh dill (2 handfuls)
 - Salt and freshly ground black pepper (to taste)
 
 ## Instructions

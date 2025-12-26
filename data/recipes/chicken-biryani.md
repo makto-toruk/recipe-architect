@@ -22,62 +22,64 @@ time: >-
 
 ### For Ginger Garlic Paste
 
-- fresh ginger (25 gm)
-- gm/1 whole head of garlic (45)
-- 1 green chilli (optional)
-- water (1/3 cup)
+- Fresh ginger (25 gm)
+- Garlic (1 whole head, about 45 gm)
+- Green chilli (1, optional)
+- Water (1/3 cup)
 
 ### For Marinating Chicken
 
-- 1.160 kg chicken on bones (use large pieces)
-- 250 gm/1 cup plain unflavored yogurt (curd)
-- 2 tsp Kashmiri red chilli powder (use just 1 tsp if you want to avoid the chilli heat, or adjust to preference)
-- turmeric powder (1 tsp)
-- coriander powder (2 tsp)
-- 2 tbsp Shan Biryani Masala (store leftover in airtight container in refrigerator for future meat curries)
-- salt (1 tsp)
-- oil (1 tbsp)
-- 2 tbsp chopped coriander leaves (cilantro)
-- 4 mint leaves (3 to)
+- Chicken on bones (1.160 kg, use large pieces)
+- Plain unflavored yogurt (1 cup, curd)
+- Kashmiri red chilli powder (2 tsp, use just 1 tsp if you want to avoid the chilli heat, or adjust to preference)
+- Turmeric powder (1 tsp)
+- Coriander powder (2 tsp)
+- Shan Biryani Masala (2 tbsp, store leftover in airtight container in refrigerator for future meat curries)
+- Salt (1 tsp)
+- Oil (1 tbsp)
+- Chopped coriander leaves (2 tbsp, cilantro)
+- Mint leaves (3 to 4)
 - Ginger garlic paste (from above)
 
 ### For the Curry
 
-- 200 ml/little less than 3/4 cup oil (can use combination of ghee and oil)
+- Oil (3/4 cup, can use combination of ghee and oil)
 - Marinated chicken (from above)
-- bay leaves (2 dry)
-- 475 gm onion (use brown onions)
-- 5 potatoes (optional)
-- garam masala powder (1 tsp)
+- Dry bay leaves (2)
+- Onion (475 gm, use brown onions)
+- Potatoes (5, optional)
+- Garam masala powder (1 tsp)
 
 ### For the Rice
 
-- 600 gm long grained Basmati rice, rinsed till water runs clear and soaked for 30 mins (if using Sella Basmati, soak for over an hour)
-- oil (1 tbsp)
-- white vinegar or lemon juice (1 tbsp)
-- salt (1 tbsp)
-- 1 tsp Shahi jeera (optional)
-- bay leaves (2 dry)
-- 5 to 6 green cardamoms, 5 cloves, 2 inch long cinnamon stick (if not using Shan Biryani Masala)
+- Long grained Basmati rice (600 gm, rinsed till water runs clear and soaked for 30 mins, if using Sella Basmati soak for over an hour)
+- Oil (1 tbsp)
+- White vinegar or lemon juice (1 tbsp)
+- Salt (1 tbsp)
+- Shahi jeera (1 tsp, optional)
+- Dry bay leaves (2)
+- Green cardamoms (5 to 6, if not using Shan Biryani Masala)
+- Cloves (5, if not using Shan Biryani Masala)
+- Cinnamon stick (2 inch long, if not using Shan Biryani Masala)
 
 ### For Layering
 
-- ml/1/2 cup warm milk with few strands of saffron crushed and soaked in it (100)
-- 2 tsp Kewra water (or Rose water if you don't like Kewra water)
+- Warm milk with saffron strands (1/2 cup, crushed and soaked)
+- Kewra water (2 tsp, or Rose water if you don't like Kewra water)
 - Brown onions (from curry)
-- melted ghee or skimmed out oil from curry (4 tbsp)
+- Melted ghee or skimmed out oil from curry (4 tbsp)
 - Chopped coriander leaves (cilantro)
-- 15 mint leaves (10 to)
+- Mint leaves (10 to 15)
 - Biryani Masala (1 tbsp)
-- lemon juice (1 tbsp)
+- Lemon juice (1 tbsp)
 
 ### For Raita
 
-- Little less than 1 tsp cumin seeds
-- plain unflavored yogurt (1/2 cup)
-- chaat masala (1/2 tsp)
-- sugar (1 tsp)
-- salt (1/4 tsp)
+- Cumin seeds (little less than 1 tsp)
+- Plain unflavored yogurt (1/2 cup)
+- Chaat masala (1/2 tsp)
+- Sugar (1 tsp)
+- Salt (1/4 tsp)
 - Freshly crushed black pepper
 - Chopped coriander leaves
 - Grated cucumber (optional, squeeze out water before adding)

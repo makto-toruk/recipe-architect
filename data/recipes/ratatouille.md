@@ -20,22 +20,22 @@ time: 20 minutes prep + 1 hour 10 minutes cook
 
 ### For the sauce:
 
-- 1/2 cup olive oil (divided)
-- garlic cloves (8 minced)
-- chopped onion (1 small)
-- shredded carrot (2/3 cup)
-- crushed tomatoes (28 oz)
-- dried basil (4 teaspoons)
-- dried parsley (1 teaspoon)
+- Olive oil (1/2 cup, divided)
+- Garlic cloves (8, minced)
+- Onion (1 small, chopped)
+- Carrot (2/3 cup, shredded)
+- Crushed tomatoes (28 oz)
+- Dried basil (4 teaspoons)
+- Dried parsley (1 teaspoon)
 - Salt and black pepper (to taste)
 
 ### For layering:
 
-- eggplant, sliced 1/8 inch thick (1)
-- zucchini, sliced 1/8 inch thick (1)
-- squash (1 yellow, sliced 1/8 inch thick)
-- tomatoes, sliced 1/8 inch thick (5)
-- potato, sliced 1/8 inch thick (1)
+- Eggplant (1, sliced 1/8 inch thick)
+- Zucchini (1, sliced 1/8 inch thick)
+- Yellow squash (1, sliced 1/8 inch thick)
+- Tomatoes (5, sliced 1/8 inch thick)
+- Potato (1, sliced 1/8 inch thick)
 
 **Note:** Choose vegetables with similar diameters to help with even layering.
 

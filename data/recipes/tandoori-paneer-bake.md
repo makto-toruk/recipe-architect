@@ -15,30 +15,33 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 
 ### For the Paneer Marinade:
 
-- paneer (1 lb, cut into 1.5-inch cubes)
-- ¾ cup plain yogurt
-- lemon juice (2 tbsp)
+- Paneer (1 lb, cut into 1.5-inch cubes)
+- Plain yogurt (3/4 cup)
+- Lemon juice (2 tbsp)
 
 ### For the Spice Rub:
 
-- 1½ tsp tandoori masala (start with 1 tsp if yours is spicy)
-- ½ tsp light brown sugar (optional)
-- ¼ tsp freshly ground black pepper
-- ½ tsp garam masala powder
-- ½ tsp ground cumin (jeera)
-- ½ tsp ground coriander (dhania)
-- ½ tsp kasoori methi (crushed dried fenugreek leaves)
-- ½ tsp sweet paprika (or Kashmiri red chilli powder for color)
-- ½ tsp salt or (to taste)
+- Tandoori masala (1 1/2 tsp, start with 1 tsp if yours is spicy)
+- Light brown sugar (1/2 tsp, optional)
+- Freshly ground black pepper (1/4 tsp)
+- Garam masala powder (1/2 tsp)
+- Ground cumin (1/2 tsp, jeera)
+- Ground coriander (1/2 tsp, dhania)
+- Kasoori methi (1/2 tsp, crushed dried fenugreek leaves)
+- Sweet paprika (1/2 tsp, or Kashmiri red chilli powder for color)
+- Salt (1/2 tsp or to taste)
 
 ### Other Ingredients:
 
-- 2 bell peppers (any color), cut into 1.5-inch pieces
-- 1 medium onion, cut into chunks (optional, for skewers)
-- 1 tbsp ginger-garlic paste (or finely grate 1-inch piece ginger + 4-5 garlic cloves)
-- 2 tbsp melted butter or ghee (divided)
-- ½ tsp paprika mixed with butter (for basting)
+- Bell peppers (2, any color, cut into 1.5-inch pieces)
+- Onion (1 medium, cut into chunks, optional for skewers)
+- Ginger-garlic paste (1 tbsp, or finely grate 1-inch piece ginger + 4-5 garlic cloves)
+- Melted butter or ghee (2 tbsp, divided)
+- Paprika mixed with butter (1/2 tsp, for basting)
 - Fresh coriander for garnish
+
+## Special Equipment
+
 - Wooden or metal skewers
 
 ## Instructions
