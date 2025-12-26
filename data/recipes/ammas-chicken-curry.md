@@ -22,9 +22,7 @@ story: Growing up, I could smell this masala from several houses away. We always
 
 ## Ingredients
 
-### Chicken:
-
-- Chicken (2 lbs, bone-in thighs preferred, cleaned and cut into large pieces)
+- Chicken (2 lbs, bone-in skin-on thighs preferred; cut into large pieces)
 
 ### For the Masala Base:
 
@@ -43,9 +41,6 @@ story: Growing up, I could smell this masala from several houses away. We always
 - Yogurt (1/2 cup)
 - Cilantro leaves (1 cup)
 - Mint leaves (1/2 cup)
-
-### For the Tempering (Oggarne):
-
 - Butter (1 Tbsp)
 - Onion (1/2, diced)
 - Fenugreek leaves (1/2 cup, optional)
