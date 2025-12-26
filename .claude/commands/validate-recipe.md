@@ -7,11 +7,13 @@ Validate a recipe in `data/recipes/` and help fix validation issues.
 ## Workflow
 
 1. **Run Validation**
+
    - Ask for recipe slug if not provided
    - Run `npm run validate:recipe [slug]`
    - Display results clearly
 
 2. **Explain Issues**
+
    - **Errors**: Must be fixed (e.g., missing required fields)
    - **Warnings**: Should be fixed (e.g., invalid date formats)
    - **Info**: Optional improvements (e.g., missing recommended fields)

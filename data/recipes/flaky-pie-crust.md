@@ -2,6 +2,7 @@
 id: flaky-pie-crust
 title: Flaky Pie Crust
 subtitle: Perfectly flaky every time.
+tags: [baking, pastry]
 image: flaky-pie-crust.jpg
 first_made: "2021-12-19"
 source:
