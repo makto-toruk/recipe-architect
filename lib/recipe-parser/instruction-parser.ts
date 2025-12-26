@@ -8,19 +8,6 @@ import { extractText } from "./ast-parser";
 export function parseInstructions(ast: Root): Instruction[] {
   const instructions: Instruction[] = [];
   let inInstructionsSection = false;
-  let currentStep: number | null = null;
-  let currentText: string[] = [];
-  let currentNote: string | undefined;
-
-  const saveCurrentInstruction = () => {
-    if (currentStep !== null && currentText.length > 0) {
-      instructions.push({
-        step: currentStep,
-        text: currentText.join(" ").trim(),
-        note: currentNote,
-      });
-    }
-  };
 
   for (let i = 0; i < ast.children.length; i++) {
     const node = ast.children[i];
@@ -32,8 +19,7 @@ export function parseInstructions(ast: Root): Instruction[] {
         inInstructionsSection = true;
         continue;
       } else if (inInstructionsSection) {
-        // Save last instruction before leaving section
-        saveCurrentInstruction();
+        // End of Instructions section
         break;
       }
       continue;
@@ -41,49 +27,46 @@ export function parseInstructions(ast: Root): Instruction[] {
 
     if (!inInstructionsSection) continue;
 
-    // H3 headings start new instruction steps
-    if (node.type === "heading" && node.depth === 3) {
-      // Save previous instruction if exists
-      saveCurrentInstruction();
+    // Process unordered list (bullets) as instruction steps
+    if (node.type === "list" && !(node as List).ordered) {
+      const listNode = node as List;
 
-      // Parse new instruction header: "1. Step Name" or just "1."
-      const headerText = extractText(node);
-      const match = headerText.match(/^(\d+)\./);
-      currentStep = match ? parseInt(match[1], 10) : instructions.length + 1;
-      currentText = [];
-      currentNote = undefined;
-      continue;
-    }
+      listNode.children.forEach((listItem, stepIndex) => {
+        const stepNumber = stepIndex + 1;
+        const textParts: string[] = [];
+        const footnotes: string[] = [];
 
-    // Only process content if we have a current step
-    if (currentStep === null) continue;
-
-    // Collect paragraph content for current instruction
-    if (node.type === "paragraph") {
-      const text = extractText(node).trim();
-
-      // Check if this looks like a footnote (text in parentheses)
-      if (text.match(/^\(.+\)$/)) {
-        currentNote = text.replace(/^\(|\)$/g, "");
-      } else if (text) {
-        currentText.push(text);
-      }
-      continue;
-    }
-
-    // Handle bullet lists within instructions
-    if (node.type === "list") {
-      for (const item of (node as List).children) {
-        const text = extractText(item).trim();
-        if (text) {
-          currentText.push("• " + text);
+        // Process all children of listItem
+        for (const child of listItem.children) {
+          if (child.type === "paragraph") {
+            const text = extractText(child).trim();
+            if (text) {
+              textParts.push(text);
+            }
+          } else if (child.type === "list") {
+            // All nested bullets are footnotes
+            for (const nestedItem of (child as List).children) {
+              const footnoteText = extractText(nestedItem).trim();
+              if (footnoteText) {
+                footnotes.push(footnoteText);
+              }
+            }
+          }
         }
-      }
+
+        if (textParts.length > 0) {
+          instructions.push({
+            step: stepNumber,
+            text: textParts.join(" ").trim(),
+            notes: footnotes.length > 0 ? footnotes : undefined,
+          });
+        }
+      });
+
+      // Only process first unordered list in Instructions section
+      break;
     }
   }
-
-  // Save last instruction
-  saveCurrentInstruction();
 
   return instructions;
 }

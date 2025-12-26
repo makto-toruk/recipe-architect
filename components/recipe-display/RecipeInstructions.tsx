@@ -17,15 +17,19 @@ export default function RecipeInstructions({
   // Collect footnotes with continuous numbering
   const footnotes: { step: number; text: string }[] = [];
   const instructionsWithFootnotes = instructions.map((inst) => {
-    let footnoteIndex = -1;
-    if (inst.note) {
-      footnoteIndex = footnotes.length;
-      footnotes.push({
-        step: inst.step,
-        text: inst.note,
+    const footnoteIndices: number[] = [];
+
+    if (inst.notes && inst.notes.length > 0) {
+      inst.notes.forEach((note) => {
+        footnoteIndices.push(footnotes.length);
+        footnotes.push({
+          step: inst.step,
+          text: note,
+        });
       });
     }
-    return { ...inst, footnoteIndex };
+
+    return { ...inst, footnoteIndices };
   });
 
   return (
@@ -65,7 +69,7 @@ function InstructionsList({
   onInstructionCheck,
   keyPrefix = "",
 }: {
-  instructions: Array<Instruction & { footnoteIndex?: number }>;
+  instructions: Array<Instruction & { footnoteIndices?: number[] }>;
   focusModeEnabled?: boolean;
   checkedInstructions?: Set<string>;
   onInstructionCheck?: (key: string, checked: boolean) => void;
@@ -101,12 +105,11 @@ function InstructionsList({
                 className={`text-gray-800 leading-relaxed pt-0.5 ${isChecked && focusModeEnabled ? "line-through opacity-60" : ""}`}
               >
                 {inst.text}
-                {inst.footnoteIndex !== undefined &&
-                  inst.footnoteIndex >= 0 && (
-                    <sup className="ml-1 align-super text-xs">
-                      {inst.footnoteIndex + 1}
-                    </sup>
-                  )}
+                {inst.footnoteIndices && inst.footnoteIndices.length > 0 && (
+                  <sup className="ml-1 align-super text-xs">
+                    {inst.footnoteIndices.map((idx) => idx + 1).join('·')}
+                  </sup>
+                )}
               </p>
             </div>
           </li>

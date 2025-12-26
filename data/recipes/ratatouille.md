@@ -20,38 +20,38 @@ time: 20 minutes prep + 1 hour 10 minutes cook
 
 ### For the sauce:
 
-- 1/2 cup olive oil (divided)
-- garlic cloves (8 minced)
-- chopped onion (1 small)
-- shredded carrot (2/3 cup)
-- crushed tomatoes (28 oz)
-- dried basil (4 teaspoons)
-- dried parsley (1 teaspoon)
+- Olive oil (1/2 cup, divided)
+- Garlic cloves (8, minced)
+- Onion (1 small, chopped)
+- Carrot (2/3 cup, shredded)
+- Crushed tomatoes (28 oz)
+- Dried basil (4 teaspoons)
+- Dried parsley (1 teaspoon)
 - Salt and black pepper (to taste)
 
 ### For layering:
 
-- eggplant, sliced 1/8 inch thick (1)
-- zucchini, sliced 1/8 inch thick (1)
-- squash (1 yellow, sliced 1/8 inch thick)
-- tomatoes, sliced 1/8 inch thick (5)
-- potato, sliced 1/8 inch thick (1)
+- Eggplant (1, sliced 1/8 inch thick)
+- Zucchini (1, sliced 1/8 inch thick)
+- Yellow squash (1, sliced 1/8 inch thick)
+- Tomatoes (5, sliced 1/8 inch thick)
+- Potato (1, sliced 1/8 inch thick)
 
 **Note:** Choose vegetables with similar diameters to help with even layering.
 
 ## Instructions
 
-1. Preheat oven to 375°F. Heat 4 tablespoons olive oil in a large nonstick pan over medium-high heat.
+- Preheat oven to 375°F. Heat 4 tablespoons olive oil in a large nonstick pan over medium-high heat.
 
-2. Cook onion, garlic, and carrot until tender (about 5 minutes).
+- Cook onion, garlic, and carrot until tender (about 5 minutes).
 
-3. Add crushed tomatoes and seasonings; simmer 15 minutes until thickened.
+- Add crushed tomatoes and seasonings; simmer 15 minutes until thickened.
 
-4. Pour sauce into a 9x13 inch baking dish and arrange sliced vegetables in circular patterns standing upright.
+- Pour sauce into a 9x13 inch baking dish and arrange sliced vegetables in circular patterns standing upright.
 
-5. Brush vegetables with remaining olive oil. Cover and bake 30 minutes.
+- Brush vegetables with remaining olive oil. Cover and bake 30 minutes.
 
-6. Uncover and continue baking until vegetables are tender. Serve immediately.
+- Uncover and continue baking until vegetables are tender. Serve immediately.
 
 ## Notes
 

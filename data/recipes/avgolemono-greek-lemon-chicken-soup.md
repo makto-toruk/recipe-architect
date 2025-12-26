@@ -1,14 +1,15 @@
 ---
 id: avgolemono-greek-lemon-chicken-soup
 title: Avgolemono — Greek Lemon Chicken Soup
-first_made: '2025-12-06'
+first_made: "2025-12-06"
 source:
   type: Adapted from
   label: Skinny Spatula
-  url: 'https://skinnyspatula.com/avgolemono-greek-lemon-chicken-soup/'
+  url: "https://skinnyspatula.com/avgolemono-greek-lemon-chicken-soup/"
 yields: 8-10 (doubled for meal prep)
 time: 10 minutes prep + 40 minutes cook
 ---
+
 ## Recipe Details
 
 - **Servings:** 8-10 (doubled for meal prep)
@@ -18,35 +19,35 @@ time: 10 minutes prep + 40 minutes cook
 
 ## Ingredients
 
-- olive oil (2 tablespoons)
-- onions (2 medium, diced)
-- carrots (2 medium, diced)
-- celery stalks, diced (4-6)
-- garlic cloves, finely chopped (4-6)
-- leaves (4 bay)
-- 4 chicken breasts (about 24 oz / 700 g total)
-- 12 cups (3 liters) chicken stock
-- 1 1/2 cups (350 g) farro
-- Juice of 2 lemons
-- yolks (4 egg)
-- fresh dill (2 handfuls)
+- Olive oil (2 tablespoons)
+- Onions (2 medium, diced)
+- Carrots (2 medium, diced)
+- Celery stalks (4-6, diced)
+- Garlic cloves (4-6, finely chopped)
+- Bay leaves (4)
+- Chicken breasts (4, about 24 oz total)
+- Chicken stock (12 cups)
+- Farro (1 1/2 cups)
+- Lemon juice (2 lemons)
+- Egg yolks (4)
+- Fresh dill (2 handfuls)
 - Salt and freshly ground black pepper (to taste)
 
 ## Instructions
 
-1. Heat the olive oil in a large stock pot or Dutch oven and cook the onion, carrot and celery for 8-10 minutes over medium heat until softened.
+- Heat the olive oil in a large stock pot or Dutch oven and cook the onion, carrot and celery for 8-10 minutes over medium heat until softened.
 
-2. Add the garlic and cook for another minute, then add the bay leaves, chicken and chicken stock.
+- Add the garlic and cook for another minute, then add the bay leaves, chicken and chicken stock.
 
-3. Bring to a boil, then lower the heat to medium-low, cover with a lid and simmer for 15 minutes.
+- Bring to a boil, then lower the heat to medium-low, cover with a lid and simmer for 15 minutes.
 
-4. Take out the chicken breasts and bay leaves. Add the farro to the pot and continue to cook for 20-30 minutes until tender (check package instructions for your specific farro type).
+- Take out the chicken breasts and bay leaves. Add the farro to the pot and continue to cook for 20-30 minutes until tender (check package instructions for your specific farro type).
 
-5. Shred the chicken with two forks and add it back to the pot.
+- Shred the chicken with two forks and add it back to the pot.
 
-6. While the farro is cooking, whisk the egg yolks and lemon juice in a bowl. Take out 1-2 ladles of soup and pour it over the egg-lemon mixture to temper it. Add this mix to the pot and continue to cook for 5 minutes.
+- While the farro is cooking, whisk the egg yolks and lemon juice in a bowl. Take out 1-2 ladles of soup and pour it over the egg-lemon mixture to temper it. Add this mix to the pot and continue to cook for 5 minutes.
 
-7. Stir in the fresh dill, adjust the seasoning and serve immediately, with some extra fresh dill on top if you like.
+- Stir in the fresh dill, adjust the seasoning and serve immediately, with some extra fresh dill on top if you like.
 
 ## Notes
 

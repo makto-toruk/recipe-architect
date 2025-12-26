@@ -3,11 +3,11 @@ id: flaky-pie-crust
 title: Flaky Pie Crust
 subtitle: Perfectly flaky every time.
 image: flaky-pie-crust.jpg
-first_made: '2021-12-19'
+first_made: "2021-12-19"
 source:
   type: Adapted from
   label: a Baking Arts class
-  url: 'http://www.bakingarts.net/classes.html'
+  url: "http://www.bakingarts.net/classes.html"
 yields: 2 pie crusts
 ---
 
@@ -27,59 +27,35 @@ yields: 2 pie crusts
 
 ## Instructions
 
-### 1. Mix dry ingredients
+- In a large mixer or food processor, place flour, salt, sugar, and ghee and mix for 10 seconds.
 
-In a large mixer or food processor, place flour, salt, sugar, and ghee and mix for 10 seconds.
+   - It is crucial that none of the ingredients are warm enough to melt the butter. The resulting mixture appears sandy. On warm days, chill flour for 30 minutes before using.
 
-(It is crucial that none of the ingredients are warm enough to melt the butter. The resulting mixture appears sandy. On warm days, chill flour for 30 minutes before using.)
+- Cut the butter into small chunks and add to the mixture. Pulse in 1-second increments until the butter is pea-sized.
 
-### 2. Add butter
+   - Typically 3 pulses, a gentle mix with a fork, then another pulse.
 
-Cut the butter into small chunks and add to the mixture. Pulse in 1-second increments until the butter is pea-sized.
+- Turn the mixture into a mixing bowl and add water in 4 to 5 additions, mixing with a fork after each addition.
 
-(Typically 3 pulses, a gentle mix with a fork, then another pulse.)
+   - Don't knead the dough. Instead use a scraper to gently press it together.
 
-### 3. Add water
+- Move the dough onto plastic wrap, wrap tightly, and chill for 2 hours before rolling.
 
-Turn the mixture into a mixing bowl and add water in 4 to 5 additions, mixing with a fork after each addition.
+- Cut the chilled dough into two pieces, lightly flour, and roll out one piece at a time.
 
-(Don't knead the dough. Instead use a scraper to gently press it together.)
+- Quarter turn and roll to keep a round shape; press and repair any edge cracks as you go.
 
-### 4. Chill the dough
+- Roll the dough at least 4 inches larger than the pie pan.
 
-Move the dough onto plastic wrap, wrap tightly, and chill for 2 hours before rolling.
+- Place the dough in the pie pan, patch any cracks, and return to the fridge while you prepare the filling.
 
-### 5. Roll out the dough
+- Prepare your filling and let it cool completely before filling the crust.
 
-Cut the chilled dough into two pieces, lightly flour, and roll out one piece at a time.
+- If making a double crust, trim and cut ventilation holes in the top dough, then crimp the edges.
+  - Edges may bake thick but will be super flaky.
 
-### 6. Shape the crust
-
-Quarter turn and roll to keep a round shape; press and repair any edge cracks as you go.
-
-### 7. Size appropriately
-
-Roll the dough at least 4 inches larger than the pie pan.
-
-### 8. Place in pan
-
-Place the dough in the pie pan, patch any cracks, and return to the fridge while you prepare the filling.
-
-### 9. Prepare filling
-
-Prepare your filling and let it cool completely before filling the crust.
-
-### 10. Finish the crust
-
-If making a double crust, trim and cut ventilation holes in the top dough, then crimp the edges.
-
-(Edges may bake thick but will be super flaky.)
-
-### 11. Bake
-
-Bake at 400°F for 60 minutes.
-
-(We've never had a soggy bottom when the crust is cold at assembly.)
+- Bake at 400°F for 60 minutes.
+  - We've never had a soggy bottom when the crust is cold at assembly.
 
 ## Notes
 

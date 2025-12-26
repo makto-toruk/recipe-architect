@@ -37,7 +37,7 @@ export interface Ingredient {
 export interface Instruction {
   step: number; // Step number
   text: string; // Instruction text
-  note?: string; // Optional footnote
+  notes?: string[]; // Optional footnotes (from nested bullets)
 }
 
 export interface RecipeCard {

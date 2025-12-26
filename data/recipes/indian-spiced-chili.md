@@ -18,46 +18,36 @@ time: 15 minutes prep + 35 minutes cook
 
 ## Ingredients
 
-- canola oil (4 tbsp)
-- onions (2 medium, diced)
-- carrots, diced (4-6)
-- celery stalks, diced (4-6)
-- garlic paste (2 tsp)
-- ginger paste (2 tsp)
-- ground cumin (2 tbsp)
-- ground coriander (2 tbsp)
-- garam masala (2 tsp)
-- chili powder (2 tsp)
-- 2 tsp dried fenugreek leaves (optional)
-- bay leaves (2 dried)
-- 6 Thai chilis or 2 jalapenos (optional, adjust to heat preference)
-- 1-2 adobo chilis, chopped (adjust to taste)
-- paneer (2 lbs, crumbled)
-- 4 (14.5 oz) cans diced tomatoes, undrained
-- 2 (14.5 oz) cans kidney beans, undrained
-- Salt, (to taste)
+- Canola oil (4 tbsp)
+- Onions (2 medium, diced)
+- Carrots (4-6, diced)
+- Celery stalks (4-6, diced)
+- Garlic paste (2 tsp)
+- Ginger paste (2 tsp)
+- Ground cumin (2 tbsp)
+- Ground coriander (2 tbsp)
+- Garam masala (2 tsp)
+- Chili powder (2 tsp)
+- Dried fenugreek leaves (2 tsp, optional)
+- Dried bay leaves (2)
+- Thai chilis or jalapenos (6 Thai chilis or 2 jalapenos, optional, adjust to heat preference)
+- Adobo chilis (1-2, chopped, adjust to taste)
+- Paneer (2 lbs, crumbled)
+- Diced tomatoes (4 cans, 14.5 oz each, undrained)
+- Kidney beans (2 cans, 14.5 oz each, undrained)
+- Salt (to taste)
 
 ## Instructions
 
-### 1. Sauté the vegetables
+- Heat oil in a large dutch oven or deep saucepan over medium-high heat. Add onions, carrots, and celery. Cook until vegetables start to soften, about 7-8 minutes. Add garlic and ginger paste, continuing to cook for 2 more minutes.
 
-Heat oil in a large dutch oven or deep saucepan over medium-high heat. Add onions, carrots, and celery. Cook until vegetables start to soften, about 7-8 minutes. Add garlic and ginger paste, continuing to cook for 2 more minutes.
+- Add cumin, coriander, garam masala, chili powder, dried fenugreek leaves (if using), bay leaves, Thai chilis/jalapenos (if using), and chopped adobo chilis. Begin adding water a few drops at a time, until you have a thick spice paste. Cook for 1-2 minutes until fragrant.
 
-### 2. Create the spice paste
+- Add crumbled paneer and mix thoroughly into the spice mixture, coating all the pieces well. Cook for 3-4 minutes, stirring occasionally.
 
-Add cumin, coriander, garam masala, chili powder, dried fenugreek leaves (if using), bay leaves, Thai chilis/jalapenos (if using), and chopped adobo chilis. Begin adding water a few drops at a time, until you have a thick spice paste. Cook for 1-2 minutes until fragrant.
+- Add the diced tomatoes and kidney beans, including all the liquid. Stir to combine, then bring pan to a boil. Let it boil for 2-3 minutes, then turn heat down to medium-low, cover, and simmer for about 25-30 minutes.
 
-### 3. Add the paneer
-
-Add crumbled paneer and mix thoroughly into the spice mixture, coating all the pieces well. Cook for 3-4 minutes, stirring occasionally.
-
-### 4. Add tomatoes and beans
-
-Add the diced tomatoes and kidney beans, including all the liquid. Stir to combine, then bring pan to a boil. Let it boil for 2-3 minutes, then turn heat down to medium-low, cover, and simmer for about 25-30 minutes.
-
-### 5. Season and serve
-
-Taste for salt and add as needed. Remove bay leaves before serving.
+- Taste for salt and add as needed. Remove bay leaves before serving.
 
 ## Serving
 

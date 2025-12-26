@@ -15,70 +15,48 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 
 ### For the Paneer Marinade:
 
-- paneer (1 lb, cut into 1.5-inch cubes)
-- ¾ cup plain yogurt
-- lemon juice (2 tbsp)
+- Paneer (1 lb, cut into 1.5-inch cubes)
+- Plain yogurt (3/4 cup)
+- Lemon juice (2 tbsp)
 
 ### For the Spice Rub:
 
-- 1½ tsp tandoori masala (start with 1 tsp if yours is spicy)
-- ½ tsp light brown sugar (optional)
-- ¼ tsp freshly ground black pepper
-- ½ tsp garam masala powder
-- ½ tsp ground cumin (jeera)
-- ½ tsp ground coriander (dhania)
-- ½ tsp kasoori methi (crushed dried fenugreek leaves)
-- ½ tsp sweet paprika (or Kashmiri red chilli powder for color)
-- ½ tsp salt or (to taste)
+- Tandoori masala (1 1/2 tsp, start with 1 tsp if yours is spicy)
+- Light brown sugar (1/2 tsp, optional)
+- Freshly ground black pepper (1/4 tsp)
+- Garam masala powder (1/2 tsp)
+- Ground cumin (1/2 tsp, jeera)
+- Ground coriander (1/2 tsp, dhania)
+- Kasoori methi (1/2 tsp, crushed dried fenugreek leaves)
+- Sweet paprika (1/2 tsp, or Kashmiri red chilli powder for color)
+- Salt (1/2 tsp or to taste)
 
 ### Other Ingredients:
 
-- 2 bell peppers (any color), cut into 1.5-inch pieces
-- 1 medium onion, cut into chunks (optional, for skewers)
-- 1 tbsp ginger-garlic paste (or finely grate 1-inch piece ginger + 4-5 garlic cloves)
-- 2 tbsp melted butter or ghee (divided)
-- ½ tsp paprika mixed with butter (for basting)
+- Bell peppers (2, any color, cut into 1.5-inch pieces)
+- Onion (1 medium, cut into chunks, optional for skewers)
+- Ginger-garlic paste (1 tbsp, or finely grate 1-inch piece ginger + 4-5 garlic cloves)
+- Melted butter or ghee (2 tbsp, divided)
+- Paprika mixed with butter (1/2 tsp, for basting)
 - Fresh coriander for garnish
+
+## Special Equipment
+
 - Wooden or metal skewers
 
 ## Instructions
 
-### 1. Prepare the Paneer
+- If using store-bought paneer, press it gently between paper towels to remove excess moisture. Cut into 1.5-inch cubes and set aside.
 
-- If using store-bought paneer, press it gently between paper towels to remove excess moisture
-- Cut into 1.5-inch cubes
-- Set aside
+- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, and all the spice rub ingredients. Add paneer cubes and bell pepper pieces. Gently toss to coat everything evenly. Cover and refrigerate for 30 minutes to 2 hours.
 
-### 2. Make the Marinade
+- If using wooden skewers, soak them in water for 30 minutes to prevent burning. Thread paneer cubes and bell peppers alternately onto skewers. Add onion chunks between them if desired.
 
-- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, and all the spice rub ingredients
-- Add paneer cubes and bell pepper pieces
-- Gently toss to coat everything evenly
-- Cover and refrigerate for 30 minutes to 2 hours
+- Preheat oven to 400°F (200°C). Line a baking tray with parchment paper or lightly oil it. Place skewers on the tray, leaving space between them. Drizzle with 1 tbsp melted butter.
 
-### 3. Assemble the Skewers
+- Bake for 15 minutes. Mix remaining melted butter with ½ tsp sweet paprika. Remove from oven, flip skewers, and baste with the paprika butter. Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender.
 
-- If using wooden skewers, soak them in water for 30 minutes to prevent burning
-- Thread paneer cubes and bell peppers alternately onto skewers
-- Add onion chunks between them if desired
-
-### 4. Prepare to Bake
-
-- Preheat oven to 400°F (200°C)
-- Line a baking tray with parchment paper or lightly oil it
-- Place skewers on the tray, leaving space between them
-- Drizzle with 1 tbsp melted butter
-
-### 5. Bake the Skewers
-
-- Bake for 15 minutes
-- Mix remaining melted butter with ½ tsp sweet paprika
-- Remove from oven, flip skewers, and baste with the paprika butter
-- Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender
-
-### 6. Broil (Optional)
-
-- For extra char, broil on high for 2-3 minutes, watching carefully to prevent burning
+- (Optional) For extra char, broil on high for 2-3 minutes, watching carefully to prevent burning.
 
 ## Serving
 

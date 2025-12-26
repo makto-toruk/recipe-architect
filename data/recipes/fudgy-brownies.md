@@ -35,33 +35,19 @@ time: 15 minutes prep + 35 minutes cook
 
 ## Instructions
 
-### 1. Melt chocolate and butter
+- Melt chocolate and butter together using a double boiler (heat-proof bowl over simmering water). Avoid microwaving as butter melts faster and may burn the chocolate.
 
-Melt chocolate and butter together using a double boiler (heat-proof bowl over simmering water). Avoid microwaving as butter melts faster and may burn the chocolate.
+- Whisk sugars into the hot chocolate mixture gradually. Some sugar crystals may remain - this is normal.
 
-### 2. Add sugars
+- Preheat oven to 350°F (175°C).
 
-Whisk sugars into the hot chocolate mixture gradually. Some sugar crystals may remain - this is normal.
+- Whisk in eggs one at a time. This requires vigorous whisking to fully incorporate each egg.
 
-### 3. Preheat oven
+- Sift together salt, flour, and cacao powder. Fold the dry mixture into the batter until just combined.
 
-Preheat oven to 350°F (175°C).
+- Line an 8x8-inch pan with greased parchment or baking paper. Pour batter into prepared pan. Bake for 35 minutes at 350°F. The surface may appear slightly gooey even when done.
 
-### 4. Add eggs
-
-Whisk in eggs one at a time. This requires vigorous whisking to fully incorporate each egg.
-
-### 5. Add dry ingredients
-
-Sift together salt, flour, and cacao powder. Fold the dry mixture into the batter until just combined.
-
-### 6. Prepare pan and bake
-
-Line an 8x8-inch pan with greased parchment or baking paper. Pour batter into prepared pan. Bake for 35 minutes at 350°F. The surface may appear slightly gooey even when done.
-
-### 7. Cool and cut
-
-Allow brownies to cool completely in the pan. Invert onto a cutting board and cut into 9 squares.
+- Allow brownies to cool completely in the pan. Invert onto a cutting board and cut into 9 squares.
 
 ## Notes
 
