@@ -31,7 +31,7 @@ time: 20 minutes prep + 20 minutes cook
 - Toasted sesame oil (2 teaspoons)
 - Grated fresh ginger (2 teaspoons)
 - Lime (1, juiced)
-- Harissa (2 tsp, optional; swap with any chili paste)
+- Harissa (2 tsp, swap with any chili paste)
 - Red pepper flakes (1/4 teaspoon)
 
 ## Instructions
