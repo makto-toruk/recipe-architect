@@ -1,6 +1,9 @@
 ---
 id: thai-peanut-quinoa-salad
 title: Crunchy Thai Peanut & Quinoa Salad
+subtitle: A salad that's really about peanuts
+tags: [thai, salad]
+image: thai-peanut-quinoa-salad.jpg
 first_made: "2025-12-23"
 source:
   type: Adapted from
@@ -25,7 +28,7 @@ time: 20 minutes prep + 20 minutes cook
 ### For the Peanut Sauce:
 
 - Smooth peanut butter (1/2 cup)
-- Reduced-sodium tamari or soy sauce (5 tablespoons)
+- Tamari or soy sauce (5 tablespoons)
 - Maple syrup or honey (2 tablespoons)
 - Rice vinegar (2 tablespoons)
 - Toasted sesame oil (2 teaspoons)
