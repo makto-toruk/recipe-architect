@@ -39,7 +39,7 @@ export default function RecipeMetadata({
             alt={title}
             width={800}
             height={384}
-            className="w-full h-auto max-h-96 object-cover rounded-lg"
+            className="recipe-hero-image w-full h-auto max-h-96 object-cover rounded-lg"
             priority
           />
         </div>

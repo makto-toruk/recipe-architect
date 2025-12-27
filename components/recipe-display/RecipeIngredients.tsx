@@ -33,7 +33,7 @@ export default function RecipeIngredients({
   const sortedGroups: string[] = [...emptyGroup, ...namedGroups];
 
   return (
-    <section className="mb-6 lg:mb-0">
+    <section className="mb-6 lg:mb-0 recipe-section-alt">
       <h2
         className="text-xl font-semibold mb-6"
         style={{

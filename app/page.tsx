@@ -43,7 +43,7 @@ export default async function Home() {
                   color: 'var(--color-text-primary)'
                 }}
               >
-                Recent Recipes
+                Recent recipes
               </h2>
               <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {sortedRecipes.map((recipe) => (
