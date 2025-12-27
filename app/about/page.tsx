@@ -11,9 +11,9 @@ export default async function AboutPage() {
   const html = await loadMarkdown("about.md");
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
       <SiteHeader />
-      <main className="min-h-screen bg-white py-12 flex-grow">
+      <main className="min-h-screen py-12 flex-grow" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <article className="prose prose-lg prose-gray">
             <div dangerouslySetInnerHTML={{ __html: html }} />

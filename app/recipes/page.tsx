@@ -11,9 +11,9 @@ export default async function RecipesPage() {
   const recipes = await loadAllRecipes(); // server-side, static
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
       <SiteHeader />
-      <main className="min-h-screen bg-white py-12">
+      <main className="min-h-screen py-12" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {recipes.map((r) => (

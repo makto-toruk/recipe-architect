@@ -47,9 +47,20 @@ export default function RecipeMetadata({
 
       {/* Title */}
       <div className="mb-4">
-        <h1 className="text-4xl font-light italic text-gray-900">{title}</h1>
+        <h1
+          className="text-4xl font-light italic"
+          style={{
+            fontFamily: "'Fraunces', Georgia, serif",
+            color: 'var(--color-text-primary)'
+          }}
+        >
+          {title}
+        </h1>
         {subtitle && (
-          <h2 className="text-lg font-normal text-gray-600 mt-1 whitespace-normal">
+          <h2
+            className="text-lg font-normal mt-1 whitespace-normal"
+            style={{ color: 'var(--color-text-secondary)' }}
+          >
             {subtitle}
           </h2>
         )}
@@ -60,21 +71,33 @@ export default function RecipeMetadata({
         <div className="mb-6 max-w-2xl mx-auto">
           <div
             id="recipe-story"
-            className="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-200"
+            className="rounded-lg p-4 border-l-4"
+            style={{
+              backgroundColor: 'var(--color-cream-light)',
+              borderColor: 'var(--color-burnt-orange)'
+            }}
           >
             <p
-              className={`text-gray-700 leading-relaxed text-sm italic transition-all ${
+              className={`leading-relaxed text-sm italic transition-all ${
                 isStoryExpanded ? "" : "line-clamp-1 overflow-hidden"
               }`}
+              style={{ color: 'var(--color-text-secondary)' }}
             >
               {story}
             </p>
             <div className="flex justify-center mt-2">
               <button
                 onClick={() => setIsStoryExpanded((prev) => !prev)}
-                className="flex items-center text-sm font-medium text-gray-600 hover:text-gray-700 transition-colors"
+                className="flex items-center text-sm font-medium transition-colors"
+                style={{ color: 'var(--color-text-secondary)' }}
                 aria-expanded={isStoryExpanded}
                 aria-controls="recipe-story"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'var(--color-text-primary)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'var(--color-text-secondary)';
+                }}
               >
                 {isStoryExpanded ? (
                   <ChevronUp size={14} />
@@ -96,7 +119,11 @@ export default function RecipeMetadata({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="bg-gray-100 text-gray-700 px-3 py-1 text-sm rounded-full"
+              className="px-3 py-1 text-sm rounded-full"
+              style={{
+                backgroundColor: 'var(--color-sage-green)',
+                color: 'white'
+              }}
             >
               {tag}
             </span>
@@ -106,7 +133,7 @@ export default function RecipeMetadata({
 
       {/* Meta info - hidden in focus mode */}
       {!focusModeEnabled && (
-        <div className="text-sm text-gray-500 text-center mb-4">
+        <div className="text-sm text-center mb-4" style={{ color: 'var(--color-text-muted)' }}>
           {[
             (first_made || last_made) &&
               (first_made === last_made
@@ -133,9 +160,16 @@ export default function RecipeMetadata({
                 {source.url ? (
                   <a
                     href={source.url}
-                    className="underline text-gray-500 hover:text-gray-700"
+                    className="underline transition-colors"
+                    style={{ color: 'var(--color-burnt-orange)' }}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = 'var(--color-burnt-orange-dark)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = 'var(--color-burnt-orange)';
+                    }}
                   >
                     {source.label}
                   </a>

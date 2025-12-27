@@ -29,14 +29,20 @@ export default async function Home() {
     .slice(0, 3); // Take the 3 most recent
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
       <SiteHeader />
-      <main className="min-h-screen bg-white py-12">
+      <main className="min-h-screen py-12" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
         <div className="max-w-6xl mx-auto px-6">
           {/* Recent Recipes Section */}
           {sortedRecipes.length > 0 && (
             <section className="mb-12">
-              <h2 className="text-2xl font-light mb-8 text-gray-900">
+              <h2
+                className="text-2xl font-light mb-8"
+                style={{
+                  fontFamily: "'Fraunces', Georgia, serif",
+                  color: 'var(--color-text-primary)'
+                }}
+              >
                 Recent Recipes
               </h2>
               <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -51,14 +57,14 @@ export default async function Home() {
           <div className="text-center mb-16">
             <a
               href="/recipes"
-              className="inline-block px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-800 transition"
+              className="browse-recipes-btn inline-block px-6 py-3 text-white rounded transition-colors"
             >
               Browse All Recipes
             </a>
           </div>
 
           {/* About Section */}
-          <section className="border-t border-gray-200 pt-12">
+          <section className="border-t pt-12" style={{ borderColor: 'var(--color-border-subtle)' }}>
             <div className="max-w-3xl mx-auto">
               <article className="prose prose-lg prose-gray">
                 <div dangerouslySetInnerHTML={{ __html: aboutHtml }} />

@@ -34,13 +34,27 @@ export default function RecipeIngredients({
 
   return (
     <section className="mb-6 lg:mb-0">
-      <h2 className="text-xl font-semibold mb-6 text-gray-900">Ingredients</h2>
+      <h2
+        className="text-xl font-semibold mb-6"
+        style={{
+          fontFamily: "'Fraunces', Georgia, serif",
+          color: 'var(--color-text-primary)'
+        }}
+      >
+        Ingredients
+      </h2>
 
       {sortedGroups.map((groupName, groupIdx) => (
         <div key={groupName || `group-${groupIdx}`} className="mb-8">
           {/* Group heading if it exists */}
           {groupName && (
-            <h3 className="text-lg font-medium mb-2 text-gray-800">
+            <h3
+              className="text-lg font-medium mb-2"
+              style={{
+                fontFamily: "'Fraunces', Georgia, serif",
+                color: 'var(--color-text-secondary)'
+              }}
+            >
               {groupName}
             </h3>
           )}
@@ -88,7 +102,11 @@ function IngredientsList({
                 onChange={(e) =>
                   onIngredientCheck?.(ingredientKey, e.target.checked)
                 }
-                className="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                className="mt-1 w-4 h-4 rounded focus:ring-2"
+                style={{
+                  accentColor: 'var(--color-burnt-orange)',
+                  borderColor: 'var(--color-border-medium)'
+                }}
               />
             )}
 
@@ -97,19 +115,22 @@ function IngredientsList({
             >
               <div className="flex justify-between items-start">
                 <span
-                  className={`text-gray-900 ${isChecked && focusModeEnabled ? "line-through" : ""}`}
+                  className={isChecked && focusModeEnabled ? "line-through" : ""}
+                  style={{ color: 'var(--color-text-primary)' }}
                 >
                   {ing.name}
                 </span>
                 <span
-                  className={`text-sm font-medium text-gray-600 ml-2 flex-shrink-0 ${isChecked && focusModeEnabled ? "line-through" : ""}`}
+                  className={`text-sm font-medium ml-2 flex-shrink-0 ${isChecked && focusModeEnabled ? "line-through" : ""}`}
+                  style={{ color: 'var(--color-text-secondary)' }}
                 >
                   {ing.quantity} {ing.unit}
                 </span>
               </div>
               {ing.note && (
                 <span
-                  className={`text-sm text-gray-500 italic ${isChecked && focusModeEnabled ? "line-through" : ""}`}
+                  className={`text-sm italic ${isChecked && focusModeEnabled ? "line-through" : ""}`}
+                  style={{ color: 'var(--color-text-muted)' }}
                 >
                   {ing.note}
                 </span>
