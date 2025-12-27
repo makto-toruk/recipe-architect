@@ -1,6 +1,6 @@
 ---
 id: tandoori-paneer-bake
-title: Tandoori Paneer Skewers
+title: Tandoori paneer skewers
 subtitle: Vegetarian version of "surprisingly easy, great for potlucks"
 tags: [paneer, tray-bake]
 first_made: "2025-11-23"
@@ -27,14 +27,14 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 - Sweet paprika (1/2 tsp, or Kashmiri red chilli powder for color)
 - Salt (1/2 tsp or to taste)
 
-### Other ingredients
+### Other ingredients:
 
 - Bell peppers (2, any color, cut into 1.5-inch pieces)
 - Onion (1 medium, cut into chunks, optional for skewers)
 - Melted butter or ghee (1 Tbsp)
 - Fresh coriander (for garnish)
 
-## Special Equipment
+## Special equipment
 
 - Wooden or metal skewers
 

@@ -1,6 +1,6 @@
 ---
 id: oven-roasted-shawarma-chicken
-title: Oven-roasted Shawarma Chicken
+title: Oven-roasted shawarma chicken
 subtitle: Easy, weeknight protein.
 image: shawarma-chicken.jpg
 tags: [chicken, tray-bake]
@@ -17,7 +17,7 @@ time: >-
 
 ## Ingredients
 
-### Chicken and Marinade:
+### Chicken and marinade:
 
 - Boneless, skinless chicken thighs (2 1/2 lbs)
 - Avocado oil (2 Tbsp)
@@ -45,6 +45,6 @@ time: >-
 
 - Flip the cooked chicken onto a cutting board and slice thinly in shawarma style.
 
-## Serving
+## Serving:
 
 Serve in a pita wrap or alongside roasted vegetables and raita.

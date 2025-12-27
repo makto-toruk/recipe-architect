@@ -1,6 +1,6 @@
 ---
 id: fudgy-brownies
-title: Fudgy Brownies
+title: Fudgy brownies
 subtitle: A quick, chocolate fix solves most problems
 tags: [baking, brownies, chocolate]
 image: fudgy-brownies.jpg
@@ -24,7 +24,7 @@ time: 15 minutes prep + 35 minutes cook
 - All-purpose flour (5/8 cup or 1/2 cup + 2 Tbsp)
 - Salt (1 pinch)
 
-## Special Equipment
+## Special equipment
 
 - 8x8-inch baking pan
 

@@ -127,7 +127,10 @@ export default function MarkdownRecipePageClient({
         onFocusModeToggle={handleFocusModeToggle}
         focusModeEnabled={focusModeEnabled}
       />
-      <main className="min-h-screen bg-white flex-grow">
+      <main
+        className="min-h-screen flex-grow"
+        style={{ backgroundColor: 'var(--color-cream-lightest)' }}
+      >
         <div className="max-w-5xl mx-auto p-6">
           {/* Recipe Header - conditionally hide elements in focus mode */}
           <RecipeMetadata recipe={recipe} focusModeEnabled={focusModeEnabled} />
@@ -138,7 +141,17 @@ export default function MarkdownRecipePageClient({
               <div className="mb-6 flex justify-center">
                 <button
                   onClick={handleClearProgress}
-                  className="px-4 py-2 text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 rounded-md transition-colors"
+                  className="px-4 py-2 text-sm rounded-md transition-colors"
+                  style={{
+                    backgroundColor: 'var(--color-cream)',
+                    color: 'var(--color-text-secondary)',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = 'var(--color-cream-light)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'var(--color-cream)';
+                  }}
                 >
                   Clear Progress
                 </button>

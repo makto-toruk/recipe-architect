@@ -1,6 +1,6 @@
 ---
 id: thai-peanut-quinoa-salad
-title: Crunchy Thai Peanut & Quinoa Salad
+title: Crunchy Thai peanut & quinoa salad
 subtitle: A salad that's really about peanuts
 tags: [thai, salad]
 image: thai-peanut-quinoa-salad.jpg
@@ -15,7 +15,7 @@ time: 20 minutes prep + 20 minutes cook
 
 ## Ingredients
 
-### For the Salad:
+### For the salad:
 
 - Uncooked quinoa or millet (1 1/2 cups)
 - Water (3 cups)
@@ -25,7 +25,7 @@ time: 20 minutes prep + 20 minutes cook
 - Thinly sliced green onion (1/2 cup)
 - Roasted and salted peanuts (1/2 cup, to top the salad)
 
-### For the Peanut Sauce:
+### For the peanut sauce:
 
 - Smooth peanut butter (1/2 cup)
 - Tamari or soy sauce (5 tablespoons)

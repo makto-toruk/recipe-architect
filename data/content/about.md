@@ -1,4 +1,4 @@
-# About This Project
+# Behind the recipes
 
 Most recipe websites feel noisy and transactional. They interrupt more than they invite. This project began as a personal response to that. A quieter way to keep and share the recipes that matter.
 

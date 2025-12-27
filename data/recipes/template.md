@@ -1,6 +1,6 @@
 ---
 id: recipe-slug-name
-title: Recipe Title
+title: Recipe title
 subtitle: Short one-line description (optional, but recommended)
 tags: [tag1, tag2, tag3] # Optional, but recommended - helps with categorization
 image: recipe-image.jpg # Optional - filename only, must exist in /public/images/
@@ -19,17 +19,17 @@ story: | # Optional - personal story or context about the recipe
 
 ## Ingredients
 
-### Main Ingredients:
+### Main ingredients:
 
 - Ingredient Name (quantity unit)
 - Ingredient Name (quantity unit, note or detail)
 - Salt (to taste)
 
-### Another Section (if needed):
+### Another section (if needed):
 
 - Ingredient Name (quantity unit)
 
-**Ingredient Format Rules:**
+**Ingredient format rules:**
 
 - Always capitalize the first letter: `Olive oil (2 Tbsp)` not `olive oil (2 Tbsp)`
 - Quantity and unit go inside parentheses: `Butter (1/2 cup)` not `1/2 cup butter`
@@ -48,7 +48,7 @@ story: | # Optional - personal story or context about the recipe
 - Salt (to taste)
 - Freshly ground black pepper
 
-## Special Equipment
+## Special equipment
 
 - Equipment item name (e.g., mandolin, food processor)
 - Another item if needed
@@ -90,9 +90,9 @@ Optional section for:
 - Scaling instructions (doubling/halving the recipe)
 - Dietary modifications (vegan, gluten-free options)
 
-## Template Usage Notes
+## Template usage notes
 
-**Required Frontmatter Fields:**
+**Required frontmatter fields:**
 
 - `id` - Must match the filename (without .md extension)
 - `title` - Recipe name
@@ -101,19 +101,19 @@ Optional section for:
 - `yields` - Number of servings or quantity
 - `time` - Prep and cook time description
 
-**Recommended Frontmatter Fields:**
+**Recommended frontmatter fields:**
 
 - `subtitle` - Helps users quickly understand the dish
 - `tags` - Improves discoverability and organization
 - `image` - Makes the recipe more appealing
 
-**Optional Frontmatter Fields:**
+**Optional frontmatter fields:**
 
 - `last_made` - Track when you last made it
 - `source.url` - Link to original recipe
 - `story` - Personal context and memories
 
-**File Naming:**
+**File naming:**
 
 - Use kebab-case: `my-amazing-recipe.md`
 - Match the `id` field in frontmatter

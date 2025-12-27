@@ -56,14 +56,22 @@ export default function SiteHeader({
 
   return (
     <header
-      className={`w-full flex items-center px-4 py-3 relative transition-colors ${
-        focusModeEnabled
-          ? "bg-blue-50 border-b border-blue-200"
-          : "border-b-[0.05px] border-gray-200 dark:border-gray-400/40"
-      }`}
+      className="w-full flex items-center px-4 py-3 relative transition-colors border-b"
+      style={{
+        backgroundColor: focusModeEnabled
+          ? 'var(--color-cream-light)'
+          : 'var(--color-cream-lightest)',
+        borderColor: focusModeEnabled
+          ? 'var(--color-burnt-orange)'
+          : 'var(--color-border-subtle)',
+      }}
     >
       {/* Brand */}
-      <Link href="/" className="flex items-center gap-3">
+      <Link
+        href="/"
+        className="flex items-center gap-3"
+        style={{ color: 'var(--color-text-primary)' }}
+      >
         <Image
           src="/images/cafe-tm-logo.png"
           width={64}
@@ -81,12 +89,26 @@ export default function SiteHeader({
         {isRecipePage && (
           <button
             onClick={handleFocusModeToggle}
-            className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-              focusModeEnabled
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
+            className="px-3 py-1.5 text-sm font-medium rounded-md transition-colors"
             aria-pressed={focusModeEnabled}
+            style={{
+              backgroundColor: focusModeEnabled
+                ? 'var(--color-burnt-orange)'
+                : 'var(--color-cream)',
+              color: focusModeEnabled ? 'white' : 'var(--color-text-secondary)',
+            }}
+            onMouseEnter={(e) => {
+              if (focusModeEnabled) {
+                e.currentTarget.style.backgroundColor = 'var(--color-burnt-orange-dark)';
+              } else {
+                e.currentTarget.style.backgroundColor = 'var(--color-cream-light)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = focusModeEnabled
+                ? 'var(--color-burnt-orange)'
+                : 'var(--color-cream)';
+            }}
           >
             {focusModeEnabled ? "Exit Focus" : "Focus Mode"}
           </button>
@@ -95,8 +117,15 @@ export default function SiteHeader({
         {/* Hamburger */}
         <button
           aria-label="Toggle navigation"
-          className="p-2 text-gray-700 hover:text-gray-950 focus:outline-none"
+          className="p-2 focus:outline-none"
+          style={{ color: 'var(--color-text-secondary)' }}
           onClick={() => setOpen((p) => !p)}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--color-text-primary)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'var(--color-text-secondary)';
+          }}
         >
           <MenuIcon open={open} />
         </button>
@@ -104,13 +133,26 @@ export default function SiteHeader({
 
       {/* Slide-down menu */}
       {open && (
-        <nav className="absolute top-full right-4 mt-2 w-40 rounded-lg bg-white shadow-lg ring-1 ring-gray-200">
-          <ul className="flex flex-col divide-y divide-gray-100">
+        <nav
+          className="absolute top-full right-4 mt-2 w-40 rounded-lg shadow-lg ring-1"
+          style={{
+            backgroundColor: 'var(--color-cream-lightest)',
+            borderColor: 'var(--color-border-subtle)',
+          }}
+        >
+          <ul className="flex flex-col divide-y" style={{ borderColor: 'var(--color-border-subtle)' }}>
             <li>
               <Link
                 href="/recipes"
-                className="block px-4 py-2 text-sm hover:bg-gray-50"
+                className="block px-4 py-2 text-sm transition-colors"
+                style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--color-cream-light)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
               >
                 All Recipes
               </Link>
@@ -118,8 +160,15 @@ export default function SiteHeader({
             <li>
               <Link
                 href="/about"
-                className="block px-4 py-2 text-sm hover:bg-gray-50"
+                className="block px-4 py-2 text-sm transition-colors"
+                style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--color-cream-light)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
               >
                 About
               </Link>

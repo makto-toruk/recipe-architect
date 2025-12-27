@@ -1,6 +1,6 @@
 ---
 id: ratatouille
-title: Homemade Ratatouille (Layered)
+title: Ratatouille
 subtitle: Layered vegetables baked in herbed tomato sauce
 tags: [dinner, tray-bake]
 image: ratatouille.jpg

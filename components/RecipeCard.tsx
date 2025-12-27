@@ -19,7 +19,11 @@ export default function RecipeCard({
   return (
     <Link
       href={`/recipes/${id}`}
-      className="block rounded-lg shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-400 transition"
+      className="block rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 bg-white border border-[color:var(--color-border-subtle)]"
+      style={{
+        backgroundColor: 'var(--color-cream-lightest)',
+        borderColor: 'var(--color-border-subtle)'
+      }}
     >
       {image ? (
         <Image
@@ -30,13 +34,28 @@ export default function RecipeCard({
           className="w-full h-48 object-cover rounded-t-lg"
         />
       ) : (
-        <div className="w-full h-48 bg-gray-100 rounded-t-lg" />
+        <div
+          className="w-full h-48 rounded-t-lg"
+          style={{ backgroundColor: 'var(--color-cream-light)' }}
+        />
       )}
 
       <div className="p-4">
-        <h3 className="text-lg font-medium text-gray-900">{title}</h3>
+        <h3
+          className="text-lg font-medium"
+          style={{
+            fontFamily: "'Fraunces', Georgia, serif",
+            color: 'var(--color-text-primary)'
+          }}
+        >
+          {title}
+        </h3>
         {subtitle && (
-          <h4 className="text-sm text-gray-600 mt-1 truncate" title={subtitle}>
+          <h4
+            className="text-sm mt-1 truncate"
+            title={subtitle}
+            style={{ color: 'var(--color-text-secondary)' }}
+          >
             {subtitle}
           </h4>
         )}
@@ -45,7 +64,11 @@ export default function RecipeCard({
             {tags.slice(0, 3).map((t) => (
               <span
                 key={t}
-                className="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded-full"
+                className="text-xs px-2 py-0.5 rounded-full"
+                style={{
+                  backgroundColor: 'var(--color-sage-green)',
+                  color: 'white'
+                }}
               >
                 {t}
               </span>
