@@ -9,6 +9,7 @@ Recipe Architect is a **markdown-based recipe application** built with Next.js 1
 ## Commands
 
 ### Development
+
 ```bash
 npm run dev          # Start Next.js dev server (localhost:3000)
 npm run build        # Production build (generates static pages)
@@ -16,10 +17,23 @@ npm run start        # Serve production build
 ```
 
 ### Validation
+
 ```bash
-npm run validate     # Run recipe quality validation (all recipes)
-                     # Reports: errors, warnings, info by severity
-                     # Pre-commit hook runs this automatically
+npm run validate            # Run recipe quality validation (all recipes)
+                            # Reports: errors, warnings, info by severity
+                            # Pre-commit hook runs this automatically
+npm run validate:recipe     # Validate a single recipe by slug
+                            # Usage: npm run validate:recipe [recipe-slug]
+```
+
+### Claude Commands
+
+When using Claude Code, the following commands are available:
+
+```bash
+/validate-recipe     # Validate a recipe and help fix any issues
+/add-recipe          # Add a new recipe following the standard template
+/grocery-list        # Generate a shopping list from multiple recipes
 ```
 
 ## Architecture
@@ -54,6 +68,7 @@ Frontend Components (components/recipe-display/)
 ### Key Modules
 
 **`lib/recipe-parser/`** - Modular parser split into focused files:
+
 - `index.ts`: Public API (`parseRecipe()`, `getAllRecipeSlugs()`, `loadAllRecipes()`)
 - `frontmatter-parser.ts`: YAML frontmatter extraction with gray-matter
 - `ingredient-parser.ts`: Parse "Ingredient Name (quantity unit, note)" format
@@ -61,15 +76,18 @@ Frontend Components (components/recipe-display/)
 - `ast-parser.ts`: Helper utilities for markdown AST traversal
 
 **`lib/recipe-validator/`** - Validation with categorized issues (schema/content/file):
+
 - `index.ts`: Orchestrates all validators (`validateRecipe()`, `validateAllRecipes()`)
 - `schema-validator.ts`: Required fields, date formats (YYYY-MM-DD)
 - `content-validator.ts`: Ingredients/instructions quality checks
 - `file-validator.ts`: Filename conventions (hyphens not underscores), image existence
 
 **`lib/tooling/`** - CLI development tools:
+
 - `validate-recipes.ts`: Console wrapper for validation with formatted output
 
 **`lib/recipe-types/`** - Shared domain types:
+
 - `Recipe`, `Ingredient`, `Instruction`, `RecipeCard` interfaces
 
 ### Recipe Markdown Format
@@ -83,8 +101,8 @@ title: Recipe Title
 subtitle: Short description
 tags: [tag1, tag2]
 image: filename.jpg
-first_made: '2024-01-15'  # YYYY-MM-DD format
-last_made: '2024-12-20'   # YYYY-MM-DD format
+first_made: "2024-01-15" # YYYY-MM-DD format
+last_made: "2024-12-20" # YYYY-MM-DD format
 source:
   type: Adapted from | Inspired by
   label: Source Name
@@ -97,6 +115,7 @@ story: Personal story about the recipe...
 ## Ingredients
 
 ### Section Name (optional):
+
 - Ingredient Name (quantity unit)
 - Ingredient Name (quantity unit, note)
 - Salt (to taste)
@@ -104,6 +123,7 @@ story: Personal story about the recipe...
 ## Instructions
 
 - Step description text. Nested bullets are footnotes:
+
   - This appears at bottom with superscript ¹
   - This appears at bottom with superscript ²
 
@@ -113,12 +133,14 @@ story: Personal story about the recipe...
 ### Component Structure
 
 **Pages** (`app/`):
+
 - `app/page.tsx`: Recipe grid homepage
 - `app/recipes/page.tsx`: All recipes list
 - `app/recipes/[slug]/page.tsx`: Individual recipe detail (SSG with `generateStaticParams`)
 - `app/about/page.tsx`: About page
 
 **Components** (`components/`):
+
 - `SiteHeader.tsx`: Site-wide navigation (logo, menu, focus mode toggle)
 - `RecipeCard.tsx`: Recipe card for grid/list views
 - `recipe-display/RecipePageClient.tsx`: Client component wrapper for recipe pages
@@ -130,6 +152,7 @@ story: Personal story about the recipe...
 ### Path Alias
 
 All imports use `@/*` alias (defined in `tsconfig.json`):
+
 ```typescript
 import { parseRecipe } from "@/lib/recipe-parser";
 import type { Recipe } from "@/lib/recipe-types";
@@ -146,6 +169,7 @@ import SiteHeader from "@/components/SiteHeader";
 ### Static Generation
 
 All recipe pages are statically generated at build time:
+
 - `generateStaticParams()` in `app/recipes/[slug]/page.tsx` generates paths
 - Images referenced in frontmatter must exist in `/public/images/`
 - Build output shows count of generated pages
