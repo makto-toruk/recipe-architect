@@ -43,6 +43,37 @@
   --font-size-4xl: clamp(2.5rem, 5vw, 4rem);
 }
 
+/* Dark Mode Color Palette */
+:root[data-theme="dark"] {
+  /* Backgrounds - warm dark tones */
+  --color-cream-lightest: #1a1614;
+  --color-cream-light: #252220;
+  --color-cream: #2f2b28;
+
+  /* Accents - lighter for contrast */
+  --color-burnt-orange: #e89077;
+  --color-burnt-orange-dark: #d97757;
+  --color-sage-green: #a8b89f;
+  --color-sage-green-light: #bcc9b3;
+
+  /* Text - inverted warm grays */
+  --color-text-primary: #f5f4f0;
+  --color-text-secondary: #d4d2cf;
+  --color-text-muted: #9a9692;
+
+  /* Borders - subtle warm borders */
+  --color-border-subtle: #3a3632;
+  --color-border-medium: #4a4540;
+}
+
+/* Smooth transitions for theme changes */
+body,
+header,
+nav,
+main {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
 /* Font Family Configuration */
 body {
   font-family:

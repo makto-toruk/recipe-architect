@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dancing_Script } from "next/font/google";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "@/components/ThemeProvider";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -43,7 +45,9 @@ export default function SiteHeader({
   focusModeEnabled = false,
 }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
+  const [themeHovered, setThemeHovered] = useState(false);
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
 
   // Check if we're on a recipe page (not homepage or recipes list)
   const isRecipePage =
@@ -85,6 +89,22 @@ export default function SiteHeader({
       </Link>
 
       <div className="ml-auto flex items-center gap-3">
+        {/* Theme Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          aria-label="Toggle dark mode"
+          aria-pressed={theme === "dark"}
+          className="p-2 rounded-md transition-colors focus:outline-none"
+          style={{
+            backgroundColor: themeHovered ? 'var(--color-cream-light)' : 'transparent',
+            color: 'var(--color-text-secondary)',
+          }}
+          onMouseEnter={() => setThemeHovered(true)}
+          onMouseLeave={() => setThemeHovered(false)}
+        >
+          {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
+
         {/* Focus Mode Button - only on recipe pages */}
         {isRecipePage && (
           <button

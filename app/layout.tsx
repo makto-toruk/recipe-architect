@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Dancing_Script } from "next/font/google";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -18,9 +19,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  const stored = localStorage.getItem('theme-preference');
+                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  const theme = stored === 'dark' || (!stored && prefersDark) ? 'dark' : 'light';
+                  document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
-        {/* Header removed from layout - each page handles its own header */}
-        <main className="flex-grow">{children}</main>
+        <ThemeProvider>
+          {/* Header removed from layout - each page handles its own header */}
+          <main className="flex-grow">{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
