@@ -149,6 +149,20 @@ story: Personal story about the recipe...
 - `recipe-display/RecipeInstructions.tsx`: Numbered instruction steps with footnotes
 - `utils/formatDate.ts`: Date formatting for UI (frontend utility)
 
+### Focus Mode
+
+Recipe pages include an interactive Focus Mode feature:
+
+- **Toggle**: Available in SiteHeader on recipe pages only
+- **Hides distractions**: Image, story, tags, dates, and source information
+- **Enables checkboxes**: Interactive checkboxes for both ingredients and instructions
+- **Progress tracking**: Checkbox state persists to localStorage per recipe
+- **Clear progress**: Button appears when items are checked to reset progress
+- **Responsive layout**:
+  - Desktop: Side-by-side layout (1/3 ingredients, 2/3 instructions)
+  - Mobile: Stacked single-column layout
+- **Persistence**: Focus mode toggle state saved per recipe in localStorage
+
 ### Path Alias
 
 All imports use `@/*` alias (defined in `tsconfig.json`):
@@ -161,10 +175,11 @@ import SiteHeader from "@/components/SiteHeader";
 
 ### Validation Philosophy
 
-- **Informational only**: Validation never blocks commits (exit code 0)
+- **Blocking for required fields**: Missing required fields (`id`, `title`, `ingredients`, `instructions`) block commits (exit code 1)
+- **Informational for quality**: Quality checks (formatting, recommendations) remain informational (exit code 0)
 - **Categorized**: Issues tagged as `schema`, `content`, or `file`
-- **Severity levels**: `error`, `warning`, `info`
-- **Auto-runs**: Husky pre-commit hook runs validation
+- **Severity levels**: `error`, `warning`, `info` (errors can be blocking or non-blocking)
+- **Auto-runs**: Husky pre-commit hook runs validation and blocks commits on required field violations
 
 ### Static Generation
 

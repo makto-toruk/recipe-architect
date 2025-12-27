@@ -1,5 +1,5 @@
 import { validateRecipe } from "@/lib/recipe-validator";
-import { displayValidationResults } from "./validation-formatter";
+import { displayValidationResults, hasBlockingIssues } from "./validation-formatter";
 
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
@@ -16,8 +16,16 @@ async function main(): Promise<void> {
   console.log(`\n📋 Validating recipe: ${slug}...\n`);
 
   const result = await validateRecipe(slug);
+  const hasBlocking = hasBlockingIssues([result]);
 
-  displayValidationResults([result], { showRecipeCount: false });
+  displayValidationResults([result], {
+    showRecipeCount: false,
+    hasBlockingIssues: hasBlocking
+  });
+
+  if (hasBlocking) {
+    process.exit(1);
+  }
 }
 
 // Run validation

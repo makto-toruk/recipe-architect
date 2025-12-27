@@ -8,6 +8,7 @@ export interface ValidationIssue {
   category: "schema" | "content" | "file";
   field: string;
   message: string;
+  blocking?: boolean;
 }
 
 export interface ValidationResult {
