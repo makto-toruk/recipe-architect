@@ -1,12 +1,14 @@
 ---
 id: oven-roasted-shawarma-chicken
 title: Oven-roasted Shawarma Chicken
+subtitle: Easy, weeknight protein.
 image: shawarma-chicken.jpg
-first_made: '2025-12-23'
+tags: [chicken, tray-bake]
+first_made: "2025-06-28"
 source:
   type: Inspired by
   label: Shred Happens
-  url: 'https://shredhappens.com/authentic-chicken-shawarma-recipe/'
+  url: "https://shredhappens.com/authentic-chicken-shawarma-recipe/"
 yields: 6-8
 time: >-
   15 minutes (plus minimum 2 hours marinating, overnight preferred) prep + 45
@@ -46,10 +48,3 @@ time: >-
 ## Serving
 
 Serve in a pita wrap or alongside roasted vegetables and raita.
-
-## Notes
-
-- First made March 3, 2024
-- Inspired by Shred Happens
-- Marinating overnight yields the best flavor
-- The loaf pan helps create the compact shape for authentic shawarma-style slicing

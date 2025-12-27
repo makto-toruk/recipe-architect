@@ -1,9 +1,11 @@
 ---
 id: thai-dumpling-soup
 title: Thai Dumpling Soup
+subtitle: The soup my husband requests on repeat
+tags: [soup, thai]
 image: thai-dumpling-soup.jpg
-story: I was inspired by a recipe I saw online and gave it a twist of my own. My husband loves this soup and I love making it for him. It's easy, comforting, and perfect for the winter months.
-first_made: '2025-12-23'
+story: Inspired by an online recipe, but with a twist of my own. My husband loves this soup, and I love making it for him. It's easy, comforting, and perfect for the winter months.
+first_made: "2025-06-28"
 source:
   type: Inspired by
   label: Online recipe with personal tweaks
@@ -14,7 +16,7 @@ time: 15 minutes prep + 30 minutes cook
 ## Ingredients
 
 - Avocado oil (2 Tbsp)
-- Shallots (2, or 1/2 large red onion, thinly sliced)
+- Shallots (2, thinly slices; or 1/2 large red onion)
 - Green bell pepper (1, thinly sliced)
 - Ginger (1 inch, galangal works even better)
 - Garlic (6 cloves, crushed)
@@ -43,14 +45,7 @@ time: 15 minutes prep + 30 minutes cook
 
 - Gently add cubed tofu and return to a simmer. Add frozen gyozas, cover, and simmer for about 10 minutes until heated through.
 
+  - Add only as many gyozas as you'll serve immediately; when reheating leftovers, drop in fresh frozen gyozas so they stay intact.
+
 - Serve hot.
-
-## Notes
-
-**Description:** Comforting red-curry soup with tofu and gyozas.
-
-**Storage tip:** For leftovers, reheat the broth and add fresh gyozas just before serving so they stay intact.
-
-**Heat level:** The recipe calls for 6 Thai chilis - reduce the amount if you prefer less heat.
-
-**Ginger substitute:** Galangal works even better than regular ginger if you can find it.
+  - For leftovers, reheat the broth and add fresh gyozas just before serving so they stay intact.
