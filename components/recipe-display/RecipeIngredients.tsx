@@ -28,7 +28,9 @@ export default function RecipeIngredients({
 
   // Preserve source order: ungrouped first, then groups in order of first appearance
   const allGroups = Object.keys(groupedIngredients);
-  const sortedGroups = allGroups.filter(g => g === "").concat(allGroups.filter(g => g !== ""));
+  const emptyGroup = allGroups.filter(g => g === "");
+  const namedGroups = allGroups.filter(g => g !== "");
+  const sortedGroups: string[] = [...emptyGroup, ...namedGroups];
 
   return (
     <section className="mb-6 lg:mb-0">

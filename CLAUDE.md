@@ -21,9 +21,22 @@ npm run start        # Serve production build
 ```bash
 npm run validate            # Run recipe quality validation (all recipes)
                             # Reports: errors, warnings, info by severity
-                            # Pre-commit hook runs this automatically
+                            # Pre-commit hook runs this + build automatically
 npm run validate:recipe     # Validate a single recipe by slug
                             # Usage: npm run validate:recipe [recipe-slug]
+```
+
+### Pre-commit Hook
+
+The Husky pre-commit hook automatically runs:
+1. `npm run validate` - Blocks if required fields are missing
+2. `npm run build` - Blocks if TypeScript errors or build failures occur
+
+**Skip pre-commit checks** (use sparingly):
+```bash
+git commit --no-verify -m "your message"
+# or shorthand:
+git commit -n -m "your message"
 ```
 
 ### Claude Commands

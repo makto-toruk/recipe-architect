@@ -47,7 +47,9 @@ export default function RecipeInstructions({
 
   // Preserve source order: ungrouped first, then groups in order of first appearance
   const allGroups = Object.keys(groupedInstructions);
-  const sortedGroups = allGroups.filter(g => g === "").concat(allGroups.filter(g => g !== ""));
+  const emptyGroup = allGroups.filter(g => g === "");
+  const namedGroups = allGroups.filter(g => g !== "");
+  const sortedGroups: string[] = [...emptyGroup, ...namedGroups];
 
   return (
     <section className="mt-8 lg:mt-0">
