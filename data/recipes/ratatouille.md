@@ -1,20 +1,17 @@
 ---
 id: ratatouille
 title: Homemade Ratatouille (Layered)
-first_made: '2025-11-23'
+subtitle: Layered vegetables baked in herbed tomato sauce
+tags: [dinner, tray-bake]
+image: ratatouille.jpg
+first_made: "2025-11-23"
 source:
   type: Adapted from
   label: How To Cook Recipes
-  url: 'https://www.howtocook.recipes/wprm_print/homemade-ratatouille-recipe-layered'
-yields: '12'
+  url: "https://www.howtocook.recipes/wprm_print/homemade-ratatouille-recipe-layered"
+yields: "12"
 time: 20 minutes prep + 1 hour 10 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 12
-- **Prep time:** 20 minutes
-- **Cook time:** 1 hour 10 minutes
-- **Pan/Dish size:** 9x13 inch
 
 ## Ingredients
 
@@ -37,8 +34,6 @@ time: 20 minutes prep + 1 hour 10 minutes cook
 - Tomatoes (5, sliced 1/8 inch thick)
 - Potato (1, sliced 1/8 inch thick)
 
-**Note:** Choose vegetables with similar diameters to help with even layering.
-
 ## Instructions
 
 - Preheat oven to 375°F. Heat 4 tablespoons olive oil in a large nonstick pan over medium-high heat.
@@ -49,10 +44,8 @@ time: 20 minutes prep + 1 hour 10 minutes cook
 
 - Pour sauce into a 9x13 inch baking dish and arrange sliced vegetables in circular patterns standing upright.
 
+  - Choose vegetables with similar diameters to help with even layering.
+
 - Brush vegetables with remaining olive oil. Cover and bake 30 minutes.
 
 - Uncover and continue baking until vegetables are tender. Serve immediately.
-
-## Notes
-
-This recipe has been doubled from the original to fit a 9x13 inch pan. The layered vegetables create a beautiful presentation with varied colors. Works well for vegetarians and vegans.

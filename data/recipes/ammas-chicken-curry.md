@@ -13,18 +13,9 @@ time: 15 minutes prep + 35-40 minutes cook
 story: Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder :)
 ---
 
-## Recipe Details
-
-- **Servings:** 4-6
-- **Prep time:** 15 minutes
-- **Cook time:** 35-40 minutes
-- **First Made:** September 1, 2015
-
 ## Ingredients
 
-### Chicken:
-
-- Chicken (2 lbs, bone-in thighs preferred, cleaned and cut into large pieces)
+- Chicken (2 lbs, bone-in skin-on thighs preferred; cut into large pieces)
 
 ### For the Masala Base:
 
@@ -43,9 +34,6 @@ story: Growing up, I could smell this masala from several houses away. We always
 - Yogurt (1/2 cup)
 - Cilantro leaves (1 cup)
 - Mint leaves (1/2 cup)
-
-### For the Tempering (Oggarne):
-
 - Butter (1 Tbsp)
 - Onion (1/2, diced)
 - Fenugreek leaves (1/2 cup, optional)

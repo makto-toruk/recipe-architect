@@ -38,6 +38,7 @@ export interface Instruction {
   step: number; // Step number
   text: string; // Instruction text
   notes?: string[]; // Optional footnotes (from nested bullets)
+  group?: string; // Optional group heading: "Marinate the Chicken", etc.
 }
 
 export interface RecipeCard {

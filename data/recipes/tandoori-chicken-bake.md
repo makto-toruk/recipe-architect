@@ -1,6 +1,9 @@
 ---
 id: tandoori-chicken-bake
-title: Easy Tandoori Masala Chicken Bake
+title: Easy Tandoori Chicken Bake
+subtitle: Surprisingly easy, great for potlucks
+tags: [chicken, tray-bake]
+image: tandoori-chicken-bake.jpg
 first_made: "2025-11-23"
 source:
   type: Adapted from
@@ -8,26 +11,18 @@ source:
   url: >-
     https://bumbicurry.blogspot.com/2025/10/easy-tandoori-masala-chicken-bake.html
 yields: 5-6
-time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
+time: 15 minutes prep + 10 minutes searing + 30 minutes baking (plus 3-12 hours marinating)
 ---
-
-## Recipe Details
-
-- **Servings:** 5-6
-- **Prep time:** 15 minutes (plus 3-12 hours marinating)
-- **Cook time:** 1 hour
 
 ## Ingredients
 
-### For the Chicken Marinade:
+### For the Marinade:
 
-- Bone-in, skin-on chicken thighs (3.3 lb)
+- Chicken (3.3 lb, bone-in skin-on thighs)
 - Buttermilk (1 1/2 cups, or substitute: 1 cup plain yogurt + 1/3 cup water)
-
-### For the Spice Rub:
-
-- Tandoori masala (1 tbsp, start with 1/2 tbsp if yours is spicy)
-- Light brown sugar (1/2 tbsp, optional)
+- Ginger-garlic paste (1 Tbsp)
+- Tandoori masala (1 Tbsp)
+- Light brown sugar (1/2 Tbsp, optional)
 - Freshly ground black pepper (1/4 tsp)
 - Garam masala powder (1 tsp)
 - Ground cumin (1 tsp, jeera)
@@ -36,38 +31,23 @@ time: 15 minutes (plus 3-12 hours marinating) prep + 1 hour cook
 - Sweet paprika (1 tsp, or Kashmiri red chilli powder for color)
 - Salt (1 tsp or to taste, adjust based on salt in your tandoori masala)
 
-### Other Ingredients:
+### For Cooking:
 
-- Onion (1 medium to large, sliced)
-- Ginger-garlic paste (1 tbsp, or finely grate 2-inch piece ginger + 8-9 garlic cloves)
-- Melted butter (4 tbsp, divided, or use ghee/oil)
-- Whole chillies (optional)
-- Paprika mixed with butter (1 tsp, for basting)
-- Fresh thyme or parsley or coriander for garnish
-
-### To Thicken Gravy (Optional):
-
-- Cornstarch (1 tbsp)
-- Water (2 tbsp)
+- Onion (1 large, sliced)
+- Ghee (for searing)
+- Whole chillies (2-3, slit, optional)
 
 ## Instructions
 
-- In a bowl, combine chicken thighs with buttermilk (or yogurt mixture). Cover and refrigerate for at least 3 hours, or up to 12 hours (don't go over 12 hours—the meat may become mushy). Remove from the fridge 1 hour before cooking to bring to room temperature.
+- In a large bowl, combine buttermilk, ginger-garlic paste, tandoori masala, brown sugar, black pepper, garam masala, ground cumin, ground coriander, kasoori methi, paprika, and salt. Mix well. Add chicken thighs and coat thoroughly. Cover and refrigerate for at least 3 hours, or up to 12 hours. Remove from the fridge 1 hour before cooking to bring to room temperature.
 
-- In a small bowl, mix tandoori masala, brown sugar, black pepper, garam masala, ground cumin, ground coriander, kasoori methi, salt, and paprika. Set aside.
+  - Don't go over 12 hours—the meat may become mushy
 
-- Preheat oven to 400°F (200°C) or 375°F (190°C) if using convection. Lightly oil a steel baking tray or cast iron casserole pot. Add sliced onions to the base. Place only the chicken into the dish (discard the marinade). Add ginger-garlic paste, the spice rub, and 1 tbsp melted butter. Mix well so every piece is coated.
+- Heat a large skillet over medium-high heat. Add ghee. Working in batches if needed, sear chicken skin-side down for 5 minutes until golden brown. Flip and sear the other side for 5 minutes. Remove chicken and set aside.
 
-- Bake for 1 hour total. At 30-minute mark, mix remaining melted butter with 1 tsp sweet paprika, baste the chicken with this mixture, and return to oven. At 50-minute mark, baste again, add whole chillies and sprinkle with fresh thyme (optional), and bake final 10 minutes.
+- Preheat oven to 400°F (200°C) or 375°F (190°C) if using convection. Lightly oil a steel baking tray or cast iron casserole pot. Add sliced onions to the base. Place seared chicken on top of onions. Add slit chillies to the pan.
 
-- (Optional) Mix cornstarch and water into a slurry. Once chicken is done, place the pan on the stove over high heat. Stir in the slurry and let the gravy boil for 1 minute. Spoon the thickened gravy over the chicken to coat.
+- Bake for about 30 minutes until chicken reaches safe internal temperature (180°F for fall-off-the-bone texture).
 
-## Serving
-
-- Check internal temp of thighs: 180°F or higher is perfect
-- Sprinkle with chopped parsley or coriander
-- Serve hot with naan, rice, or even mashed potatoes
-
-## Notes
-
-Tender, tandoori masala spiced chicken thighs baked with onions and aromatic spices. The buttermilk marinade helps tenderize the meat while the spice rub creates a flavorful crust.
+- Turn oven to broil and broil for 2 minutes to crisp up the skin. Watch carefully to prevent burning.
+  - For someone like me who is incapable of multi-tasking, it's essential to not step away no matter how tempting it might seem.

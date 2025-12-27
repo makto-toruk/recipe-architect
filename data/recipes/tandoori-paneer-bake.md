@@ -1,26 +1,22 @@
 ---
 id: tandoori-paneer-bake
 title: Tandoori Paneer Skewers
-first_made: '2025-11-23'
+subtitle: Vegetarian version of "surprisingly easy, great for potlucks"
+tags: [paneer, tray-bake]
+first_made: "2025-11-23"
+image: tandoori-paneer-bake.jpg
 yields: 3-4
 time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes cook
 ---
-## Recipe Details
-
-- **Servings:** 3-4
-- **Prep time:** 15 minutes (plus 30 minutes to 2 hours marinating)
-- **Cook time:** 20-25 minutes
 
 ## Ingredients
 
-### For the Paneer Marinade:
+### For the marinade
 
 - Paneer (1 lb, cut into 1.5-inch cubes)
 - Plain yogurt (3/4 cup)
-- Lemon juice (2 tbsp)
-
-### For the Spice Rub:
-
+- Lemon juice (2 Tbsp)
+- Ginger-garlic paste (1 Tbsp, or finely grate 1-inch piece ginger + 4-5 garlic cloves)
 - Tandoori masala (1 1/2 tsp, start with 1 tsp if yours is spicy)
 - Light brown sugar (1/2 tsp, optional)
 - Freshly ground black pepper (1/4 tsp)
@@ -31,14 +27,12 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 - Sweet paprika (1/2 tsp, or Kashmiri red chilli powder for color)
 - Salt (1/2 tsp or to taste)
 
-### Other Ingredients:
+### Other ingredients
 
 - Bell peppers (2, any color, cut into 1.5-inch pieces)
 - Onion (1 medium, cut into chunks, optional for skewers)
-- Ginger-garlic paste (1 tbsp, or finely grate 1-inch piece ginger + 4-5 garlic cloves)
-- Melted butter or ghee (2 tbsp, divided)
-- Paprika mixed with butter (1/2 tsp, for basting)
-- Fresh coriander for garnish
+- Melted butter or ghee (1 Tbsp)
+- Fresh coriander (for garnish)
 
 ## Special Equipment
 
@@ -48,22 +42,14 @@ time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes co
 
 - If using store-bought paneer, press it gently between paper towels to remove excess moisture. Cut into 1.5-inch cubes and set aside.
 
-- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, and all the spice rub ingredients. Add paneer cubes and bell pepper pieces. Gently toss to coat everything evenly. Cover and refrigerate for 30 minutes to 2 hours.
+- In a bowl, combine yogurt, lemon juice, ginger-garlic paste, tandoori masala, brown sugar, black pepper, garam masala, ground cumin, ground coriander, kasoori methi, paprika, and salt. Mix well. Add paneer cubes and bell pepper pieces. Gently toss to coat everything evenly. Cover and refrigerate for 30 minutes to 2 hours.
 
-- If using wooden skewers, soak them in water for 30 minutes to prevent burning. Thread paneer cubes and bell peppers alternately onto skewers. Add onion chunks between them if desired.
+- Thread paneer cubes and bell peppers alternately onto skewers. Add onion chunks between them if desired.
 
-- Preheat oven to 400°F (200°C). Line a baking tray with parchment paper or lightly oil it. Place skewers on the tray, leaving space between them. Drizzle with 1 tbsp melted butter.
+- Heat a large skillet over medium-high heat. Add ghee. Working in batches if needed, sear skewers for a few minutes on each side until paneer develops a golden crust. Remove and set aside.
 
-- Bake for 15 minutes. Mix remaining melted butter with ½ tsp sweet paprika. Remove from oven, flip skewers, and baste with the paprika butter. Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender.
+- Preheat oven to 400°F (200°C). Line a baking tray with parchment paper or lightly oil it. Place seared skewers on the tray, leaving space between them.
 
-- (Optional) For extra char, broil on high for 2-3 minutes, watching carefully to prevent burning.
+- Bake for 15 minutes. Remove from oven, and flip skewers. Return to oven and bake for another 8-10 minutes until edges are lightly charred and peppers are tender.
 
-## Serving
-
-- Garnish with fresh coriander
-- Serve hot with naan, rice, or as an appetizer
-- Can also serve with mint chutney or raita
-
-## Notes
-
-Paneer absorbs flavors quickly but doesn't need as long to marinate as chicken. Don't over-marinate or it may become too soft. The yogurt-based marinade creates a beautiful tandoori-style crust when baked. Bell peppers add sweetness and color to complement the spiced paneer.
+- Turn oven to broil and broil for 2-3 minutes to get extra char. Watch carefully to prevent burning.

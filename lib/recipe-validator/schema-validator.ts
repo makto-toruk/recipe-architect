@@ -15,6 +15,51 @@ export function validateSchema(slug: string, recipe: Recipe): ValidationIssue[] 
       category: "schema",
       field: "title",
       message: "Missing required field: title",
+      blocking: true,
+    });
+  }
+
+  if (!recipe.id) {
+    issues.push({
+      slug,
+      severity: "error",
+      category: "schema",
+      field: "id",
+      message: "Missing required field: id",
+      blocking: true,
+    });
+  }
+
+  if (recipe.id !== slug) {
+    issues.push({
+      slug,
+      severity: "error",
+      category: "schema",
+      field: "id",
+      message: `ID mismatch: frontmatter id '${recipe.id}' does not match filename '${slug}'`,
+      blocking: true,
+    });
+  }
+
+  if (recipe.ingredients.length === 0) {
+    issues.push({
+      slug,
+      severity: "error",
+      category: "schema",
+      field: "ingredients",
+      message: "Missing required field: ingredients (no ingredients found)",
+      blocking: true,
+    });
+  }
+
+  if (recipe.instructions.length === 0) {
+    issues.push({
+      slug,
+      severity: "error",
+      category: "schema",
+      field: "instructions",
+      message: "Missing required field: instructions (no instructions found)",
+      blocking: true,
     });
   }
 

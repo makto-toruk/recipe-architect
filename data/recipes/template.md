@@ -17,13 +17,6 @@ story: | # Optional - personal story or context about the recipe
   memories associated with it, or why it's special to you.
 ---
 
-## Recipe Details
-
-- **Servings:** 4-6
-- **Prep time:** 15 minutes
-- **Cook time:** 40 minutes
-- **Pan/Dish size:** 9x13 inch baking dish (optional - include if specific size needed)
-
 ## Ingredients
 
 ### Main Ingredients:

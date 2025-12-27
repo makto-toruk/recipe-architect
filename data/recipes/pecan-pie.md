@@ -1,25 +1,21 @@
 ---
 id: pecan-pie
 title: Pecan Pie
+subtitle: A Thanksgiving tradition worth stealing
+tags: [baking, pie]
 image: pecan-pie.jpg
-first_made: '2025-12-23'
+first_made: "2022-11-25"
+last_made: "2023-11-23"
 source:
   type: Adapted from
   label: Joshua Weissman's Pecan Pie
-  url: 'https://www.joshuaweissman.com/post/homemade-pecan-pie'
-yields: '8'
+  url: "https://www.joshuaweissman.com/post/homemade-pecan-pie"
+yields: "8"
 time: >-
   2 hours 30 minutes (includes chilling) prep + 60 minutes (crust) + 50-60
   minutes (filled pie) cook
+story: A Thanksgiving classic recreated from a roommate's homemade version - "the best I'd ever had." Adapted from Joshua Weissman's Pecan Pie.
 ---
-A Thanksgiving classic recreated from a roommate's homemade version - "the best I'd ever had." Adapted from Joshua Weissman's Pecan Pie.
-
-## Recipe Details
-
-- **Servings:** 8
-- **Prep time:** 2 hours 30 minutes (includes chilling)
-- **Cook time:** 60 minutes (crust) + 50-60 minutes (filled pie)
-- **Pan/Dish size:** Standard 9-inch pie pan
 
 ## Ingredients
 
