@@ -19,11 +19,15 @@ You are helping add a new recipe to the `data/recipes/` directory.
 
 3. **Critical Formatting Reminders**
 
+   - **Sentence case**: Use sentence case for all titles and section headers
+     - ✅ Title: `Chicken biryani` (not `Chicken Biryani`)
+     - ✅ Section: `### For the marinade:` (not `### For the Marinade:`)
+     - Keep proper nouns capitalized: `Thai`, `Amma's`, `Greek`
    - **Ingredients**: Always capitalize first letter, quantity in parentheses
      - ✅ `Olive oil (2 Tbsp)`
      - ❌ `2 Tbsp olive oil`
    - **Fractions**: Use `1 1/2` format (convert Unicode symbols like ½)
-   - **Equipment**: Goes in "Special Equipment" section, not ingredients
+   - **Equipment**: Goes in "Special equipment" section, not ingredients
 
 4. **Ask User Before Saving**
 

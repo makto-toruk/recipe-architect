@@ -1,6 +1,6 @@
 ---
 id: thai-dumpling-soup
-title: Thai Dumpling Soup
+title: Thai dumpling soup
 subtitle: The soup my husband requests on repeat
 tags: [soup, thai]
 image: thai-dumpling-soup.jpg

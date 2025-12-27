@@ -1,6 +1,6 @@
 ---
 id: avgolemono-greek-lemon-chicken-soup
-title: Avgolemono — Greek Lemon Chicken Soup
+title: Avgolemono — Greek lemon chicken soup
 subtitle: A warm chicken soup for cozy winter dinners.
 tags: [soup, chicken]
 image: avgolemono-greek-lemon-chicken-soup.jpg

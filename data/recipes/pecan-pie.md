@@ -1,6 +1,6 @@
 ---
 id: pecan-pie
-title: Pecan Pie
+title: Pecan pie
 subtitle: A Thanksgiving tradition worth stealing
 tags: [baking, pie]
 image: pecan-pie.jpg
@@ -19,7 +19,7 @@ story: A Thanksgiving classic recreated from a roommate's homemade version - "th
 
 ## Ingredients
 
-### Flaky Pie Crust:
+### Flaky pie crust:
 
 - All-purpose flour (2 1/2 cups)
 - Salt (1 tsp)
@@ -28,7 +28,7 @@ story: A Thanksgiving classic recreated from a roommate's homemade version - "th
 - Unsalted butter (3/4 cup, chilled)
 - Cold water (5/8 cup, which is 1/2 cup + 2 Tbsp)
 
-### Pecan Pie Filling:
+### Pecan pie filling:
 
 - Pecans (2 1/2 cups, chopped or halves)
 - Eggs (3 large, room temperature)

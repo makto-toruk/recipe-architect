@@ -1,6 +1,6 @@
 ---
 id: indian-spiced-chili
-title: Indian-Spiced Chili
+title: Indian-spiced chili
 subtitle: When chili night meets Indian spice night.
 tags: [chili, dinner]
 first_made: "2025-12-13"

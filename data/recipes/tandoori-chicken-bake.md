@@ -1,6 +1,6 @@
 ---
 id: tandoori-chicken-bake
-title: Easy Tandoori Chicken Bake
+title: Easy tandoori chicken bake
 subtitle: Surprisingly easy, great for potlucks
 tags: [chicken, tray-bake]
 image: tandoori-chicken-bake.jpg
@@ -16,7 +16,7 @@ time: 15 minutes prep + 10 minutes searing + 30 minutes baking (plus 3-12 hours 
 
 ## Ingredients
 
-### For the Marinade:
+### For the marinade:
 
 - Chicken (3.3 lb, bone-in skin-on thighs)
 - Buttermilk (1 1/2 cups, or substitute: 1 cup plain yogurt + 1/3 cup water)
@@ -31,7 +31,7 @@ time: 15 minutes prep + 10 minutes searing + 30 minutes baking (plus 3-12 hours 
 - Sweet paprika (1 tsp, or Kashmiri red chilli powder for color)
 - Salt (1 tsp or to taste, adjust based on salt in your tandoori masala)
 
-### For Cooking:
+### For cooking:
 
 - Onion (1 large, sliced)
 - Ghee (for searing)

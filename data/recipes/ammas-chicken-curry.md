@@ -1,6 +1,6 @@
 ---
 id: ammas-chicken-curry
-title: Amma's Chicken Curry
+title: Amma's chicken curry
 subtitle: Spicy and comforting chicken curry from home.
 tags: [curry, chicken, indian]
 image: ammas-chicken-curry.jpg
@@ -17,7 +17,7 @@ story: Growing up, I could smell this masala from several houses away. We always
 
 - Chicken (2 lbs, bone-in skin-on thighs preferred; cut into large pieces)
 
-### For the Masala Base:
+### For the masala base:
 
 - Ghee (1 Tbsp)
 - Onion (1/2, quartered)
@@ -43,7 +43,7 @@ story: Growing up, I could smell this masala from several houses away. We always
 - Cinnamon stick (1 inch)
 - Salt (1 Tbsp)
 
-## Special Equipment
+## Special equipment
 
 - Heavy-bottomed pressure cooker or Dutch oven
 - Blender

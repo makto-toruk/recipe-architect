@@ -110,7 +110,7 @@ Recipes use YAML frontmatter + markdown body:
 ```markdown
 ---
 id: recipe-slug
-title: Recipe Title
+title: Recipe title  # IMPORTANT: Use sentence case, not title case
 subtitle: Short description
 tags: [tag1, tag2]
 image: filename.jpg
@@ -127,7 +127,7 @@ story: Personal story about the recipe...
 
 ## Ingredients
 
-### Section Name (optional):
+### Section name (optional):  # Use sentence case for section headers
 
 - Ingredient Name (quantity unit)
 - Ingredient Name (quantity unit, note)
@@ -211,6 +211,10 @@ All recipe pages are statically generated at build time:
 
 ## Important Notes
 
+- **Sentence case**: ALWAYS use sentence case for titles and section headers, not title case
+  - ✅ `title: Chicken biryani` (not `Chicken Biryani`)
+  - ✅ `### For the marinade:` (not `### For the Marinade:`)
+  - Keep proper nouns capitalized: `Thai dumpling soup`, `Amma's chicken curry`
 - **Image paths**: Must be in `/public/images/` (Next.js requirement for Vercel)
 - **Template available**: Use `data/recipes/template.md` as starting point
 - **No generic names**: Directories use recipe-specific names (`recipe-parser`, not `utils`)

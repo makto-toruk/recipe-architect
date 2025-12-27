@@ -1,6 +1,6 @@
 ---
 id: chicken-biryani
-title: Chicken Biryani
+title: Chicken biryani
 subtitle: An easy layered, chicken biryani
 tags: [chicken, biryani]
 image: chicken-biryani.jpg
@@ -27,7 +27,7 @@ time: Marinate overnight and then the whole morning
 - Biryani Masala (1 Tbsp)
 - Lemon juice (1 Tbsp)
 
-### Marinade
+### Marinade:
 
 - Chicken (2.5 lbs, use large bone-in pieces)
 - Ginger (25 g)
@@ -44,7 +44,7 @@ time: Marinate overnight and then the whole morning
 - Chopped coriander leaves (2 Tbsp, cilantro)
 - Mint leaves (3 to 4)
 
-### Rice
+### Rice:
 
 - Long grained Basmati rice (600 gm, rinsed till water runs clear and soaked for 30 mins, if using Sella Basmati soak for over an hour)
 - Salt (1 Tbsp)
@@ -53,7 +53,7 @@ time: Marinate overnight and then the whole morning
 
 ## Instructions
 
-### Marinate the chicken
+### Marinate the chicken:
 
 - Blend fresh ginger, garlic, and an optional green chili with about 1/3 cup of water to a smooth paste.
 
@@ -73,11 +73,11 @@ time: Marinate overnight and then the whole morning
 
   - Set a timer to avoid over-soaking, which can cause grains to break.
 
-### Prepare the rice
+### Prepare the rice:
 
 - In a large pot, bring a generous amount of water to a boil. Add the whole spices from the Biryani Masala along with two dry bay leaves. Add about 1 tablespoon of salt. Once the water boils, remove the whole spices and add the drained rice. Keep the heat high initially, then lower to medium once the water bubbles. Stir gently from time to time. Taste frequently: the rice needs to be 70% cooked, still slightly chewy but not too chewy. Once 70% cooked, turn off the heat, drain the rice, discard bay leaves, and gently spread out the rice with a fork.
 
-### Cook the chicken and assemble
+### Cook the chicken and assemble:
 
 - Heat ghee in a large, wide, heavy-bottomed pot. Add the marinated chicken and two dry bay leaves. Stir on medium heat until the juices come to a boil. Then, stir on high heat for 10 minutes. Add 1 teaspoon of garam masala powder. Cover with a lid and simmer on low heat for 20 minutes until the chicken is cooked through (but not falling off the bone). Skim off the oil from the top of the curry; save it for layering.
 

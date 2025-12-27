@@ -1,6 +1,6 @@
 ---
 id: flaky-pie-crust
-title: Flaky Pie Crust
+title: Flaky pie crust
 subtitle: Perfectly flaky every time.
 tags: [baking, pastry]
 image: flaky-pie-crust.jpg

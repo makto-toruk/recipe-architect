@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/SiteHeader";
 import { loadAllRecipes } from "@/lib/recipe-parser";
 import RecipeCard from "@/components/RecipeCard";
+import { loadMarkdown } from "@/lib/loadMarkdown";
 
 export const metadata = {
   title: "Cafe TM | Kitchen Lab",
@@ -9,6 +10,7 @@ export const metadata = {
 
 export default async function Home() {
   const allRecipes = await loadAllRecipes();
+  const aboutHtml = await loadMarkdown("about.md");
 
   // Sort recipes by most recent date (coalesce last_made and first_made)
   const sortedRecipes = allRecipes
@@ -46,7 +48,7 @@ export default async function Home() {
           )}
 
           {/* Browse More Section */}
-          <div className="text-center">
+          <div className="text-center mb-16">
             <a
               href="/recipes"
               className="inline-block px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-800 transition"
@@ -54,6 +56,15 @@ export default async function Home() {
               Browse All Recipes
             </a>
           </div>
+
+          {/* About Section */}
+          <section className="border-t border-gray-200 pt-12">
+            <div className="max-w-3xl mx-auto">
+              <article className="prose prose-lg prose-gray">
+                <div dangerouslySetInnerHTML={{ __html: aboutHtml }} />
+              </article>
+            </div>
+          </section>
         </div>
       </main>
     </div>
