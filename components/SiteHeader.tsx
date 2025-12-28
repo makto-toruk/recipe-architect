@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dancing_Script } from "next/font/google";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "@/components/ThemeProvider";
+import Logo from "@/components/Logo";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -76,13 +76,7 @@ export default function SiteHeader({
         className="flex items-center gap-3"
         style={{ color: 'var(--color-text-primary)' }}
       >
-        <Image
-          src="/images/cafe-tm-logo.png"
-          width={64}
-          height={64}
-          alt="Cafe TM logo"
-          priority
-        />
+        <Logo width={64} height={64} />
         <span className={`${dancing.className} text-2xl leading-none`}>
           Cafe&nbsp;TM
         </span>
