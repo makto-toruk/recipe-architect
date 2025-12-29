@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import RecipeMetadata from "./RecipeMetadata";
 import RecipeIngredients from "./RecipeIngredients";
 import RecipeInstructions from "./RecipeInstructions";
@@ -196,6 +197,29 @@ export default function MarkdownRecipePageClient({
               />
             </div>
           </div>
+
+          {/* Contributor - at bottom with horizontal line, right-aligned, hidden in focus mode */}
+          {recipe.contributor && !focusModeEnabled && (
+            <>
+              <hr className="mt-8 mb-3" style={{ borderColor: 'var(--color-border-subtle)' }} />
+              <div className="flex justify-end items-center gap-1.5 pb-4">
+                <span className="text-xs" style={{ color: 'var(--color-text-secondary)' }}>
+                  contributed by:
+                </span>
+                <Link
+                  href={`/recipes?contributor=${encodeURIComponent(recipe.contributor)}`}
+                  className="px-2.5 py-0.5 text-xs rounded-full transition-opacity hover:opacity-80"
+                  style={{
+                    backgroundColor: 'var(--color-burnt-orange)',
+                    color: 'white',
+                    display: 'inline-block'
+                  }}
+                >
+                  {recipe.contributor}
+                </Link>
+              </div>
+            </>
+          )}
         </div>
       </main>
     </>

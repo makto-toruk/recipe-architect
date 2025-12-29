@@ -5,6 +5,7 @@ subtitle: A salad that's really about peanuts
 tags: [thai, salad]
 image: thai-peanut-quinoa-salad.jpg
 first_made: "2025-12-25"
+contributor: manasij
 source:
   type: Adapted from
   label: Cookie and Kate

@@ -16,18 +16,23 @@ export default function RecipesSearchClient({
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedContributor, setSelectedContributor] = useState<string | null>(null);
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
   // Initialize from URL params
   useEffect(() => {
     const tagParam = searchParams.get("tag");
     const searchParam = searchParams.get("search");
+    const contributorParam = searchParams.get("contributor");
 
     if (tagParam) {
       setSelectedTag(tagParam);
     }
     if (searchParam) {
       setSearchQuery(searchParam);
+    }
+    if (contributorParam) {
+      setSelectedContributor(contributorParam);
     }
   }, [searchParams]);
 
@@ -41,16 +46,23 @@ export default function RecipesSearchClient({
     if (searchQuery) {
       params.set("search", searchQuery);
     }
+    if (selectedContributor) {
+      params.set("contributor", selectedContributor);
+    }
 
     const queryString = params.toString();
     const newUrl = queryString ? `/recipes?${queryString}` : "/recipes";
     window.history.replaceState({}, "", newUrl);
-  }, [searchQuery, selectedTag]);
+  }, [searchQuery, selectedTag, selectedContributor]);
 
-  const filteredRecipes = filterRecipes(recipes, searchQuery, selectedTag);
+  const filteredRecipes = filterRecipes(recipes, searchQuery, selectedTag, selectedContributor);
 
   const handleTagRemove = () => {
     setSelectedTag(null);
+  };
+
+  const handleContributorRemove = () => {
+    setSelectedContributor(null);
   };
 
   return (
@@ -104,7 +116,23 @@ export default function RecipesSearchClient({
             </button>
           </div>
         )}
-        {(searchQuery || selectedTag) && (
+        {selectedContributor && (
+          <div className="flex flex-wrap gap-2 mt-3 max-w-2xl mx-auto">
+            <button
+              onClick={handleContributorRemove}
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full transition-opacity hover:opacity-80"
+              style={{
+                backgroundColor: "var(--color-burnt-orange)",
+                color: "white",
+              }}
+              aria-label={`Remove ${selectedContributor} contributor filter`}
+            >
+              {selectedContributor}
+              <span className="text-xs">✕</span>
+            </button>
+          </div>
+        )}
+        {(searchQuery || selectedTag || selectedContributor) && (
           <p
             className="text-sm mt-2 text-center max-w-2xl mx-auto"
             style={{ color: "var(--color-text-secondary)" }}

@@ -50,6 +50,7 @@ export async function parseRecipe(slug: string): Promise<Recipe | null> {
       source: frontmatter.source,
       time: frontmatter.time,
       yields: frontmatter.yields,
+      contributor: frontmatter.contributor,
       ingredients,
       instructions,
     };
@@ -87,6 +88,7 @@ export async function loadAllRecipes(): Promise<RecipeCard[]> {
           tags: frontmatter.tags,
           first_made: frontmatter.first_made,
           last_made: frontmatter.last_made,
+          contributor: frontmatter.contributor,
         };
       })
     );

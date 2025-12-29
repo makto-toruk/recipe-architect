@@ -5,6 +5,7 @@ subtitle: Spicy and comforting chicken curry from home.
 tags: [curry, chicken, indian]
 image: ammas-chicken-curry.jpg
 first_made: "2015-09-01"
+contributor: manasij
 source:
   type: Inspired by
   label: My Amma's recipe

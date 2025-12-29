@@ -20,6 +20,7 @@ export interface Recipe {
   };
   time?: string;
   yields?: string;
+  contributor?: string; // Optional contributor ID (references contributors.json)
 
   // Parsed content from markdown body
   ingredients: Ingredient[];
@@ -49,4 +50,5 @@ export interface RecipeCard {
   tags?: string[];
   first_made?: string;
   last_made?: string;
+  contributor?: string; // Optional contributor ID
 }
