@@ -1,5 +1,5 @@
 import { loadAllRecipes } from "@/lib/recipe-parser";
-import RecipeCard from "@/components/RecipeCard";
+import RecipesSearchClient from "@/components/RecipesSearchClient";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata = {
@@ -15,11 +15,7 @@ export default async function RecipesPage() {
       <SiteHeader />
       <main className="min-h-screen py-12" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            {recipes.map((r) => (
-              <RecipeCard key={r.id} {...r} />
-            ))}
-          </div>
+          <RecipesSearchClient recipes={recipes} />
         </div>
       </main>
     </div>
