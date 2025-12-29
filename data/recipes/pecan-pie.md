@@ -6,6 +6,7 @@ tags: [baking, pie]
 image: pecan-pie.jpg
 first_made: "2022-11-25"
 last_made: "2023-11-23"
+contributor: manasij
 source:
   type: Adapted from
   label: Joshua Weissman's Pecan Pie

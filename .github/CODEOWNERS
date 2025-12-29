@@ -1,0 +1,6 @@
+# CODEOWNERS file
+# This file defines who owns the code in this repository.
+# Each line is a file pattern followed by one or more owners.
+
+# Default owner for everything in the repo
+* @makto-toruk

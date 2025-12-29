@@ -5,6 +5,7 @@ subtitle: Perfectly flaky every time.
 tags: [baking, pastry]
 image: flaky-pie-crust.jpg
 first_made: "2021-12-19"
+contributor: manasij
 source:
   type: Adapted from
   label: a Baking Arts class

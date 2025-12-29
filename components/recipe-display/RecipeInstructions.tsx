@@ -47,8 +47,8 @@ export default function RecipeInstructions({
 
   // Preserve source order: ungrouped first, then groups in order of first appearance
   const allGroups = Object.keys(groupedInstructions);
-  const emptyGroup = allGroups.filter(g => g === "");
-  const namedGroups = allGroups.filter(g => g !== "");
+  const emptyGroup = allGroups.filter((g) => g === "");
+  const namedGroups = allGroups.filter((g) => g !== "");
   const sortedGroups: string[] = [...emptyGroup, ...namedGroups];
 
   return (
@@ -57,7 +57,7 @@ export default function RecipeInstructions({
         className="text-xl font-semibold mb-6"
         style={{
           fontFamily: "'Fraunces', Georgia, serif",
-          color: 'var(--color-text-primary)'
+          color: "var(--color-text-primary)",
         }}
       >
         Instructions
@@ -71,7 +71,7 @@ export default function RecipeInstructions({
               className="text-lg font-medium mb-4"
               style={{
                 fontFamily: "'Fraunces', Georgia, serif",
-                color: 'var(--color-text-secondary)'
+                color: "var(--color-text-secondary)",
               }}
             >
               {groupName}
@@ -90,11 +90,17 @@ export default function RecipeInstructions({
 
       {/* Footnotes with continuous numbering */}
       {footnotes.length > 0 && (
-        <section className="mt-8 border-t pt-4" style={{ borderColor: 'var(--color-border-subtle)' }}>
-          <ol className="list-none space-y-2 text-sm" style={{ color: 'var(--color-text-secondary)' }}>
+        <section
+          className="mt-8 border-t pt-4"
+          style={{ borderColor: "var(--color-border-subtle)" }}
+        >
+          <ol
+            className="list-none space-y-2 text-sm"
+            style={{ color: "var(--color-text-secondary)" }}
+          >
             {footnotes.map((fn, i) => (
-              <li key={`${fn.step}`} className="flex">
-                <sup className="mr-1 align-super text-xs">{i + 1}</sup>
+              <li key={`${fn.step}`} className="flex gap-2">
+                <span className="flex-shrink-0">[{i + 1}]</span>
                 <span>{fn.text}</span>
               </li>
             ))}
@@ -137,8 +143,8 @@ function InstructionsList({
                 }
                 className="mt-1.5 w-4 h-4 rounded focus:ring-2 flex-shrink-0"
                 style={{
-                  accentColor: 'var(--color-burnt-orange)',
-                  borderColor: 'var(--color-border-medium)'
+                  accentColor: "var(--color-burnt-orange)",
+                  borderColor: "var(--color-border-medium)",
                 }}
               />
             )}
@@ -146,8 +152,8 @@ function InstructionsList({
             <span
               className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-sm font-medium ${isChecked && focusModeEnabled ? "opacity-60" : ""}`}
               style={{
-                backgroundColor: 'var(--color-cream)',
-                color: 'var(--color-text-secondary)'
+                backgroundColor: "var(--color-cream)",
+                color: "var(--color-text-secondary)",
               }}
             >
               {inst.step}
@@ -155,12 +161,15 @@ function InstructionsList({
             <div className="flex flex-col">
               <p
                 className={`leading-relaxed pt-0.5 ${isChecked && focusModeEnabled ? "line-through opacity-60" : ""}`}
-                style={{ color: 'var(--color-text-primary)' }}
+                style={{ color: "var(--color-text-primary)" }}
               >
                 {inst.text}
                 {inst.footnoteIndices && inst.footnoteIndices.length > 0 && (
-                  <sup className="ml-1 align-super text-xs">
-                    {inst.footnoteIndices.map((idx) => idx + 1).join('·')}
+                  <sup
+                    className="ml-1 align-super"
+                    style={{ fontSize: "0.1em" }}
+                  >
+                    {inst.footnoteIndices.map((idx) => idx + 1).join("·")}
                   </sup>
                 )}
               </p>

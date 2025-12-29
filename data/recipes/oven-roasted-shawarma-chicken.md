@@ -5,6 +5,7 @@ subtitle: Easy, weeknight protein.
 image: shawarma-chicken.jpg
 tags: [chicken, tray-bake]
 first_made: "2025-06-28"
+contributor: manasij
 source:
   type: Inspired by
   label: Shred Happens

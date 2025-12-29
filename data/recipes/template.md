@@ -6,6 +6,7 @@ tags: [tag1, tag2, tag3] # Optional, but recommended - helps with categorization
 image: recipe-image.jpg # Optional - filename only, must exist in /public/images/
 first_made: "2024-01-15" # Required - Use 'YYYY-MM-DD' format with quotes
 last_made: "2024-12-20" # Optional - Use 'YYYY-MM-DD' format with quotes
+contributor: contributor-id # Optional - References contributor ID from data/contributors.json
 source:
   type: Adapted from # Options: "Adapted from", "Inspired by", "Original"
   label: Source Name or Author

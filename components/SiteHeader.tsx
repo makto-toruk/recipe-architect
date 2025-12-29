@@ -158,7 +158,7 @@ export default function SiteHeader({
             <li>
               <Link
                 href="/recipes"
-                className="block px-4 py-2 text-sm transition-colors"
+                className="block px-4 py-2 text-sm transition-colors rounded-t-lg"
                 style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
                 onMouseEnter={(e) => {
@@ -173,8 +173,24 @@ export default function SiteHeader({
             </li>
             <li>
               <Link
-                href="/about"
+                href="/contributors"
                 className="block px-4 py-2 text-sm transition-colors"
+                style={{ color: 'var(--color-text-primary)' }}
+                onClick={() => setOpen(false)}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--color-cream-light)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
+              >
+                Contributors
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="block px-4 py-2 text-sm transition-colors rounded-b-lg"
                 style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
                 onMouseEnter={(e) => {

@@ -1,0 +1,22 @@
+{
+  "contributors": [
+    {
+      "id": "manasij",
+      "name": "manasij",
+      "motto": "Recipe follower, not recipe writer",
+      "image": "manasij.png"
+    },
+    {
+      "id": "tunga",
+      "name": "tunga",
+      "motto": "Dreams in flavors",
+      "image": "tunga.png"
+    },
+    {
+      "id": "arka",
+      "name": "arka",
+      "motto": "Too bold for vanilla",
+      "image": "arka.png"
+    }
+  ]
+}

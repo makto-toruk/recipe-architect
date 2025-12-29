@@ -5,6 +5,7 @@ subtitle: Layered vegetables baked in herbed tomato sauce
 tags: [dinner, tray-bake]
 image: ratatouille.jpg
 first_made: "2025-11-23"
+contributor: manasij
 source:
   type: Adapted from
   label: How To Cook Recipes

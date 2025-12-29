@@ -5,6 +5,7 @@ subtitle: An easy layered, chicken biryani
 tags: [chicken, biryani]
 image: chicken-biryani.jpg
 first_made: "2025-12-19"
+contributor: manasij
 source:
   type: Adapted from
   label: Curries With Bumbi - How To Make Chicken Biryani

@@ -5,6 +5,7 @@ subtitle: A quick, chocolate fix solves most problems
 tags: [baking, brownies, chocolate]
 image: fudgy-brownies.jpg
 first_made: "2022-08-12"
+contributor: manasij
 source:
   type: Adapted from
   label: Thomas Joseph's recipe

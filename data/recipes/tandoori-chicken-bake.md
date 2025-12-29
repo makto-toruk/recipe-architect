@@ -5,6 +5,7 @@ subtitle: Surprisingly easy, great for potlucks
 tags: [chicken, tray-bake]
 image: tandoori-chicken-bake.jpg
 first_made: "2025-11-23"
+contributor: manasij
 source:
   type: Adapted from
   label: Curries With Bumbi

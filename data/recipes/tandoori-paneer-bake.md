@@ -4,6 +4,7 @@ title: Tandoori paneer skewers
 subtitle: Vegetarian version of "surprisingly easy, great for potlucks"
 tags: [paneer, tray-bake]
 first_made: "2025-11-23"
+contributor: manasij
 image: tandoori-paneer-bake.jpg
 yields: 3-4
 time: 15 minutes (plus 30 minutes to 2 hours marinating) prep + 20-25 minutes cook
