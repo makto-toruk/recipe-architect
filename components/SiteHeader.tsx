@@ -158,7 +158,7 @@ export default function SiteHeader({
             <li>
               <Link
                 href="/recipes"
-                className="block px-4 py-2 text-sm transition-colors"
+                className="block px-4 py-2 text-sm transition-colors rounded-t-lg"
                 style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
                 onMouseEnter={(e) => {
@@ -174,7 +174,7 @@ export default function SiteHeader({
             <li>
               <Link
                 href="/about"
-                className="block px-4 py-2 text-sm transition-colors"
+                className="block px-4 py-2 text-sm transition-colors rounded-b-lg"
                 style={{ color: 'var(--color-text-primary)' }}
                 onClick={() => setOpen(false)}
                 onMouseEnter={(e) => {
