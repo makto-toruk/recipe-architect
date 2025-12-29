@@ -1,33 +1,37 @@
 import type { RecipeCard } from "@/lib/recipe-types";
 
 /**
- * Filters recipes based on a search query.
+ * Filters recipes based on a search query and/or selected tag.
  * Searches across recipe title and tags (case-insensitive).
+ * Both filters use AND logic when present.
  *
  * @param recipes - Array of recipe cards to filter
  * @param searchQuery - Search term to match against
- * @returns Filtered array of recipes matching the search query
+ * @param selectedTag - Specific tag to filter by (exact match)
+ * @returns Filtered array of recipes matching the filters
  */
 export function filterRecipes(
   recipes: RecipeCard[],
-  searchQuery: string
+  searchQuery: string,
+  selectedTag: string | null
 ): RecipeCard[] {
-  const query = searchQuery.toLowerCase().trim();
-
-  // Return all recipes if query is empty
-  if (!query) {
-    return recipes;
-  }
-
   return recipes.filter((recipe) => {
-    // Check if title matches
-    const titleMatch = recipe.title.toLowerCase().includes(query);
+    // Text search filter (if query exists)
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      const titleMatch = recipe.title.toLowerCase().includes(query);
+      const tagsMatch = (recipe.tags || []).some((tag) =>
+        tag.toLowerCase().includes(query)
+      );
+      if (!titleMatch && !tagsMatch) return false;
+    }
 
-    // Check if any tag matches
-    const tagsMatch = (recipe.tags || []).some((tag) =>
-      tag.toLowerCase().includes(query)
-    );
+    // Tag filter (if tag is selected)
+    if (selectedTag) {
+      const recipeTags = recipe.tags || [];
+      if (!recipeTags.includes(selectedTag)) return false;
+    }
 
-    return titleMatch || tagsMatch;
+    return true;
   });
 }

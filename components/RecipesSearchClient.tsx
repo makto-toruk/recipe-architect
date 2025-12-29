@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { filterRecipes } from "@/lib/recipe-search";
 import RecipeCard from "@/components/RecipeCard";
 import type { RecipeCard as RecipeCardType } from "@/lib/recipe-types";
@@ -12,8 +13,24 @@ interface RecipesSearchClientProps {
 export default function RecipesSearchClient({
   recipes,
 }: RecipesSearchClientProps) {
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const filteredRecipes = filterRecipes(recipes, searchQuery);
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // Initialize from URL param
+  useEffect(() => {
+    const tagParam = searchParams.get("tag");
+    if (tagParam) {
+      setSelectedTag(tagParam);
+    }
+  }, [searchParams]);
+
+  const filteredRecipes = filterRecipes(recipes, searchQuery, selectedTag);
+
+  const handleTagRemove = () => {
+    setSelectedTag(null);
+    window.history.replaceState({}, "", "/recipes");
+  };
 
   return (
     <>
@@ -48,7 +65,23 @@ export default function RecipesSearchClient({
             </button>
           )}
         </div>
-        {searchQuery && (
+        {selectedTag && (
+          <div className="flex flex-wrap gap-2 mt-3 max-w-2xl mx-auto">
+            <button
+              onClick={handleTagRemove}
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-full transition-opacity hover:opacity-80"
+              style={{
+                backgroundColor: "var(--color-sage-green)",
+                color: "white",
+              }}
+              aria-label={`Remove ${selectedTag} filter`}
+            >
+              {selectedTag}
+              <span className="text-xs">✕</span>
+            </button>
+          </div>
+        )}
+        {(searchQuery || selectedTag) && (
           <p
             className="text-sm mt-2 text-center max-w-2xl mx-auto"
             style={{ color: "var(--color-text-secondary)" }}

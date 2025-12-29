@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { loadAllRecipes } from "@/lib/recipe-parser";
 import RecipesSearchClient from "@/components/RecipesSearchClient";
 import SiteHeader from "@/components/SiteHeader";
@@ -15,7 +16,9 @@ export default async function RecipesPage() {
       <SiteHeader />
       <main className="min-h-screen py-12" style={{ backgroundColor: 'var(--color-cream-lightest)' }}>
         <div className="max-w-6xl mx-auto px-6">
-          <RecipesSearchClient recipes={recipes} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <RecipesSearchClient recipes={recipes} />
+          </Suspense>
         </div>
       </main>
     </div>

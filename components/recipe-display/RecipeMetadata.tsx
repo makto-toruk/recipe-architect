@@ -5,6 +5,7 @@ import type { Recipe } from "@/lib/recipe-types";
 import { Clock, Users, ChevronUp, ChevronDown } from "lucide-react";
 import { formatDate } from "@/components/utils/formatDate";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   recipe: Recipe;
@@ -117,16 +118,18 @@ export default function RecipeMetadata({
       {tags && tags.length > 0 && !focusModeEnabled && (
         <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag) => (
-            <span
+            <Link
               key={tag}
-              className="px-3 py-1 text-sm rounded-full"
+              href={`/recipes?tag=${encodeURIComponent(tag)}`}
+              className="px-3 py-1 text-sm rounded-full transition-opacity hover:opacity-80"
               style={{
                 backgroundColor: 'var(--color-sage-green)',
-                color: 'white'
+                color: 'white',
+                display: 'inline-block'
               }}
             >
               {tag}
-            </span>
+            </Link>
           ))}
         </div>
       )}
