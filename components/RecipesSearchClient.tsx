@@ -16,47 +16,70 @@ export default function RecipesSearchClient({
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
 
-  // Initialize from URL param
+  // Initialize from URL params
   useEffect(() => {
     const tagParam = searchParams.get("tag");
+    const searchParam = searchParams.get("search");
+
     if (tagParam) {
       setSelectedTag(tagParam);
     }
+    if (searchParam) {
+      setSearchQuery(searchParam);
+    }
   }, [searchParams]);
+
+  // Update URL when search query changes
+  useEffect(() => {
+    const params = new URLSearchParams();
+
+    if (selectedTag) {
+      params.set("tag", selectedTag);
+    }
+    if (searchQuery) {
+      params.set("search", searchQuery);
+    }
+
+    const queryString = params.toString();
+    const newUrl = queryString ? `/recipes?${queryString}` : "/recipes";
+    window.history.replaceState({}, "", newUrl);
+  }, [searchQuery, selectedTag]);
 
   const filteredRecipes = filterRecipes(recipes, searchQuery, selectedTag);
 
   const handleTagRemove = () => {
     setSelectedTag(null);
-    window.history.replaceState({}, "", "/recipes");
   };
 
   return (
     <>
       {/* Search Input Section */}
       <div className="mb-8">
-        <div className="max-w-2xl mx-auto flex items-center gap-3">
+        <div className="max-w-2xl mx-auto relative">
           <input
             type="text"
             placeholder="Search by recipe name or tag..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg border transition-all focus:outline-none focus:ring-2 focus:ring-offset-1"
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            className="w-full px-4 py-3 rounded-lg border transition-all focus:outline-none"
             style={{
               backgroundColor: "var(--color-cream)",
-              borderColor: searchQuery
+              borderColor: isFocused || searchQuery
                 ? "var(--color-burnt-orange)"
                 : "var(--color-border-subtle)",
               color: "var(--color-text-primary)",
+              paddingRight: searchQuery ? "2.5rem" : "1rem",
             }}
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="px-3 py-2 rounded-md transition-colors hover:opacity-80"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-lg transition-opacity hover:opacity-60"
               style={{
-                backgroundColor: "var(--color-cream-light)",
                 color: "var(--color-text-secondary)",
               }}
               aria-label="Clear search"
