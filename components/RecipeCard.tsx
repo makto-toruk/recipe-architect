@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CARD_BASE_CLASSES, CARD_BASE_STYLE } from "./card-styles";
 
 type Props = {
   id: string;
@@ -19,11 +20,8 @@ export default function RecipeCard({
   return (
     <Link
       href={`/recipes/${id}`}
-      className="block rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 bg-white border border-[color:var(--color-border-subtle)]"
-      style={{
-        backgroundColor: 'var(--color-cream-lightest)',
-        borderColor: 'var(--color-border-subtle)'
-      }}
+      className={CARD_BASE_CLASSES}
+      style={CARD_BASE_STYLE}
     >
       {image ? (
         <Image
