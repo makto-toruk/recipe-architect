@@ -9,7 +9,11 @@
     "validate:recipe": "tsx lib/tooling/validate-recipe.ts",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fizzy:find-card": "tsx scripts/fizzy/find-card.ts",
+    "fizzy:add-steps": "tsx scripts/fizzy/add-steps.ts",
+    "fizzy:delete-steps": "tsx scripts/fizzy/delete-all-steps.ts",
+    "fizzy:sync-grocery": "tsx scripts/fizzy/sync-grocery.ts"
   },
   "repository": {
     "type": "git",
@@ -39,6 +43,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.10",
     "@tailwindcss/typography": "^0.5.16",
+    "dotenv": "^17.2.3",
     "fraction.js": "^5.2.2",
     "glob": "^11.0.3",
     "gray-matter": "^4.0.3",

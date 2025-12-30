@@ -36,16 +36,22 @@ Example:
 ```
 
 ### Section 2: Shopping List
-Create a simple, scannable shopping list organized by category:
-- Regular Groceries
-  - Vegetables & Produce
-  - Dairy & Protein
-  - Pantry
-- Indian Store (if applicable)
+Create a simple, flat shopping list - just items, no categories.
 
-Format: `- Item: total quantity needed`
+**Format:**
+```markdown
+## Shopping List
 
-Keep it practical for shopping (e.g., "2 heads of garlic" not "20 cloves")
+- Item: total quantity needed
+- Item: total quantity needed
+- Item: total quantity needed
+```
+
+**Important formatting rules:**
+- Each item on its own line starting with `-`
+- Keep it practical for shopping (e.g., "2 heads of garlic" not "20 cloves")
+- No categories, headers, or groupings - just a flat list
+- This format is optimized for parsing by the Fizzy sync script
 
 ### Section 3: Double-Check
 For each recipe, verify:
@@ -67,82 +73,26 @@ Add final status: "All recipes can be completed with this grocery list" or note 
 
 7. **Fizzy Card Integration (Optional)**
 
-   After creating the local markdown file, check for Fizzy API credentials:
+   After creating the local markdown file, sync to Fizzy using the built-in script:
 
-   - Read the `.env` file (if it exists) using the Read tool
-   - Extract: `FIZZY_API_TOKEN`, `FIZZY_ACCOUNT_SLUG`, `FIZZY_BOARD_ID`
-   - If ANY are missing/empty, skip Fizzy integration and inform user:
-     - "Fizzy integration skipped. To enable, configure credentials in `.env` file."
-     - "See `.env.example` for setup instructions."
-
-   **If all credentials exist, proceed:**
-
-   a) **Find the Grocery Card**
-
-   Make API request to find cards with the "golden-grocery" tag:
    ```bash
-   curl -X GET "https://app.fizzy.do/{ACCOUNT_SLUG}/cards.json" \
-     -H "Authorization: Bearer {API_TOKEN}" \
-     -H "Accept: application/json"
+   npm run fizzy:sync-grocery grocery_lists/{YYYYMMDD}.md
    ```
 
-   - Parse JSON response to find card(s) with "golden-grocery" in the `tags` array
-   - Extract the `number` field (card number) from the matching card
-   - If no card with "golden-grocery" tag found:
-     - Inform: "No card with 'golden-grocery' tag found. Please tag a Fizzy card with 'golden-grocery' for grocery lists."
-     - Skip Fizzy integration, exit gracefully
-   - If multiple cards have the tag, use the first one
-   - If API call fails (401, 404, 500, network error):
-     - Log error message
-     - Skip Fizzy integration
-     - Suggest: "Check FIZZY_API_TOKEN and FIZZY_ACCOUNT_SLUG in .env file"
+   The script will:
+   - Check for Fizzy credentials in `.env` file
+   - Find the card tagged with "golden-grocery"
+   - Extract shopping items from the markdown file
+   - Add all items as checklist steps to the card
+   - Display a summary with link to the Fizzy card
 
-   b) **Prepare Shopping Items as Checklist Steps**
-
-   Transform the Shopping List section (Section 2) into step format:
-   - Each line item becomes one step: `{Item}: {quantity}`
-   - Optionally prefix with category for organization
-
-   Examples:
-   - `Garlic: 2 heads`
-   - `Chicken breasts: 4 breasts (24 oz)`
-   - `Quinoa: 1 1/2 cups`
-   - `Cumin seeds: 2 tsp`
-
-   c) **Create Steps in Fizzy Card**
-
-   For each shopping item, make a POST request:
-   ```bash
-   curl -X POST "https://app.fizzy.do/{ACCOUNT_SLUG}/cards/{CARD_NUMBER}/steps.json" \
-     -H "Authorization: Bearer {API_TOKEN}" \
-     -H "Content-Type: application/json" \
-     -H "Accept: application/json" \
-     -d '{
-       "step": {
-         "content": "Carrots: 2 medium",
-         "completed": false
-       }
-     }'
-   ```
-
-   **Error handling:**
-   - If individual step creation fails, continue with remaining steps
-   - Track successful vs failed requests
-   - If >50% fail, warn: "Many items failed to sync. Check API credentials."
-
-   d) **Confirm Success**
-
-   Display summary:
-   - Count: "Added {N} items to Fizzy card #{CARD_NUMBER}"
-   - Link: "View in Fizzy: https://app.fizzy.do/{ACCOUNT_SLUG}/cards/{CARD_NUMBER}"
-   - If partial success: "Added {X} of {Y} items (check Fizzy for details)"
+   If credentials are missing or the card is not found, the script will display helpful error messages.
 
 8. **Final Summary to User**
 
    Provide combined status:
    - "Local grocery list: `grocery_lists/{YYYYMMDD}.md`"
-   - IF Fizzy enabled: "Fizzy card updated with {N} items: [View Card](link)"
-   - IF Fizzy skipped: "Fizzy integration skipped (configure .env to enable)"
+   - Output from the Fizzy sync script (if any)
 
 ## Tips
 - Combine similar ingredients (e.g., "butter" across multiple recipes)
