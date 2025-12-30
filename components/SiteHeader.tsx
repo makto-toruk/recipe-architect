@@ -148,7 +148,7 @@ export default function SiteHeader({
       {/* Slide-down menu */}
       {open && (
         <nav
-          className="absolute top-full right-4 mt-2 w-40 rounded-lg shadow-lg ring-1"
+          className="absolute top-full right-4 mt-2 w-40 rounded-lg shadow-lg ring-1 z-50"
           style={{
             backgroundColor: 'var(--color-cream-lightest)',
             borderColor: 'var(--color-border-subtle)',

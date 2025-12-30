@@ -1,4 +1,7 @@
+import { useState } from "react";
+import { ClipboardCopy, ClipboardCheck } from "lucide-react";
 import type { Ingredient } from "@/lib/recipe-types";
+import { formatIngredientsForClipboard, copyToClipboard } from "@/components/utils/copyIngredientsToClipboard";
 
 interface Props {
   ingredients: Ingredient[];
@@ -13,6 +16,16 @@ export default function RecipeIngredients({
   checkedIngredients = new Set(),
   onIngredientCheck,
 }: Props) {
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'copied' | 'error'>('idle');
+
+  // Handler for copy button
+  const handleCopyIngredients = async () => {
+    const formattedText = formatIngredientsForClipboard(ingredients);
+    const success = await copyToClipboard(formattedText);
+    setCopyStatus(success ? 'copied' : 'error');
+    setTimeout(() => setCopyStatus('idle'), 2000);
+  };
+
   // Group ingredients by their group field, preserving order
   const groupedIngredients = ingredients.reduce(
     (acc, ing) => {
@@ -34,15 +47,56 @@ export default function RecipeIngredients({
 
   return (
     <section className="mb-6 lg:mb-0 recipe-section-alt">
-      <h2
-        className="text-xl font-semibold mb-6"
-        style={{
-          fontFamily: "'Fraunces', Georgia, serif",
-          color: 'var(--color-text-primary)'
-        }}
-      >
-        Ingredients
-      </h2>
+      <div className="flex items-center justify-between mb-6">
+        <h2
+          className="text-xl font-semibold"
+          style={{
+            fontFamily: "'Fraunces', Georgia, serif",
+            color: 'var(--color-text-primary)'
+          }}
+        >
+          Ingredients
+        </h2>
+
+        {!focusModeEnabled && (
+          <button
+            onClick={handleCopyIngredients}
+            disabled={copyStatus !== 'idle'}
+            className="p-1.5 -mr-1.5 rounded-md transition-all duration-200"
+            style={{
+              backgroundColor: 'transparent',
+              color: copyStatus === 'copied'
+                ? 'var(--color-sage-green)'
+                : 'var(--color-text-muted)',
+              transform: copyStatus === 'copied' ? 'scale(1.1)' : 'scale(1)',
+              opacity: copyStatus === 'error' ? 0.5 : 1,
+            }}
+            onMouseEnter={(e) => {
+              if (copyStatus === 'idle') {
+                e.currentTarget.style.color = 'var(--color-text-secondary)';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (copyStatus === 'idle') {
+                e.currentTarget.style.color = 'var(--color-text-muted)';
+              }
+            }}
+            aria-label={
+              copyStatus === 'copied'
+                ? 'Copied to clipboard'
+                : copyStatus === 'error'
+                ? 'Failed to copy'
+                : 'Copy ingredient list to clipboard'
+            }
+          >
+            {copyStatus === 'copied' ? (
+              <ClipboardCheck size={18} />
+            ) : (
+              <ClipboardCopy size={18} />
+            )}
+          </button>
+        )}
+      </div>
 
       {sortedGroups.map((groupName, groupIdx) => (
         <div key={groupName || `group-${groupIdx}`} className="mb-8">
