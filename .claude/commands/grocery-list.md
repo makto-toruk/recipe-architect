@@ -36,16 +36,22 @@ Example:
 ```
 
 ### Section 2: Shopping List
-Create a simple, scannable shopping list organized by category:
-- Regular Groceries
-  - Vegetables & Produce
-  - Dairy & Protein
-  - Pantry
-- Indian Store (if applicable)
+Create a simple, flat shopping list - just items, no categories.
 
-Format: `- Item: total quantity needed`
+**Format:**
+```markdown
+## Shopping List
 
-Keep it practical for shopping (e.g., "2 heads of garlic" not "20 cloves")
+- Item: total quantity needed
+- Item: total quantity needed
+- Item: total quantity needed
+```
+
+**Important formatting rules:**
+- Each item on its own line starting with `-`
+- Keep it practical for shopping (e.g., "2 heads of garlic" not "20 cloves")
+- No categories, headers, or groupings - just a flat list
+- This format is optimized for parsing by the Fizzy sync script
 
 ### Section 3: Double-Check
 For each recipe, verify:
@@ -65,8 +71,32 @@ Add final status: "All recipes can be completed with this grocery list" or note 
 
 6. Save the file and confirm to the user with the filename
 
+7. **Fizzy Card Integration (Optional)**
+
+   After creating the local markdown file, sync to Fizzy using the built-in script:
+
+   ```bash
+   npm run fizzy:sync-grocery grocery_lists/{YYYYMMDD}.md
+   ```
+
+   The script will:
+   - Check for Fizzy credentials in `.env` file
+   - Find the card tagged with "golden-grocery"
+   - Extract shopping items from the markdown file
+   - Add all items as checklist steps to the card
+   - Display a summary with link to the Fizzy card
+
+   If credentials are missing or the card is not found, the script will display helpful error messages.
+
+8. **Final Summary to User**
+
+   Provide combined status:
+   - "Local grocery list: `grocery_lists/{YYYYMMDD}.md`"
+   - Output from the Fizzy sync script (if any)
+
 ## Tips
 - Combine similar ingredients (e.g., "butter" across multiple recipes)
 - Note substitutions if mentioned in recipes (e.g., "buttermilk OR yogurt")
 - Flag optional ingredients clearly
 - Round up quantities to practical shopping amounts
+- **Fizzy Integration**: Set up `.env` with Fizzy credentials to auto-sync grocery lists to a golden-tagged card for mobile shopping

@@ -47,6 +47,7 @@ When using Claude Code, the following commands are available:
 /validate-recipe     # Validate a recipe and help fix any issues
 /add-recipe          # Add a new recipe following the standard template
 /grocery-list        # Generate a shopping list from multiple recipes
+                     # Creates local markdown + syncs to Fizzy (if configured)
 ```
 
 ## Architecture
@@ -151,6 +152,11 @@ story: Personal story about the recipe...
 - CSS variables for all colors (cream tones, burnt orange, sage green)
 
 **Shared Styles** - Card components (RecipeCard, ContributorCard) use shared constants in `card-styles.ts` for consistency
+
+**Fizzy Integration** - Optional sync to Fizzy for mobile shopping:
+- Appends grocery items as checklist steps to card tagged with "golden-grocery"
+- Graceful fallback if credentials missing or API fails
+- Configure via `.env` file (see `.env.example`)
 
 ### Path Alias
 
