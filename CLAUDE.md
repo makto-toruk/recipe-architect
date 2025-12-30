@@ -80,28 +80,11 @@ Frontend Components (components/recipe-display/)
 
 ### Key Modules
 
-**`lib/recipe-parser/`** - Modular parser split into focused files:
-
-- `index.ts`: Public API (`parseRecipe()`, `getAllRecipeSlugs()`, `loadAllRecipes()`)
-- `frontmatter-parser.ts`: YAML frontmatter extraction with gray-matter
-- `ingredient-parser.ts`: Parse "Ingredient Name (quantity unit, note)" format
-- `instruction-parser.ts`: Parse bullet list as numbered steps
-- `ast-parser.ts`: Helper utilities for markdown AST traversal
-
-**`lib/recipe-validator/`** - Validation with categorized issues (schema/content/file):
-
-- `index.ts`: Orchestrates all validators (`validateRecipe()`, `validateAllRecipes()`)
-- `schema-validator.ts`: Required fields, date formats (YYYY-MM-DD)
-- `content-validator.ts`: Ingredients/instructions quality checks
-- `file-validator.ts`: Filename conventions (hyphens not underscores), image existence
-
-**`lib/tooling/`** - CLI development tools:
-
-- `validate-recipes.ts`: Console wrapper for validation with formatted output
-
-**`lib/recipe-types/`** - Shared domain types:
-
-- `Recipe`, `Ingredient`, `Instruction`, `RecipeCard` interfaces
+- **`lib/recipe-parser/`** - Parses markdown recipes into structured data (frontmatter, ingredients, instructions)
+- **`lib/recipe-validator/`** - Validates recipe quality and schema (required fields, formatting, file conventions)
+- **`lib/recipe-search/`** - Filters recipes by search query, tag, and contributor
+- **`lib/contributors/`** - Loads contributor data from `data/contributors.json`
+- **`lib/recipe-types/`** - Shared TypeScript interfaces for recipes, ingredients, instructions, contributors
 
 ### Recipe Markdown Format
 
@@ -114,6 +97,7 @@ title: Recipe title  # IMPORTANT: Use sentence case, not title case
 subtitle: Short description
 tags: [tag1, tag2]
 image: filename.jpg
+contributor: contributor-id  # Optional: references contributor from contributors.json
 first_made: "2024-01-15" # YYYY-MM-DD format
 last_made: "2024-12-20" # YYYY-MM-DD format
 source:
@@ -143,38 +127,30 @@ story: Personal story about the recipe...
 - For lists, write inline: "In a bowl, mix flour, sugar, and salt."
 ```
 
-### Component Structure
+### Pages & Features
 
-**Pages** (`app/`):
+- **Home** (`/`) - Shows 3 most recent recipes
+- **All Recipes** (`/recipes`) - Searchable/filterable recipe list with URL state sync
+- **Recipe Detail** (`/recipes/[slug]`) - Individual recipe with Focus Mode toggle
+- **Contributors** (`/contributors`) - Contributor profiles that filter recipes when clicked
+- **About** (`/about`) - Static markdown content page
 
-- `app/page.tsx`: Recipe grid homepage
-- `app/recipes/page.tsx`: All recipes list
-- `app/recipes/[slug]/page.tsx`: Individual recipe detail (SSG with `generateStaticParams`)
-- `app/about/page.tsx`: About page
+### Key Features
 
-**Components** (`components/`):
+**Focus Mode** - Recipe pages have a distraction-free mode with:
+- Checkboxes for ingredients and instructions (localStorage persistence)
+- Side-by-side layout on desktop, stacked on mobile
+- Hides image, story, tags, dates
 
-- `SiteHeader.tsx`: Site-wide navigation (logo, menu, focus mode toggle)
-- `RecipeCard.tsx`: Recipe card for grid/list views
-- `recipe-display/RecipePageClient.tsx`: Client component wrapper for recipe pages
-- `recipe-display/RecipeMetadata.tsx`: Recipe header (title, image, story, tags, dates)
-- `recipe-display/RecipeIngredients.tsx`: Ingredient list with localStorage progress tracking
-- `recipe-display/RecipeInstructions.tsx`: Numbered instruction steps with footnotes
-- `utils/formatDate.ts`: Date formatting for UI (frontend utility)
+**Search & Filtering** - Multi-criteria filtering with URL persistence:
+- Search by recipe title/tags, filter by tag or contributor
+- Supports combining multiple filters (AND logic)
 
-### Focus Mode
+**Theme System** - Light/dark mode with:
+- localStorage persistence and system preference detection
+- CSS variables for all colors (cream tones, burnt orange, sage green)
 
-Recipe pages include an interactive Focus Mode feature:
-
-- **Toggle**: Available in SiteHeader on recipe pages only
-- **Hides distractions**: Image, story, tags, dates, and source information
-- **Enables checkboxes**: Interactive checkboxes for both ingredients and instructions
-- **Progress tracking**: Checkbox state persists to localStorage per recipe
-- **Clear progress**: Button appears when items are checked to reset progress
-- **Responsive layout**:
-  - Desktop: Side-by-side layout (1/3 ingredients, 2/3 instructions)
-  - Mobile: Stacked single-column layout
-- **Persistence**: Focus mode toggle state saved per recipe in localStorage
+**Shared Styles** - Card components (RecipeCard, ContributorCard) use shared constants in `card-styles.ts` for consistency
 
 ### Path Alias
 
@@ -220,3 +196,4 @@ All recipe pages are statically generated at build time:
 - **No generic names**: Directories use recipe-specific names (`recipe-parser`, not `utils`)
 - **Module size**: Each parser/validator module kept under 150 lines for maintainability
 - **Type safety**: All recipe data flows through typed interfaces in `lib/recipe-types`
+- **Shared styles**: When adding new card-like components, use `card-styles.ts` constants to maintain consistency
