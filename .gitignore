@@ -6,3 +6,6 @@ npm-debug.log*
 .next/
 .vscode/
 grocery_lists/
+
+.env
+.env.local
