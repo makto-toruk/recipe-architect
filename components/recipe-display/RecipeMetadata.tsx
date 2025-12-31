@@ -29,6 +29,8 @@ export default function RecipeMetadata({
     story,
   } = recipe;
   const [isStoryExpanded, setIsStoryExpanded] = useState(true);
+  // Only show Read more/less toggle for stories longer than ~200 characters (roughly 2-3 lines)
+  const isLongStory = story && story.length > 200;
 
   return (
     <header className="mb-8">
@@ -80,36 +82,38 @@ export default function RecipeMetadata({
           >
             <p
               className={`leading-relaxed text-sm italic transition-all ${
-                isStoryExpanded ? "" : "line-clamp-1 overflow-hidden"
+                isLongStory && !isStoryExpanded ? "line-clamp-1 overflow-hidden" : ""
               }`}
               style={{ color: 'var(--color-text-secondary)' }}
             >
               {story}
             </p>
-            <div className="flex justify-center mt-2">
-              <button
-                onClick={() => setIsStoryExpanded((prev) => !prev)}
-                className="flex items-center text-sm font-medium transition-colors"
-                style={{ color: 'var(--color-text-secondary)' }}
-                aria-expanded={isStoryExpanded}
-                aria-controls="recipe-story"
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'var(--color-text-primary)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'var(--color-text-secondary)';
-                }}
-              >
-                {isStoryExpanded ? (
-                  <ChevronUp size={14} />
-                ) : (
-                  <ChevronDown size={14} />
-                )}
-                <span className="ml-1">
-                  {isStoryExpanded ? "Read less" : "Read more"}
-                </span>
-              </button>
-            </div>
+            {isLongStory && (
+              <div className="flex justify-center mt-2">
+                <button
+                  onClick={() => setIsStoryExpanded((prev) => !prev)}
+                  className="flex items-center text-sm font-medium transition-colors"
+                  style={{ color: 'var(--color-text-secondary)' }}
+                  aria-expanded={isStoryExpanded}
+                  aria-controls="recipe-story"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = 'var(--color-text-primary)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = 'var(--color-text-secondary)';
+                  }}
+                >
+                  {isStoryExpanded ? (
+                    <ChevronUp size={14} />
+                  ) : (
+                    <ChevronDown size={14} />
+                  )}
+                  <span className="ml-1">
+                    {isStoryExpanded ? "Read less" : "Read more"}
+                  </span>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       )}
