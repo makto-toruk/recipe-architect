@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import type { Instruction } from "@/lib/recipe-types";
 
 type Props = {
@@ -14,6 +16,32 @@ export default function RecipeInstructions({
   checkedInstructions = new Set(),
   onInstructionCheck,
 }: Props) {
+  // State for managing which footnote popup is open
+  const [openFootnoteId, setOpenFootnoteId] = useState<number | null>(null);
+
+  // Close popup when clicking outside or pressing ESC
+  useEffect(() => {
+    if (openFootnoteId === null) return;
+
+    const handleClickOutside = () => {
+      setOpenFootnoteId(null);
+    };
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpenFootnoteId(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, [openFootnoteId]);
+
   // Collect footnotes with continuous numbering
   const footnotes: { step: number; text: string }[] = [];
   const instructionsWithFootnotes = instructions.map((inst) => {
@@ -84,6 +112,9 @@ export default function RecipeInstructions({
             checkedInstructions={checkedInstructions}
             onInstructionCheck={onInstructionCheck}
             keyPrefix={groupName || "main"}
+            footnotes={footnotes}
+            openFootnoteId={openFootnoteId}
+            setOpenFootnoteId={setOpenFootnoteId}
           />
         </div>
       ))}
@@ -118,12 +149,18 @@ function InstructionsList({
   checkedInstructions = new Set(),
   onInstructionCheck,
   keyPrefix = "",
+  footnotes,
+  openFootnoteId,
+  setOpenFootnoteId,
 }: {
   instructions: Array<Instruction & { footnoteIndices?: number[] }>;
   focusModeEnabled?: boolean;
   checkedInstructions?: Set<string>;
   onInstructionCheck?: (key: string, checked: boolean) => void;
   keyPrefix?: string;
+  footnotes: Array<{ step: number; text: string }>;
+  openFootnoteId: number | null;
+  setOpenFootnoteId: (id: number | null) => void;
 }) {
   return (
     <ol className="space-y-6">
@@ -165,8 +202,48 @@ function InstructionsList({
               >
                 {inst.text}
                 {inst.footnoteIndices && inst.footnoteIndices.length > 0 && (
-                  <sup>
-                    {inst.footnoteIndices.map((idx) => idx + 1).join("·")}
+                  <sup className="inline-flex items-center gap-0.5">
+                    {inst.footnoteIndices.map((idx, citationIdx) => (
+                      <React.Fragment key={idx}>
+                        {citationIdx > 0 && <span>·</span>}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOpenFootnoteId(openFootnoteId === idx ? null : idx);
+                          }}
+                          className="relative"
+                          style={{
+                            color: "var(--color-burnt-orange)",
+                            background: "none",
+                            border: "none",
+                            padding: "0",
+                            cursor: "pointer",
+                            fontFamily: "inherit",
+                            fontSize: "inherit",
+                          }}
+                        >
+                          {idx + 1}
+
+                          {/* Inline popup */}
+                          {openFootnoteId === idx && (
+                            <span
+                              className="absolute left-0 top-6 w-64 p-3 rounded-lg shadow-lg z-40"
+                              style={{
+                                backgroundColor: "var(--color-cream-light)",
+                                borderLeft: "4px solid var(--color-burnt-orange)",
+                                color: "var(--color-text-secondary)",
+                                fontSize: "0.875rem",
+                                lineHeight: "1.5",
+                                boxShadow: "0 4px 12px rgba(26, 22, 20, 0.08)",
+                              }}
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              {footnotes[idx].text}
+                            </span>
+                          )}
+                        </button>
+                      </React.Fragment>
+                    ))}
                   </sup>
                 )}
               </p>
