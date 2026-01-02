@@ -165,10 +165,7 @@ function InstructionsList({
               >
                 {inst.text}
                 {inst.footnoteIndices && inst.footnoteIndices.length > 0 && (
-                  <sup
-                    className="ml-1 align-super"
-                    style={{ fontSize: "0.1em" }}
-                  >
+                  <sup>
                     {inst.footnoteIndices.map((idx) => idx + 1).join("·")}
                   </sup>
                 )}
