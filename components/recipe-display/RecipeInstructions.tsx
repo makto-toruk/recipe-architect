@@ -227,7 +227,7 @@ function InstructionsList({
                           {/* Inline popup */}
                           {openFootnoteId === idx && (
                             <span
-                              className="absolute left-0 top-6 w-64 p-3 rounded-lg shadow-lg z-40"
+                              className="absolute right-0 sm:left-0 top-6 w-64 max-w-[calc(100vw-2rem)] p-3 rounded-lg shadow-lg z-40"
                               style={{
                                 backgroundColor: "var(--color-cream-light)",
                                 borderLeft: "4px solid var(--color-burnt-orange)",
