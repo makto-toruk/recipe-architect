@@ -70,27 +70,6 @@ story: | # Optional - personal story or context about the recipe
 
 - Continue with each step, keeping instructions clear and actionable. Use present tense and active voice.
 
-## Serving
-
-Optional section for:
-
-- How to plate or present the dish
-- What to serve it with
-- Garnishing suggestions
-- Suggested pairings
-
-## Notes
-
-Optional section for:
-
-- Storage instructions (how long it keeps, refrigeration/freezing)
-- Make-ahead tips
-- Substitution suggestions
-- Variations or adaptations
-- Common mistakes to avoid
-- Scaling instructions (doubling/halving the recipe)
-- Dietary modifications (vegan, gluten-free options)
-
 ## Template usage notes
 
 **Required frontmatter fields:**
