@@ -49,10 +49,3 @@ time: 20 minutes prep + 20 minutes cook
 - Combine cooked quinoa, cabbage, carrot, cilantro, and green onion in a large bowl. Pour in the peanut sauce and toss well to coat. Taste and adjust seasoning if needed (add more tamari for saltiness, lime for acidity, or maple syrup for sweetness).
 
 - Divide salad into bowls and garnish with chopped peanuts.
-
-## Notes
-
-- Keeps refrigerated for about 4 days
-- Store peanuts separately to prevent sogginess
-- Can substitute millet for quinoa if preferred
-- For a spicier version, increase red pepper flakes or add sriracha to the sauce

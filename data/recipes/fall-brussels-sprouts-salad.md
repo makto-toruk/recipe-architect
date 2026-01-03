@@ -58,9 +58,3 @@ contributor: tunga
 - Once the roasted vegetables are completely cooled, combine them with the apple, drained red onion, roasted nuts, and goat cheese in a large bowl.
 
 - Pour the dressing over the salad and toss gently to combine. Serve immediately.
-
-## Notes
-
-- Make sure the roasted vegetables are completely cooled before combining all the ingredients to prevent wilting.
-- The salad can be prepped ahead by roasting the vegetables and making the dressing in advance. Store separately and combine just before serving.
-- For a vegan version, omit the goat cheese or substitute with a plant-based alternative.

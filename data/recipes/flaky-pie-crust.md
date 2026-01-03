@@ -53,10 +53,3 @@ yields: 2 pie crusts
 
 - Bake at 400°F for 60 minutes.
   - We've never had a soggy bottom when the crust is cold at assembly.
-
-## Notes
-
-- The key to a flaky crust is keeping everything cold - chill the flour on warm days
-- Don't overwork the dough when adding water
-- The butter should remain in pea-sized pieces for maximum flakiness
-- Always let the filling cool completely before adding to the crust

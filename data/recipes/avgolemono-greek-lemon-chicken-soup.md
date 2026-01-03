@@ -45,7 +45,3 @@ time: 10 minutes prep + 40 minutes cook
 - While the farro is cooking, whisk the egg yolks and lemon juice in a bowl. Take out 1-2 ladles of soup and pour it over the egg-lemon mixture to temper it. Add this mix to the pot and continue to cook for 5 minutes.
 
 - Stir in the fresh dill, adjust the seasoning and serve immediately, with some extra fresh dill on top if you like.
-
-## Notes
-
-This recipe has been doubled from the original for meal prepping. Farro has been substituted for orzo - it provides a heartier texture and holds up better when reheating. Avgolemono is a traditional Greek lemon chicken soup that's comforting and satisfying with bright lemon flavor balanced by creamy egg yolks.
