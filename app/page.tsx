@@ -18,7 +18,7 @@ export default async function Home() {
       ...recipe,
       mostRecentDate: recipe.last_made || recipe.first_made,
     }))
-    .filter((recipe) => recipe.mostRecentDate) // Only include recipes with dates
+    .filter((recipe) => recipe.mostRecentDate && recipe.image) // Only include recipes with dates and images
     .sort((a, b) => {
       // Sort by most recent date descending
       return (
