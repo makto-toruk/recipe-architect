@@ -45,7 +45,3 @@ time: >-
 - Bake uncovered for 45 minutes until fully cooked with a crispy top. Internal temperature should reach 165°F.
 
 - Flip the cooked chicken onto a cutting board and slice thinly in shawarma style.
-
-## Serving:
-
-Serve in a pita wrap or alongside roasted vegetables and raita.

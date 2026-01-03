@@ -48,10 +48,3 @@ story: A Thanksgiving classic recreated from a roommate's homemade version - "th
 - First, bake the prepared crust at 400°F for 60 minutes until lightly golden. Add the filling, then bake the filled pie at 375°F (with fan on) for 50-60 minutes. The pie is done when it's set but still slightly jiggly in the center.
 
 - Cool the pie completely before cutting. For serving, you can invert and cut into squares for a unique presentation.
-
-## Notes
-
-- Make sure eggs are at room temperature for better incorporation
-- The butter for the filling should be melted and cooled to avoid cooking the eggs
-- The pie should still have a slight jiggle in the center when done - it will continue to set as it cools
-- Store covered at room temperature for 2-3 days or refrigerate for up to 5 days

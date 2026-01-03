@@ -62,12 +62,3 @@ story: Growing up, I could smell this masala from several houses away. We always
 - Add chicken and salt to the tempering. Sear for 10 minutes on all sides until well-browned.
 
 - Add the blended masala to the chicken. Simmer covered on low heat for 20-25 minutes, stirring occasionally. The chicken should be tender and the curry thickened.
-
-## Notes
-
-- The creator notes: "I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder."
-- Bone-in chicken thighs provide the best flavor and stay moist during cooking
-- If using a pressure cooker, you can reduce the simmering time to about 15 minutes after the first whistle
-- Adjust red chili powder to taste - start with less if you prefer milder curries
-- The fenugreek leaves (kasuri methi) add an authentic flavor but can be omitted if unavailable
-- This curry tastes even better the next day as the flavors meld together

@@ -43,11 +43,3 @@ time: 15 minutes prep + 35 minutes cook
 - Add the diced tomatoes and kidney beans, including all the liquid. Stir to combine, then bring pan to a boil. Let it boil for 2-3 minutes, then turn heat down to medium-low, cover, and simmer for about 25-30 minutes.
 
 - Taste for salt and add as needed. Remove bay leaves before serving.
-
-## Notes
-
-- The adobo chili adds a smoky, tangy heat. Start with 1 chili and add more to taste.
-- If you prefer a saucier chili, add 1-2 cups of vegetable broth or water during simmering.
-- Paneer can be browned in a separate pan before adding if you prefer a firmer texture.
-- Leftovers keep well in the refrigerator for 3-4 days and freeze beautifully for up to 3 months.
-- For a vegan version, substitute firm tofu or chickpeas for the paneer.
