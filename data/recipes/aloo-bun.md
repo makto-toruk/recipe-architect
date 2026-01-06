@@ -4,6 +4,7 @@ title: Aloo buns
 subtitle: Soft homemade buns stuffed with a savory South Indian potato filling, reminiscent of the bakery around the corner in Bangalore.
 tags: [indian, baking, snack, vegetarian, savory-baking]
 image: aloo-bun.jpg
+contributor: arka
 first_made: "2020-12-24"
 last_made: "2025-01-15"
 source:
