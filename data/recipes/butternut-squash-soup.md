@@ -4,6 +4,7 @@ title: Butternut squash soup
 subtitle: A fall and winter favorite
 tags: [soup]
 first_made: "2026-01-11"
+contributor: manasij
 source:
   type: Adapted from
   label: Our Salty Kitchen
@@ -23,7 +24,7 @@ time: 10 minutes prep + 35 minutes cook
 - Ground black pepper (1/2 tsp)
 - Fresh thyme and sage (1 sprig, or dry 1 tsp each)
 - Bay leaf (1)
-- Low sodium broth (3-4 cups, chicken or vegetable)
+- Low sodium broth (3-4 cups, chicken or vegetable or water)
 - Pomegranate aril (for garnish)
 
 ## Instructions
