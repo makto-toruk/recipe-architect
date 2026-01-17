@@ -1,8 +1,9 @@
 ---
 id: butternut-squash-soup
-title: Butternut squash soup
+title: Roasted butternut squash soup
 subtitle: A fall and winter favorite
 tags: [soup]
+image: butternut-squash-soup.jpg
 first_made: "2026-01-11"
 contributor: manasij
 source:
@@ -10,35 +11,38 @@ source:
   label: Our Salty Kitchen
   url: "https://oursaltykitchen.com/wprm_print/creamy-roasted-butternut-squash-soup"
 yields: 4
-time: 10 minutes prep + 35 minutes cook
+time: 10 minutes prep + 50 minutes cook
 ---
 
 ## Ingredients
 
-- Butternut squash (3 lb, I use two bags of TJ's pre-cut)
+- Butternut squash (3 medium, peeled and diced)
 - Sweet onion (1 medium, sliced to 1/2")
-- Celery (2 stalks, sliced into 1" pieces)
+- Celery (1 heart, sliced into 1" pieces)
 - Garlic cloves (1 bulb, peeled and smashed)
-- Olive oil (3 Tbsp)
+- Avocado oil (3 Tbsp, divided)
 - Kosher salt (1 tsp)
 - Ground black pepper (1/2 tsp)
 - Fresh thyme and sage (1 sprig, or dry 1 tsp each)
-- Bay leaf (1)
-- Low sodium broth (3-4 cups, chicken or vegetable or water)
+- Bay leaves (2)
+- Low sodium chicken stock (4 cups)
+- Water (2 cups)
 - Pomegranate aril (for garnish)
 
 ## Instructions
 
-- Heat olive oil in a large pot over medium heat. Add onion, salt, and several grinds of black pepper. Sauté until tender, about 5-8 minutes.
+- Preheat oven to 375°F (fan on). Toss diced squash with 2 Tbsp avocado oil, salt, and pepper on a sheet pan. Roast for 20 minutes, stir, then roast another 10-15 minutes until tender and caramelized.
 
-- Add squash and celery to the pot. Cook for 8-10 minutes, stirring occasionally, until vegetables begin to soften.
+- Heat 1 Tbsp avocado oil in a large pot over medium heat. Add onion and sauté until tender, about 5-8 minutes.
 
-- Add garlic, thyme, sage, and bay leaf. Stir and cook for 30 seconds to 1 minute, until fragrant.
+- Add garlic, stir and cook for 30 seconds to 1 minute, until fragrant.
 
-- Add 3 cups of broth. Bring to a boil, then reduce heat to low, cover, and simmer for 20-30 minutes, until squash is completely tender.
+- Add celery, thyme, sage, and bay leaves. Cook for another 2-3 minutes.
 
-- Remove bay leaf. Let soup cool slightly, then transfer to a blender in batches. Blend until smooth and creamy.
+- Add roasted squash, chicken stock, and water. Bring to a boil, then reduce heat to low, cover, and simmer for 5-10 minutes.
 
-- Return soup to pot. If too thick, add remaining broth as needed for desired consistency. Adjust seasoning to taste.
+- Remove bay leaves. Let soup cool slightly, then transfer to a blender in batches. Blend until smooth and creamy.
 
-- Serve immediately, garnished with pomegranate aril and fresh thyme.
+  - Be patient here. Adjust seasoning. The difference between a 5 on 10 and 8 on 10 soup is the seasoning.
+
+- Serve, garnished with pomegranate aril and fresh thyme.

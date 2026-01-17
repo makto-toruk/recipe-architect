@@ -7,6 +7,51 @@ import { formatDate } from "@/components/utils/formatDate";
 import Image from "next/image";
 import Link from "next/link";
 
+function renderStoryWithLinks(story: string): React.ReactNode {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = linkRegex.exec(story)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(story.slice(lastIndex, match.index));
+    }
+    const [, text, url] = match;
+    const isInternal = url.startsWith("/");
+    parts.push(
+      isInternal ? (
+        <Link
+          key={match.index}
+          href={url}
+          className="underline transition-colors"
+          style={{ color: "var(--color-burnt-orange)" }}
+        >
+          {text}
+        </Link>
+      ) : (
+        <a
+          key={match.index}
+          href={url}
+          className="underline transition-colors"
+          style={{ color: "var(--color-burnt-orange)" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {text}
+        </a>
+      )
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < story.length) {
+    parts.push(story.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : story;
+}
+
 type Props = {
   recipe: Recipe;
   focusModeEnabled?: boolean;
@@ -86,7 +131,7 @@ export default function RecipeMetadata({
               }`}
               style={{ color: 'var(--color-text-secondary)' }}
             >
-              {story}
+              {renderStoryWithLinks(story)}
             </p>
             {isLongStory && (
               <div className="flex justify-center mt-2">
