@@ -3,6 +3,7 @@ id: zaatar-chicken
 title: Za'atar chicken
 subtitle: Marinated chicken with Middle Eastern spices
 tags: [chicken, middle-eastern]
+image: zaatar-chicken.jpg
 first_made: "2026-01-11"
 contributor: manasij
 source:
@@ -11,6 +12,7 @@ source:
   url: "https://www.drapervalleyfarms.com/recipes/zaatar-chicken-with-harissa-and-honey-mashed-butternut-squash/"
 yields: 4
 time: 20 minutes prep + 4 hours marinating + 25 minutes cook
+story: Pairs wonderfully with a [butternut squash puree](/recipes/butternut-squash-soup) - just use less water for a smooth, thick side.
 ---
 
 ## Ingredients

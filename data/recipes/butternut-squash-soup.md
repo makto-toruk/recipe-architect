@@ -3,6 +3,7 @@ id: butternut-squash-soup
 title: Roasted butternut squash soup
 subtitle: A fall and winter favorite
 tags: [soup]
+image: butternut-squash-soup.jpg
 first_made: "2026-01-11"
 contributor: manasij
 source:
