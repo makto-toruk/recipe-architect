@@ -2,6 +2,7 @@
 id: mushroom-fry
 title: Mushroom fry
 subtitle: Spiced Indian stir-fried mushrooms
+image: mushroom-fry.jpg
 tags: [indian, vegetarian, side-dish, quick]
 first_made: "2026-01-19"
 source:
