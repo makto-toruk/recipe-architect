@@ -51,4 +51,4 @@ story: |
 
 - Remove from heat. Taste and adjust salt. Add lemon juice if desired.
 
-- Serve hot with rice, roti, chapati, or bread.
+- Serve hot with rice or chapati or in tacos(!)
