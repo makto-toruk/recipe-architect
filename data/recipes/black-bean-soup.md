@@ -3,13 +3,15 @@ id: black-bean-soup
 title: Black bean soup
 subtitle: Rich and silky black bean soup with a partial puree technique
 tags: [soup, instant-pot, beans]
-first_made: "2025-01-24"
+image: black-bean-soup.jpg
+first_made: "2026-01-25"
 source:
   type: Adapted from
   label: Our Salty Kitchen
   url: "https://oursaltykitchen.com/instant-pot-black-bean-soup/"
 yields: 8
 time: 10 minutes prep + 45 minutes pressure cook + 15 minutes release
+story: T says this is among the best soups I've made and reminds her of Masala Puri!
 ---
 
 ## Ingredients
@@ -46,7 +48,7 @@ time: 10 minutes prep + 45 minutes pressure cook + 15 minutes release
 ### Toppings:
 
 - Red onion (diced)
-- Fresh cilantro
+- Fresh cilantro (for garnish)
 - Avocado (diced)
 
 ## Special equipment
