@@ -48,7 +48,7 @@ story: T says this is among the best soups I've made and reminds her of Masala P
 ### Toppings:
 
 - Red onion (diced)
-- Fresh cilantro
+- Fresh cilantro (for garnish)
 - Avocado (diced)
 
 ## Special equipment
