@@ -3,7 +3,7 @@ id: thai-peanut-quinoa-salad
 title: Crunchy Thai peanut & quinoa salad
 subtitle: A salad that's really about peanuts
 tags: [thai, salad]
-image: thai-peanut-quinoa-salad.jpg
+gallery: thai-peanut-quinoa-salad
 first_made: "2025-12-25"
 contributor: manasij
 source:

@@ -3,7 +3,8 @@ id: black-bean-soup
 title: Black bean soup
 subtitle: Rich and silky black bean soup with a partial puree technique
 tags: [soup, instant-pot, beans]
-image: black-bean-soup.jpg
+contributor: manasij
+gallery: black-bean-soup
 first_made: "2026-01-25"
 source:
   type: Adapted from

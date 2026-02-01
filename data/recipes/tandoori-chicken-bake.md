@@ -3,7 +3,7 @@ id: tandoori-chicken-bake
 title: Easy tandoori chicken bake
 subtitle: Surprisingly easy, great for potlucks
 tags: [chicken, tray-bake]
-image: tandoori-chicken-bake.jpg
+gallery: tandoori-chicken-bake
 first_made: "2025-11-23"
 contributor: manasij
 source:

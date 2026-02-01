@@ -3,7 +3,7 @@ id: zaatar-chicken
 title: Za'atar chicken
 subtitle: Marinated chicken with Middle Eastern spices
 tags: [chicken, middle-eastern]
-image: zaatar-chicken.jpg
+gallery: zaatar-chicken
 first_made: "2026-01-11"
 contributor: manasij
 source:

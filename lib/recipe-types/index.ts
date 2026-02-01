@@ -3,13 +3,21 @@
  * These types represent the structure of recipes and their components.
  */
 
+export interface GalleryImage {
+  src: string; // Path like "/images/gallery-dir/01-prep.jpg"
+  filename: string; // Just the filename for caption lookup
+  caption?: string; // Optional caption
+}
+
 export interface Recipe {
   // Frontmatter metadata
   id: string;
   title: string;
   subtitle?: string;
   tags?: string[];
-  image?: string;
+  gallery?: string; // Directory name in public/images/
+  galleryCaptions?: Record<string, string>; // Filename → caption map
+  galleryImages?: GalleryImage[]; // Resolved images (populated at parse time)
   first_made?: string; // YYYY-MM-DD format
   last_made?: string; // YYYY-MM-DD format
   story?: string;
@@ -46,7 +54,7 @@ export interface RecipeCard {
   id: string;
   title: string;
   subtitle?: string;
-  image?: string;
+  heroImage?: string; // First gallery image path (for cards)
   tags?: string[];
   first_made?: string;
   last_made?: string;

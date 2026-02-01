@@ -97,7 +97,9 @@ id: recipe-slug
 title: Recipe title  # IMPORTANT: Use sentence case, not title case
 subtitle: Short description
 tags: [tag1, tag2]
-image: filename.jpg
+gallery: recipe-slug  # Directory name in public/images/ (first image = hero)
+gallery_captions:     # Optional captions by filename
+  02-prep.jpg: "Preparing the ingredients"
 contributor: contributor-id  # Optional: references contributor from contributors.json
 first_made: "2024-01-15" # YYYY-MM-DD format
 last_made: "2024-12-20" # YYYY-MM-DD format
@@ -141,7 +143,7 @@ story: Personal story about the recipe...
 **Focus Mode** - Recipe pages have a distraction-free mode with:
 - Checkboxes for ingredients and instructions (localStorage persistence)
 - Side-by-side layout on desktop, stacked on mobile
-- Hides image, story, tags, dates
+- Hides gallery, story, tags, dates
 
 **Search & Filtering** - Multi-criteria filtering with URL persistence:
 - Search by recipe title/tags, filter by tag or contributor
@@ -187,7 +189,9 @@ All recipe pages are statically generated at build time:
 ## Adding a New Recipe
 
 1. Create `data/recipes/recipe-slug.md` with frontmatter + markdown body
-2. Add recipe image to `/public/images/recipe-slug.jpg` (if applicable)
+2. Create gallery directory `/public/images/recipe-slug/` with images (if applicable)
+   - Name images with numeric prefixes for ordering: `01-hero.jpg`, `02-prep.jpg`, etc.
+   - First image (alphabetically) becomes the hero/card image
 3. Run `npm run validate` to check for issues
 4. Commit (validation runs automatically via pre-commit hook)
 
@@ -197,7 +201,7 @@ All recipe pages are statically generated at build time:
   - ✅ `title: Chicken biryani` (not `Chicken Biryani`)
   - ✅ `### For the marinade:` (not `### For the Marinade:`)
   - Keep proper nouns capitalized: `Thai dumpling soup`, `Amma's chicken curry`
-- **Image paths**: Must be in `/public/images/` (Next.js requirement for Vercel)
+- **Gallery images**: Must be in `/public/images/<gallery-name>/` directories (Next.js requirement for Vercel)
 - **Template available**: Use `data/recipes/template.md` as starting point
 - **No generic names**: Directories use recipe-specific names (`recipe-parser`, not `utils`)
 - **Module size**: Each parser/validator module kept under 150 lines for maintainability

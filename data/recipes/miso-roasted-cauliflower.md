@@ -2,8 +2,9 @@
 id: miso-roasted-cauliflower
 title: Miso roasted cauliflower
 subtitle: T's favorite cauliflower
-image: miso-roasted-cauliflower.jpg
+gallery: miso-roasted-cauliflower
 tags: [vegetarian, tray-bake, side-dish]
+contributor: manasij
 first_made: "2026-01-04"
 source:
   type: Adapted from

@@ -26,10 +26,10 @@ Validate a recipe in `data/recipes/` and help fix validation issues.
 
 ## Common Issues
 
-- **Missing fields**: Add subtitle, image, tags (recommended but optional)
+- **Missing fields**: Add subtitle, gallery, tags (recommended but optional)
 - **Ingredients without quantity**: Add `(to taste)` or specific amount
 - **Invalid dates**: Must be `YYYY-MM-DD` format with quotes
-- **Image not found**: Add image to `/public/images/` or remove image field
+- **Gallery not found**: Create directory at `/public/images/[recipe-slug]/` with images, or remove gallery field
 
 ## Validation Categories
 

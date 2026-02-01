@@ -3,7 +3,7 @@ id: ammas-chicken-curry
 title: Amma's chicken curry
 subtitle: Spicy and comforting chicken curry from home.
 tags: [curry, chicken, indian]
-image: ammas-chicken-curry.jpg
+gallery: ammas-chicken-curry
 first_made: "2015-09-01"
 contributor: manasij
 source:

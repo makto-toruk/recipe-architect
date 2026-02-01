@@ -3,7 +3,7 @@ id: recipe-slug-name
 title: Recipe title
 subtitle: Short one-line description (optional, but recommended)
 tags: [tag1, tag2, tag3] # Optional, but recommended - helps with categorization
-image: recipe-image.jpg # Optional - filename only, must exist in /public/images/
+gallery: recipe-slug-name # Optional - directory name in /public/images/ containing gallery images
 first_made: "2024-01-15" # Required - Use 'YYYY-MM-DD' format with quotes
 last_made: "2024-12-20" # Optional - Use 'YYYY-MM-DD' format with quotes
 contributor: contributor-id # Optional - References contributor ID from data/contributors.json
@@ -85,7 +85,7 @@ story: | # Optional - personal story or context about the recipe
 
 - `subtitle` - Helps users quickly understand the dish
 - `tags` - Improves discoverability and organization
-- `image` - Makes the recipe more appealing
+- `gallery` - Directory name for images (makes the recipe more appealing)
 
 **Optional frontmatter fields:**
 
@@ -99,8 +99,10 @@ story: | # Optional - personal story or context about the recipe
 - Match the `id` field in frontmatter
 - Use hyphens, not underscores
 
-**Images:**
+**Images (Gallery):**
 
-- Place in `/public/images/` directory
-- Reference by filename only in frontmatter
+- Create a directory in `/public/images/` matching the recipe slug
+- Add images with numeric prefixes for ordering: `01-hero.jpg`, `02-prep.jpg`, etc.
+- First image (alphabetically) is used as the hero/card image
+- Optionally add captions in frontmatter using `gallery_captions` field
 - Common formats: .jpg, .png, .webp

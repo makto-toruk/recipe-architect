@@ -3,7 +3,7 @@ id: pecan-pie
 title: Pecan pie
 subtitle: A Thanksgiving tradition worth stealing
 tags: [baking, pie]
-image: pecan-pie.jpg
+gallery: pecan-pie
 first_made: "2022-11-25"
 last_made: "2023-11-23"
 contributor: manasij

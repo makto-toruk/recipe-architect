@@ -3,7 +3,7 @@ id: ratatouille
 title: Ratatouille
 subtitle: Layered vegetables baked in herbed tomato sauce
 tags: [dinner, tray-bake]
-image: ratatouille.jpg
+gallery: ratatouille
 first_made: "2025-11-23"
 contributor: manasij
 source:
