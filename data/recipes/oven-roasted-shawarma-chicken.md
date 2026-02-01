@@ -2,7 +2,7 @@
 id: oven-roasted-shawarma-chicken
 title: Oven-roasted shawarma chicken
 subtitle: Easy, weeknight protein.
-image: shawarma-chicken.jpg
+gallery: shawarma-chicken
 tags: [chicken, tray-bake]
 first_made: "2025-06-28"
 contributor: manasij

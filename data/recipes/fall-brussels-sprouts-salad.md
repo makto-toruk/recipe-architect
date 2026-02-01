@@ -3,7 +3,7 @@ id: fall-brussels-sprouts-salad
 title: Shaved Brussels sprouts salad
 subtitle: Easy, crowd-favorite fall salad
 tags: [salad, fall, vegetarian, thanksgiving]
-image: fall-brussels-sprouts-salad.jpg
+gallery: fall-brussels-sprouts-salad
 first_made: "2025-11-27"
 yields: 6-8
 time: 20 minutes prep + 60 minutes baking

@@ -2,7 +2,7 @@
 id: lentil-shepherds-pie
 title: Lentil shepherd's pie
 subtitle: Savory warmth and comfort
-image: lentil-shepherds-pie.jpg
+gallery: lentil-shepherds-pie
 tags: [vegetarian, winter]
 first_made: "2026-01-03"
 contributor: manasij

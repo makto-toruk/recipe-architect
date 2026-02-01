@@ -2,14 +2,19 @@
 id: ammas-chicken-biryani
 title: Amma's chicken biryani
 subtitle: A one-pot family biryani with freshly ground masala
-tags: [biryani, chicken, indian, one-pot]
-image: ammas-chicken-biryani.jpg
+tags: [biryani, chicken, indian]
+contributor: manasij
+gallery: ammas-chicken-biryani
+gallery_captions:
+  02-spices.jpg: "You know it's going to be a good day when all the spices come out :)"
+  03-ingredients.jpeg: "My mom's handwritten recipe!"
 first_made: "2026-01-31"
 source:
   type: Original
   label: Family recipe
 yields: 4-6
 time: 30 minutes prep + 30 minutes cook
+story: My mom's "mutton" biryani is my favorite thing to eat. My family often reminds me how even when I was a baby, I would wake up to the smell of the spices and ask for "putton" (I couldn't say mutton yet). I was vegetarian for 7 years and during that time, this was the only food I really missed. I don't eat red meat much anymore, but this chicken version is quite good :) T said it was the most comforting food she's had in many weeks <3
 ---
 
 ## Ingredients

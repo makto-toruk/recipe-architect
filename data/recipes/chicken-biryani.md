@@ -3,7 +3,7 @@ id: chicken-biryani
 title: Chicken biryani
 subtitle: An easy layered, chicken biryani
 tags: [chicken, biryani]
-image: chicken-biryani.jpg
+gallery: chicken-biryani
 first_made: "2025-12-19"
 contributor: manasij
 source:

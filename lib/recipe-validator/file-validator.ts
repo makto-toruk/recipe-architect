@@ -24,23 +24,32 @@ export async function validateFile(
     });
   }
 
-  // Image file existence check
-  if (recipe.image) {
-    const imagePath = path.join(
+  // Gallery directory existence check
+  if (recipe.gallery) {
+    const galleryPath = path.join(
       process.cwd(),
       "public",
       "images",
-      recipe.image
+      recipe.gallery
     );
     try {
-      await fs.access(imagePath);
+      const stats = await fs.stat(galleryPath);
+      if (!stats.isDirectory()) {
+        issues.push({
+          slug,
+          severity: "warning",
+          category: "file",
+          field: "gallery",
+          message: `Gallery path is not a directory: ${recipe.gallery}`,
+        });
+      }
     } catch {
       issues.push({
         slug,
         severity: "warning",
         category: "file",
-        field: "image",
-        message: `Image file not found: ${recipe.image}`,
+        field: "gallery",
+        message: `Gallery directory not found: ${recipe.gallery}`,
       });
     }
   }

@@ -4,8 +4,8 @@ import { useState } from "react";
 import type { Recipe } from "@/lib/recipe-types";
 import { Clock, Users, ChevronUp, ChevronDown } from "lucide-react";
 import { formatDate } from "@/components/utils/formatDate";
-import Image from "next/image";
 import Link from "next/link";
+import RecipeGallery from "./RecipeGallery";
 
 function renderStoryWithLinks(story: string): React.ReactNode {
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -65,7 +65,7 @@ export default function RecipeMetadata({
     title,
     subtitle,
     tags,
-    image,
+    galleryImages,
     first_made,
     last_made,
     source,
@@ -79,18 +79,9 @@ export default function RecipeMetadata({
 
   return (
     <header className="mb-8">
-      {/* Image - hidden in focus mode */}
-      {image && !focusModeEnabled && (
-        <div className="w-full max-w-2xl mx-auto mb-6">
-          <Image
-            src={`/images/${image}`}
-            alt={title}
-            width={800}
-            height={384}
-            className="recipe-hero-image w-full h-auto max-h-96 object-cover rounded-lg"
-            priority
-          />
-        </div>
+      {/* Gallery - hidden in focus mode */}
+      {galleryImages && galleryImages.length > 0 && !focusModeEnabled && (
+        <RecipeGallery images={galleryImages} title={title} />
       )}
 
       {/* Title */}

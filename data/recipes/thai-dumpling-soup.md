@@ -3,7 +3,7 @@ id: thai-dumpling-soup
 title: Thai dumpling soup
 subtitle: The soup my husband requests on repeat
 tags: [soup, thai]
-image: thai-dumpling-soup.jpg
+gallery: thai-dumpling-soup
 story: Inspired by an online recipe, but with a twist of my own. My husband loves this soup, and I love making it for him. It's easy, comforting, and perfect for the winter months.
 first_made: "2025-06-28"
 contributor: tunga

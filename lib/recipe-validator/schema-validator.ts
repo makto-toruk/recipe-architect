@@ -74,13 +74,21 @@ export function validateSchema(slug: string, recipe: Recipe): ValidationIssue[] 
     });
   }
 
-  if (!recipe.image) {
+  if (!recipe.gallery) {
     issues.push({
       slug,
       severity: "info",
       category: "schema",
-      field: "image",
-      message: "Missing recommended field: image",
+      field: "gallery",
+      message: "Missing recommended field: gallery",
+    });
+  } else if (recipe.galleryImages && recipe.galleryImages.length === 0) {
+    issues.push({
+      slug,
+      severity: "info",
+      category: "schema",
+      field: "gallery",
+      message: `Gallery directory "${recipe.gallery}" is empty or contains no images`,
     });
   }
 
@@ -91,6 +99,16 @@ export function validateSchema(slug: string, recipe: Recipe): ValidationIssue[] 
       category: "schema",
       field: "tags",
       message: "Missing recommended field: tags",
+    });
+  }
+
+  if (!recipe.contributor) {
+    issues.push({
+      slug,
+      severity: "info",
+      category: "schema",
+      field: "contributor",
+      message: "Missing recommended field: contributor",
     });
   }
 

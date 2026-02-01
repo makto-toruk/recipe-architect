@@ -6,7 +6,7 @@ type Props = {
   id: string;
   title: string;
   subtitle?: string;
-  image?: string;
+  heroImage?: string;
   tags?: string[];
 };
 
@@ -14,7 +14,7 @@ export default function RecipeCard({
   id,
   title,
   subtitle,
-  image,
+  heroImage,
   tags = [],
 }: Props) {
   return (
@@ -23,9 +23,9 @@ export default function RecipeCard({
       className={CARD_BASE_CLASSES}
       style={CARD_BASE_STYLE}
     >
-      {image ? (
+      {heroImage ? (
         <Image
-          src={`/images/${image}`}
+          src={heroImage}
           alt={title}
           width={480}
           height={320}
