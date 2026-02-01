@@ -14,7 +14,7 @@ You are helping add a new recipe to the `data/recipes/` directory.
 2. **Follow the Template**
 
    - Use `data/recipes/template.md` as the structure and format guide
-   - Today's date for `first_made` field: '2025-12-25'
+   - Today's date for `first_made` field: '2026-01-31'
    - All formatting rules are documented in the template
 
 3. **Critical Formatting Reminders**
@@ -34,7 +34,7 @@ You are helping add a new recipe to the `data/recipes/` directory.
    - Filename (suggest kebab-case based on title)
    - Personal story about the recipe?
    - Tags to add? (suggest based on content)
-   - Do they have an image? (goes in `/public/images/`)
+   - Do they have images? (create gallery directory at `/public/images/[recipe-slug]/`)
    - Any modifications needed?
 
 5. **Save & Validate**
@@ -42,4 +42,7 @@ You are helping add a new recipe to the `data/recipes/` directory.
    - Ensure `id` field matches filename (without .md)
    - **Run `npm run validate:recipe [slug]`** and review the output
    - Fix any errors or warnings until the recipe validates cleanly
-   - If image mentioned, remind about `/public/images/` placement
+   - If images mentioned, remind user to:
+     - Create directory `/public/images/[recipe-slug]/`
+     - Name images with numeric prefixes: `01-hero.jpg`, `02-prep.jpg`, etc.
+     - First image (alphabetically) becomes the hero/card image
