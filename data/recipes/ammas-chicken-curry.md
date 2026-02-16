@@ -4,61 +4,74 @@ title: Amma's chicken curry
 subtitle: Spicy and comforting chicken curry from home.
 tags: [curry, chicken, indian]
 gallery: ammas-chicken-curry
+gallery_captions:
+  02-spices.jpg: "The masala mise en place"
+  03-saute.jpg: "Sautéing the aromatics before blending"
 first_made: "2015-09-01"
+last_made: "2026-02-15"
 contributor: manasij
 source:
   type: Inspired by
   label: My Amma's recipe
 yields: 4-6
 time: 15 minutes prep + 35-40 minutes cook
-story: Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. I've made it over 20 times now, but it never tastes quite like Amma's. I probably just need to be a bit more with the chili powder :)
+story: Growing up, I could smell this masala from several houses away. We always called it 'chaaps'. I never knew why, and I still don't. Someone once told me it comes from 'chops,' but this is really a curry. When T and I decided to start eating meat again, this was the first thing I wanted to make. Update 2026/02/15 — T came home and said she could smell it from the driveway :)
 ---
 
 ## Ingredients
 
-- Chicken (2 lbs, bone-in skin-on thighs preferred; cut into large pieces)
+### For the masala (sautée then blend):
 
-### For the masala base:
+- Green Chillis (4)
+- Onion (1/2, quartered)
+- Garlic (1 1/2 bulbs)
+- Ginger (2-3 inches)
+- Black Peppercorns (1/2 tsp)
+- Curry Leaves (1/2 cup)
+- Cashews (4-5)
+- Almonds (4-5)
+- Oil (1 tsp, for sautéing)
+
+### Add to blender with the sautéed mixture:
+
+- Coriander Powder (2 tsp)
+- Red Chilli Powder (1 1/2 tsp)
+- Cumin Powder (1 tsp)
+- Cinnamon (4-5 pieces, ~1 cm each)
+- Cloves (8)
+- Cardamom (3)
+- Raisins (5)
+- Fennel Seeds (1 tsp)
+- Yogurt (4 Tbsp)
+- Cilantro (1 cup)
+- Mint Leaves (1/2 cup)
+
+### For cooking:
 
 - Ghee (1 Tbsp)
-- Onion (1/2, quartered)
-- Garlic (1 bulb)
-- Ginger (1 inch)
-- Black peppercorns (1 tsp)
-- Cashews (2 Tbsp)
-- Curry leaves (2 Tbsp)
-- Cumin powder (1 tsp)
-- Red chili powder (1 tsp)
-- Raisins (1 Tbsp)
-- Coriander powder (1 tsp)
-- Garam masala (1 tsp)
-- Yogurt (1/2 cup)
-- Cilantro leaves (1 cup)
-- Mint leaves (1/2 cup)
-- Butter (1 Tbsp)
 - Onion (1/2, diced)
-- Fenugreek leaves (1/2 cup, optional)
-- Cardamom pods (2)
-- Cloves (4)
-- Fennel seeds (1 tsp)
-- Cinnamon stick (1 inch)
-- Salt (1 Tbsp)
+- Chicken Thighs (2 1/2 lbs, bone-in)
+- Cilantro (a handful, finely chopped)
+- Mint (a handful, finely chopped)
+- Salt (4 tsp)
+- Turmeric (1/2 tsp)
+- Kasuri Methi (1 tsp)
 
 ## Special equipment
 
-- Heavy-bottomed pressure cooker or Dutch oven
+- Heavy-bottomed pan
 - Blender
 
 ## Instructions
 
-- Clean and cut chicken into large pieces.
+- In 1 tsp of oil, lightly sautée the green chillis, quartered onion, garlic, ginger, peppercorns, curry leaves, cashews, and almonds for about a minute.
 
-- Heat ghee in heavy-bottomed pressure cooker. Sauté quartered onion, garlic, and ginger until translucent. Add peppercorns, cashews, and curry leaves. Sauté for 2-3 minutes.
+- Transfer to a blender along with coriander powder, red chilli powder, cumin powder, cinnamon, cloves, cardamom, raisins, fennel seeds, yogurt, cilantro, and mint. Blend until smooth.
 
-- Transfer the sautéed mixture to a blender along with cumin powder, red chili powder, raisins, coriander powder, garam masala, yogurt, cilantro, and mint. Blend until smooth.
+- Heat ghee in a heavy-bottomed pan. Add diced onion and sauté briefly.
 
-- Heat butter in the pan. Sauté diced onion with fenugreek leaves, cardamom, cloves, fennel seeds, and cinnamon stick. Cook until onions are golden.
+- Add the chicken thighs, chopped cilantro, chopped mint, salt, turmeric, and kasuri methi. Cook until the chicken releases its water and is well over half cooked.
 
-- Add chicken and salt to the tempering. Sear for 10 minutes on all sides until well-browned.
+  - Don't add the masala too early or it may burn before the chicken is cooked. If you do add it early, add some water to prevent burning.
 
-- Add the blended masala to the chicken. Simmer covered on low heat for 20-25 minutes, stirring occasionally. The chicken should be tender and the curry thickened.
+- Add the blended masala and continue cooking until the chicken reaches 170°F internal temperature.
