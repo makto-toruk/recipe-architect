@@ -4,7 +4,7 @@ title: CAVA inspired black lentil bowls
 subtitle: Mediterranean lentil bowls with herb quinoa, roasted veggies, and all the toppings
 tags: [grain-bowl, mediterranean]
 gallery: cava-inspired-black-lentil-grain-bowls
-first_made: "2026-01-31"
+first_made: "2026-03-01"
 source:
   type: Adapted from
   label: Our Salty Kitchen
