@@ -17,6 +17,12 @@
       "name": "arka",
       "motto": "Too bold for vanilla",
       "image": "arka.png"
+    },
+    {
+      "id": "geethanjali",
+      "name": "Geethanjali",
+      "motto": "",
+      "image": ""
     }
   ]
 }
