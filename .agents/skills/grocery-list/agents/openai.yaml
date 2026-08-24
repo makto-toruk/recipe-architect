@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grocery list"
+  short_description: "Combine recipe ingredients into a practical grocery list."
+  default_prompt: "Create a grocery list from recipes in this repository."

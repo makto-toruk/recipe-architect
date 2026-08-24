@@ -39,16 +39,13 @@ git commit --no-verify -m "your message"
 git commit -n -m "your message"
 ```
 
-### Claude Commands
+### Agent Skills
 
-When using Claude Code, the following commands are available:
+Repository-scoped equivalents are available in `.agents/skills/`:
 
-```bash
-/validate-recipe     # Validate a recipe and help fix any issues
-/add-recipe          # Add a new recipe following the standard template
-/grocery-list        # Generate a shopping list from multiple recipes
-                     # Creates local markdown + syncs to Fizzy (if configured)
-```
+- `add-recipe`
+- `grocery-list`
+- `validate-recipe`
 
 ## Architecture
 

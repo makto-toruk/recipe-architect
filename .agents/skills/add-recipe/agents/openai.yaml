@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add recipe"
+  short_description: "Add and validate a recipe from a URL or supplied recipe."
+  default_prompt: "Add a recipe to this repository using its recipe template."

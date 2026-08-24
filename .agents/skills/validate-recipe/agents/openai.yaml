@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validate recipe"
+  short_description: "Validate a recipe and resolve reported issues."
+  default_prompt: "Validate a recipe in this repository and help resolve its issues."
