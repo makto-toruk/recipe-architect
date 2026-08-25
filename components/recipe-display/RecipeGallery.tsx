@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight, X, Grid3X3 } from "lucide-react";
 import type { GalleryImage } from "@/lib/recipe-types";
 
@@ -9,6 +10,26 @@ type Props = {
   images: GalleryImage[];
   title: string;
 };
+
+function GalleryCaption({ caption }: { caption: string }) {
+  const linkPattern = /\[([^\]]+)\]\((\/[^)\s]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkPattern.exec(caption)) !== null) {
+    parts.push(caption.slice(lastIndex, match.index));
+    parts.push(
+      <Link key={`${match.index}-${match[2]}`} href={match[2]} className="underline">
+        {match[1]}
+      </Link>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  parts.push(caption.slice(lastIndex));
+  return <>{parts}</>;
+}
 
 export default function RecipeGallery({ images, title }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -127,7 +148,7 @@ export default function RecipeGallery({ images, title }: Props) {
             className="mt-2 text-sm text-center italic"
             style={{ color: "var(--color-text-secondary)" }}
           >
-            {currentImage.caption}
+            <GalleryCaption caption={currentImage.caption} />
           </p>
         )}
       </div>
@@ -173,7 +194,7 @@ export default function RecipeGallery({ images, title }: Props) {
             {/* Caption in lightbox */}
             {currentImage.caption && (
               <p className="mt-4 text-white text-center italic max-w-2xl">
-                {currentImage.caption}
+                <GalleryCaption caption={currentImage.caption} />
               </p>
             )}
           </div>
